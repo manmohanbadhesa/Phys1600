@@ -1,0 +1,94 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[p mainexit ]
+"373 C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\math.h
+[; ;C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\math.h: 373: float sqrtf(float);
+[v _sqrtf `(f ~T0 @X0 0 ef1`f ]
+[v F972 `(f ~T0 @X0 1 tf2`f`f ]
+"319
+[; ;C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\math.h: 319: __attribute__((nonreentrant)) float powf(float, float);
+[v _powf `JF972 ~T0 @X0 0 e ]
+"111 C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\stdio.h
+[v _printf `(i ~T0 @X0 0 ev`*Cuc ]
+"84 C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\math.h
+[; ;C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\math.h: 84: float atanf(float);
+[v _atanf `(f ~T0 @X0 0 ef1`f ]
+"120
+[; ;C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\math.h: 120: float cosf(float);
+[v _cosf `(f ~T0 @X0 0 ef1`f ]
+"379
+[; ;C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\math.h: 379: float tanf(float);
+[v _tanf `(f ~T0 @X0 0 ef1`f ]
+[v $root$_main `(v ~T0 @X0 0 e ]
+"9 main.c
+[; ;main.c: 9: int main()
+[v _main `(i ~T0 @X0 1 ef ]
+"10
+[; ;main.c: 10: {
+{
+[e :U _main ]
+[f ]
+"16
+[; ;main.c: 16:  float x=2.25, y=3.72, z;
+[v _x `f ~T0 @X0 1 a ]
+[e = _x -> .2.25 `f ]
+[v _y `f ~T0 @X0 1 a ]
+[e = _y -> .3.72 `f ]
+[v _z `f ~T0 @X0 1 a ]
+"18
+[; ;main.c: 18:     z= sqrtf(powf(x,2)+powf(y,2));
+[e = _z ( _sqrtf (1 + ( _powf (2 , _x -> -> 2 `i `f ( _powf (2 , _y -> -> 2 `i `f ]
+"21
+[; ;main.c: 21:     printf(" Part a's answer is: %f ",z);
+[e ( _printf , (. :s 1C -> _z `d ]
+"26
+[; ;main.c: 26:     float pi=4.0*atanf(1.0), R, A=4.27, beta=35.0*pi/180;
+[v _pi `f ~T0 @X0 1 a ]
+[e = _pi -> * .4.0 -> ( _atanf (1 -> .1.0 `f `d `f ]
+[v _R `f ~T0 @X0 1 a ]
+[v _A `f ~T0 @X0 1 a ]
+[e = _A -> .4.27 `f ]
+[v _beta `f ~T0 @X0 1 a ]
+[e = _beta -> / * .35.0 -> _pi `d -> -> 180 `i `d `f ]
+"28
+[; ;main.c: 28:     R= A*cosf(beta);
+[e = _R * _A ( _cosf (1 _beta ]
+"31
+[; ;main.c: 31:     printf("\n Part b's answer is: %f ",R);
+[e ( _printf , (. :s 2C -> _R `d ]
+"36
+[; ;main.c: 36:     float X, D=6.85, alpha=33.0*pi/180;
+[v _X `f ~T0 @X0 1 a ]
+[v _D `f ~T0 @X0 1 a ]
+[e = _D -> .6.85 `f ]
+[v _alpha `f ~T0 @X0 1 a ]
+[e = _alpha -> / * .33.0 -> _pi `d -> -> 180 `i `d `f ]
+"38
+[; ;main.c: 38:     X=D*powf(tanf(alpha),2);
+[e = _X * _D ( _powf (2 , ( _tanf (1 _alpha -> -> 2 `i `f ]
+"40
+[; ;main.c: 40:     printf("\n Part c's answer is: %f ",X);
+[e ( _printf , (. :s 3C -> _X `d ]
+"46
+[; ;main.c: 46:     float v, J=2.15, g=9.81, theta=43.0*pi/180;
+[v _v `f ~T0 @X0 1 a ]
+[v _J `f ~T0 @X0 1 a ]
+[e = _J -> .2.15 `f ]
+[v _g `f ~T0 @X0 1 a ]
+[e = _g -> .9.81 `f ]
+[v _theta `f ~T0 @X0 1 a ]
+[e = _theta -> / * .43.0 -> _pi `d -> -> 180 `i `d `f ]
+"48
+[; ;main.c: 48:     v= sqrtf(J*g*tanf(theta));
+[e = _v ( _sqrtf (1 * * _J _g ( _tanf (1 _theta ]
+"50
+[; ;main.c: 50:     printf("\n Part d's answer is: %f ",v);
+[e ( _printf , (. :s 4C -> _v `d ]
+"52
+[; ;main.c: 52: }
+[e :UE 9 ]
+}
+[p f _printf 8396800 ]
+[a 4C 10 32 80 97 114 116 32 100 39 115 32 97 110 115 119 101 114 32 105 115 58 32 37 102 32 0 ]
+[a 3C 10 32 80 97 114 116 32 99 39 115 32 97 110 115 119 101 114 32 105 115 58 32 37 102 32 0 ]
+[a 2C 10 32 80 97 114 116 32 98 39 115 32 97 110 115 119 101 114 32 105 115 58 32 37 102 32 0 ]
+[a 1C 32 80 97 114 116 32 97 39 115 32 97 110 115 119 101 114 32 105 115 58 32 37 102 32 0 ]
