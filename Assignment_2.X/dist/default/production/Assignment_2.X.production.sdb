@@ -3,24 +3,12 @@
 [d edition pro ]
 [d chip 18F46K42 ]
 [d frameptr 16353 ]
-"26 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\__cosdf.c
-[v ___cosdf __cosdf `(f  1 e 4 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\__fpclassifyf.c
 [v ___fpclassifyf __fpclassifyf `(i  1 e 2 0 ]
-"43 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\__rem_pio2f.c
-[v ___rem_pio2f __rem_pio2f `(i  1 e 2 0 ]
-"26 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\__sindf.c
-[v ___sindf __sindf `(f  1 e 4 0 ]
-"28 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\__tandf.c
-[v ___tandf __tandf `(f  1 e 4 0 ]
-"41 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\atanf.c
-[v _atanf atanf `(f  1 e 4 0 ]
 "7 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
 "7 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awmod.c
 [v ___awmod __awmod `(i  1 e 2 0 ]
-"26 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\cosf.c
-[v _cosf cosf `(f  1 e 4 0 ]
 "72 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
 [v _pad pad `(i  1 s 2 pad ]
 "332
@@ -29,8 +17,6 @@
 [v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
 "1390
 [v _vfprintf vfprintf `(i  1 e 2 0 ]
-"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\fabsf.c
-[v _fabsf fabsf `(f  1 e 4 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\flge.c
@@ -53,18 +39,12 @@
 [v ___ftsub __ftsub `(f  1 e 4 0 ]
 "5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\isupper.c
 [v _isupper isupper `(i  1 e 2 0 ]
-"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\nanf.c
-[v _nanf nanf `(f  1 e 4 0 ]
 "8 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\nf_fputc.c
 [v _fputc fputc `(i  1 e 2 0 ]
 "8 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\nf_fputs.c
 [v _fputs fputs `(i  1 e 2 0 ]
-"52 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\powf.c
-[v _powf powf `JJ(f  1 e 4 0 ]
 "5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\printf.c
 [v _printf printf `(i  1 e 2 0 ]
-"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\scalbnf.c
-[v _scalbnf scalbnf `(f  1 e 4 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "245
@@ -73,16 +53,12 @@
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
 "8 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
-"22 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\sqrtf.c
-[v _sqrtf sqrtf `(f  1 e 4 0 ]
 "3 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\strcpy.c
 [v _strcpy strcpy `(*.39uc  1 e 2 0 ]
 "5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\strlen.c
 [v _strlen strlen `(ui  1 e 2 0 ]
 "3 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\strncmp.c
 [v _strncmp strncmp `(i  1 e 2 0 ]
-"26 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\tanf.c
-[v _tanf tanf `(f  1 e 4 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\tolower.c
 [v _tolower tolower `(i  1 e 2 0 ]
 "15 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\Umul32.c
@@ -91,6 +67,7 @@
 [v ___omul __omul `(uo  1 e 8 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+<<<<<<< HEAD:Assignment_1.X/dist/default/production/Assignment_1.X.production.sdb
 "9 C:\msys\1.0\home\Manmo\Phys1600\Assignment_1.X\main.c
 [v _main main `(i  1 e 2 0 ]
 "58 C:\msys\1.0\home\Manmo\Phys1600\Assignment_1.X\mcc_generated_files/mcc.c
@@ -100,6 +77,19 @@
 "55 C:\msys\1.0\home\Manmo\Phys1600\Assignment_1.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 "66 C:\msys\1.0\home\Manmo\Phys1600\Assignment_1.X\mcc_generated_files/uart2.c
+=======
+"9 C:\MinGW\msys\1.0\home\manmo\Phys1600\Assignment_2.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"50 C:\MinGW\msys\1.0\home\manmo\Phys1600\Assignment_2.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"58
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"72
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"55 C:\MinGW\msys\1.0\home\manmo\Phys1600\Assignment_2.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"66 C:\MinGW\msys\1.0\home\manmo\Phys1600\Assignment_2.X\mcc_generated_files/uart2.c
+>>>>>>> c75ec598988a967cb7be6200a6df8e07d7ceef0e:Assignment_2.X/dist/default/production/Assignment_2.X.production.sdb
 [v _UART2_Initialize UART2_Initialize `(v  1 e 1 0 ]
 "136
 [v _UART2_Read UART2_Read `(uc  1 e 1 0 ]
@@ -119,7 +109,7 @@
 [v _UART2_SetOverrunErrorHandler UART2_SetOverrunErrorHandler `(v  1 e 1 0 ]
 "199
 [v _UART2_SetErrorHandler UART2_SetErrorHandler `(v  1 e 1 0 ]
-[s S176 . 1 `uc 1 I2C2IF 1 0 :1:0 
+[s S77 . 1 `uc 1 I2C2IF 1 0 :1:0 
 `uc 1 I2C2EIF 1 0 :1:1 
 `uc 1 U2RXIF 1 0 :1:2 
 `uc 1 U2TXIF 1 0 :1:3 
@@ -129,8 +119,8 @@
 `uc 1 TMR3GIF 1 0 :1:7 
 ]
 "4505 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f46k42.h
-[u S185 . 1 `S176 1 . 1 0 ]
-[v _PIR6bits PIR6bits `VES185  1 e 1 @14758 ]
+[u S86 . 1 `S77 1 . 1 0 ]
+[v _PIR6bits PIR6bits `VES86  1 e 1 @14758 ]
 "4686
 [v _PMD0 PMD0 `VEuc  1 e 1 @14784 ]
 "4763
@@ -157,6 +147,8 @@
 [v _OSCTUNE OSCTUNE `VEuc  1 e 1 @14814 ]
 "5654
 [v _OSCFRQ OSCFRQ `VEuc  1 e 1 @14815 ]
+"7216
+[v _RB6PPS RB6PPS `VEuc  1 e 1 @14862 ]
 "8266
 [v _ANSELA ANSELA `VEuc  1 e 1 @14912 ]
 "8328
@@ -233,29 +225,29 @@
 [v _U2P3L U2P3L `VEuc  1 e 1 @15832 ]
 "25973
 [v _U2CON0 U2CON0 `VEuc  1 e 1 @15834 ]
-[s S197 . 1 `uc 1 MODE0 1 0 :1:0 
+[s S98 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 ]
 "26004
-[s S201 . 1 `uc 1 U2MODE 1 0 :4:0 
+[s S102 . 1 `uc 1 U2MODE 1 0 :4:0 
 `uc 1 U2RXEN 1 0 :1:4 
 `uc 1 U2TXEN 1 0 :1:5 
 `uc 1 U2ABDEN 1 0 :1:6 
 `uc 1 U2BRGS 1 0 :1:7 
 ]
-[s S207 . 1 `uc 1 U2MODE0 1 0 :1:0 
+[s S108 . 1 `uc 1 U2MODE0 1 0 :1:0 
 `uc 1 U2MODE1 1 0 :1:1 
 `uc 1 U2MODE2 1 0 :1:2 
 ]
-[s S211 . 1 `uc 1 MODE 1 0 :4:0 
+[s S112 . 1 `uc 1 MODE 1 0 :4:0 
 `uc 1 RXEN 1 0 :1:4 
 `uc 1 TXEN 1 0 :1:5 
 `uc 1 ABDEN 1 0 :1:6 
 `uc 1 BRGS 1 0 :1:7 
 ]
-[u S217 . 1 `S197 1 . 1 0 `S201 1 . 1 0 `S207 1 . 1 0 `S211 1 . 1 0 ]
-[v _U2CON0bits U2CON0bits `VES217  1 e 1 @15834 ]
+[u S118 . 1 `S98 1 . 1 0 `S102 1 . 1 0 `S108 1 . 1 0 `S112 1 . 1 0 ]
+[v _U2CON0bits U2CON0bits `VES118  1 e 1 @15834 ]
 "26089
 [v _U2CON1 U2CON1 `VEuc  1 e 1 @15835 ]
 "26169
@@ -270,7 +262,7 @@
 [v _U2UIR U2UIR `VEuc  1 e 1 @15840 ]
 "26534
 [v _U2ERRIR U2ERRIR `VEuc  1 e 1 @15841 ]
-[s S243 . 1 `uc 1 TXCIF 1 0 :1:0 
+[s S144 . 1 `uc 1 TXCIF 1 0 :1:0 
 `uc 1 RXFOIF 1 0 :1:1 
 `uc 1 RXBKIF 1 0 :1:2 
 `uc 1 FERIF 1 0 :1:3 
@@ -280,7 +272,7 @@
 `uc 1 TXMTIF 1 0 :1:7 
 ]
 "26561
-[s S252 . 1 `uc 1 U2TXCIF 1 0 :1:0 
+[s S153 . 1 `uc 1 U2TXCIF 1 0 :1:0 
 `uc 1 U2RXFOIF 1 0 :1:1 
 `uc 1 U2RXBKIF 1 0 :1:2 
 `uc 1 U2FERIF 1 0 :1:3 
@@ -289,8 +281,8 @@
 `uc 1 U2PERIF 1 0 :1:6 
 `uc 1 U2TXMTIF 1 0 :1:7 
 ]
-[u S261 . 1 `S243 1 . 1 0 `S252 1 . 1 0 ]
-[v _U2ERRIRbits U2ERRIRbits `VES261  1 e 1 @15841 ]
+[u S162 . 1 `S144 1 . 1 0 `S153 1 . 1 0 ]
+[v _U2ERRIRbits U2ERRIRbits `VES162  1 e 1 @15841 ]
 "26646
 [v _U2ERRIE U2ERRIE `VEuc  1 e 1 @15842 ]
 "45726
@@ -313,14 +305,6 @@
 [v _TRISD TRISD `VEuc  1 e 1 @16325 ]
 "46474
 [v _TRISE TRISE `VEuc  1 e 1 @16326 ]
-"19 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\__tandf.c
-[v _T T `C[6]d  1 s 24 T ]
-"19 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\atanf.c
-[v _atanhi atanhi `C[4]f  1 s 16 atanhi ]
-"26
-[v _atanlo atanlo `C[4]f  1 s 16 atanlo ]
-"33
-[v _aT aT `C[5]f  1 s 20 aT ]
 "55 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
 [v _flags flags `i  1 s 2 flags ]
 [v _prec prec `i  1 s 2 prec ]
@@ -329,28 +313,27 @@
 [v _dbuf dbuf `[80]uc  1 s 80 dbuf ]
 "69
 [v _nout nout `i  1 s 2 nout ]
-"3 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\errno.c
-[v _errno errno `i  1 e 2 0 ]
-"19 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\powf.c
-[v _bp bp `C[2]f  1 s 8 bp ]
-"20
-[v _dp_h dp_h `C[2]f  1 s 8 dp_h ]
-"21
-[v _dp_l dp_l `C[2]f  1 s 8 dp_l ]
-[s S123 . 1 `uc 1 perr 1 0 :1:0 
+[s S24 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
+<<<<<<< HEAD:Assignment_1.X/dist/default/production/Assignment_1.X.production.sdb
 "53 C:\msys\1.0\home\Manmo\Phys1600\Assignment_1.X\mcc_generated_files/uart2.c
 [u S128 . 1 `S123 1 . 1 0 `uc 1 status 1 0 ]
 [v _uart2RxLastError uart2RxLastError `VES128  1 s 1 uart2RxLastError ]
+=======
+"53 C:\MinGW\msys\1.0\home\manmo\Phys1600\Assignment_2.X\mcc_generated_files/uart2.c
+[u S29 . 1 `S24 1 . 1 0 `uc 1 status 1 0 ]
+[v _uart2RxLastError uart2RxLastError `VES29  1 s 1 uart2RxLastError ]
+>>>>>>> c75ec598988a967cb7be6200a6df8e07d7ceef0e:Assignment_2.X/dist/default/production/Assignment_2.X.production.sdb
 "58
 [v _UART2_FramingErrorHandler UART2_FramingErrorHandler `*.37(v  1 e 2 0 ]
 "59
 [v _UART2_OverrunErrorHandler UART2_OverrunErrorHandler `*.37(v  1 e 2 0 ]
 "60
 [v _UART2_ErrorHandler UART2_ErrorHandler `*.37(v  1 e 2 0 ]
+<<<<<<< HEAD:Assignment_1.X/dist/default/production/Assignment_1.X.production.sdb
 "9 C:\msys\1.0\home\Manmo\Phys1600\Assignment_1.X\main.c
 [v _main main `(i  1 e 2 0 ]
 {
@@ -391,57 +374,64 @@
 [v tanf@sign sign `ui  1 a 2 64 ]
 "26
 [v tanf@x x `f  1 p 4 83 ]
-"66
-} 0
-"28 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\__tandf.c
-[v ___tandf __tandf `(f  1 e 4 0 ]
+=======
+"9 C:\MinGW\msys\1.0\home\manmo\Phys1600\Assignment_2.X\main.c
+[v _main main `(v  1 e 1 0 ]
 {
-"30
-[v ___tandf@z z `d  1 a 4 36 ]
-[v ___tandf@r r `d  1 a 4 32 ]
-[v ___tandf@s s `d  1 a 4 28 ]
-[v ___tandf@w w `d  1 a 4 24 ]
-[v ___tandf@u u `d  1 a 4 4 ]
-[v ___tandf@t t `d  1 a 4 0 ]
-"28
-[v ___tandf@x x `d  1 p 4 74 ]
-[v ___tandf@odd odd `i  1 p 2 78 ]
-"54
+"24
+[v main@sum1 sum1 `f  1 a 4 40 ]
+[v main@sum2 sum2 `f  1 a 4 36 ]
+[v main@Xn Xn `f  1 a 4 32 ]
+[v main@X1 X1 `f  1 a 4 28 ]
+"20
+[v main@deltax deltax `f  1 a 4 24 ]
+>>>>>>> c75ec598988a967cb7be6200a6df8e07d7ceef0e:Assignment_2.X/dist/default/production/Assignment_2.X.production.sdb
+"66
+[v main@sum3 sum3 `f  1 a 4 16 ]
+[v main@area area `f  1 a 4 12 ]
+"15
+[v main@b b `f  1 a 4 8 ]
+[v main@a a `f  1 a 4 4 ]
+"16
+[v main@i i `i  1 a 2 46 ]
+"18
+[v main@n n `i  1 a 2 44 ]
+"74
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\printf.c
 [v _printf printf `(i  1 e 2 0 ]
 {
 "8
-[v printf@ap ap `[1]*.39v  1 a 2 104 ]
+[v printf@ap ap `[1]*.39v  1 a 2 122 ]
 "5
-[v printf@fmt fmt `*.32Cuc  1 p 2 96 ]
+[v printf@fmt fmt `*.32Cuc  1 p 2 110 ]
 "13
 } 0
 "1390 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
 [v _vfprintf vfprintf `(i  1 e 2 0 ]
 {
 "1393
-[v vfprintf@cfmt cfmt `*.32uc  1 a 2 94 ]
-[s S1049 _IO_FILE 0 ]
+[v vfprintf@cfmt cfmt `*.32uc  1 a 2 92 ]
+[s S815 _IO_FILE 0 ]
 "1390
-[v vfprintf@fp fp `*.2S1049  1 p 2 88 ]
-[v vfprintf@fmt fmt `*.32Cuc  1 p 2 90 ]
-[v vfprintf@ap ap `*.39*.39v  1 p 2 92 ]
+[v vfprintf@fp fp `*.2S815  1 p 2 104 ]
+[v vfprintf@fmt fmt `*.32Cuc  1 p 2 106 ]
+[v vfprintf@ap ap `*.39*.39v  1 p 2 108 ]
 "1404
 } 0
 "692
 [v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
 {
 "698
-[v vfpfcnvrt@f f `d  1 a 4 80 ]
+[v vfpfcnvrt@f f `d  1 a 4 96 ]
 "694
-[v vfpfcnvrt@ct ct `[3]uc  1 a 3 84 ]
-[v vfpfcnvrt@c c `uc  1 a 1 87 ]
-[s S1049 _IO_FILE 0 ]
+[v vfpfcnvrt@ct ct `[3]uc  1 a 3 100 ]
+[v vfpfcnvrt@c c `uc  1 a 1 103 ]
+[s S815 _IO_FILE 0 ]
 "692
-[v vfpfcnvrt@fp fp `*.2S1049  1 p 2 68 ]
-[v vfpfcnvrt@fmt fmt `*.39*.32uc  1 p 2 70 ]
-[v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 72 ]
+[v vfpfcnvrt@fp fp `*.2S815  1 p 2 84 ]
+[v vfpfcnvrt@fmt fmt `*.39*.32uc  1 p 2 86 ]
+[v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 88 ]
 "1387
 } 0
 "3 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\strncmp.c
@@ -460,31 +450,31 @@
 [v _efgtoa efgtoa `(i  1 s 2 efgtoa ]
 {
 "336
-[v efgtoa@u u `d  1 a 4 64 ]
-[v efgtoa@g g `d  1 a 4 56 ]
-[v efgtoa@l l `d  1 a 4 50 ]
-[v efgtoa@h h `d  1 a 4 46 ]
-[v efgtoa@ou ou `d  1 a 4 32 ]
+[v efgtoa@u u `d  1 a 4 80 ]
+[v efgtoa@g g `d  1 a 4 72 ]
+[v efgtoa@l l `d  1 a 4 66 ]
+[v efgtoa@h h `d  1 a 4 62 ]
+[v efgtoa@ou ou `d  1 a 4 48 ]
 "335
-[v efgtoa@n n `i  1 a 2 62 ]
-[v efgtoa@e e `i  1 a 2 60 ]
-[v efgtoa@i i `i  1 a 2 54 ]
-[v efgtoa@w w `i  1 a 2 42 ]
-[v efgtoa@p p `i  1 a 2 40 ]
-[v efgtoa@sign sign `i  1 a 2 38 ]
-[v efgtoa@d d `i  1 a 2 36 ]
-[v efgtoa@m m `i  1 a 2 30 ]
-[v efgtoa@ne ne `i  1 a 2 28 ]
-[v efgtoa@pp pp `i  1 a 2 26 ]
-[v efgtoa@t t `i  1 a 2 24 ]
+[v efgtoa@n n `i  1 a 2 78 ]
+[v efgtoa@e e `i  1 a 2 76 ]
+[v efgtoa@i i `i  1 a 2 70 ]
+[v efgtoa@w w `i  1 a 2 58 ]
+[v efgtoa@p p `i  1 a 2 56 ]
+[v efgtoa@sign sign `i  1 a 2 54 ]
+[v efgtoa@d d `i  1 a 2 52 ]
+[v efgtoa@m m `i  1 a 2 46 ]
+[v efgtoa@ne ne `i  1 a 2 44 ]
+[v efgtoa@pp pp `i  1 a 2 42 ]
+[v efgtoa@t t `i  1 a 2 40 ]
 "334
-[v efgtoa@mode mode `uc  1 a 1 45 ]
-[v efgtoa@nmode nmode `uc  1 a 1 44 ]
-[s S1049 _IO_FILE 0 ]
+[v efgtoa@mode mode `uc  1 a 1 61 ]
+[v efgtoa@nmode nmode `uc  1 a 1 60 ]
+[s S815 _IO_FILE 0 ]
 "332
-[v efgtoa@fp fp `*.2S1049  1 p 2 0 ]
-[v efgtoa@f f `d  1 p 4 2 ]
-[v efgtoa@c c `uc  1 p 1 6 ]
+[v efgtoa@fp fp `*.2S815  1 p 2 16 ]
+[v efgtoa@f f `d  1 p 4 18 ]
+[v efgtoa@c c `uc  1 p 1 22 ]
 "525
 } 0
 "4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\tolower.c
@@ -517,9 +507,9 @@
 "74
 [v pad@w w `i  1 a 2 27 ]
 [v pad@i i `i  1 a 2 25 ]
-[s S1049 _IO_FILE 0 ]
+[s S815 _IO_FILE 0 ]
 "72
-[v pad@fp fp `*.2S1049  1 p 2 18 ]
+[v pad@fp fp `*.2S815  1 p 2 18 ]
 [v pad@buf buf `*.39uc  1 p 2 20 ]
 [v pad@p p `i  1 p 2 22 ]
 "95
@@ -542,19 +532,23 @@
 [v fputs@c c `uc  1 a 1 15 ]
 "8
 [v fputs@s s `*.39Cuc  1 p 2 11 ]
-[s S1032 _IO_FILE 6 `*.2uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
-[v fputs@fp fp `*.2S1032  1 p 2 13 ]
+[s S798 _IO_FILE 6 `*.2uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[v fputs@fp fp `*.2S798  1 p 2 13 ]
 "19
 } 0
 "8 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\nf_fputc.c
 [v _fputc fputc `(i  1 e 2 0 ]
 {
 [v fputc@c c `i  1 p 2 2 ]
-[s S1032 _IO_FILE 6 `*.2uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
-[v fputc@fp fp `*.2S1032  1 p 2 4 ]
+[s S798 _IO_FILE 6 `*.2uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[v fputc@fp fp `*.2S798  1 p 2 4 ]
 "24
 } 0
+<<<<<<< HEAD:Assignment_1.X/dist/default/production/Assignment_1.X.production.sdb
 "175 C:\msys\1.0\home\Manmo\Phys1600\Assignment_1.X\mcc_generated_files/uart2.c
+=======
+"175 C:\MinGW\msys\1.0\home\manmo\Phys1600\Assignment_2.X\mcc_generated_files/uart2.c
+>>>>>>> c75ec598988a967cb7be6200a6df8e07d7ceef0e:Assignment_2.X/dist/default/production/Assignment_2.X.production.sdb
 [v _putch putch `(v  1 e 1 0 ]
 {
 [v putch@txData txData `uc  1 a 1 wreg ]
@@ -574,18 +568,103 @@
 "3 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\floorf.c
 [v _floorf floorf `(f  1 e 4 0 ]
 {
-[u S847 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+[u S945 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
 "5
-[v floorf@u u `S847  1 a 4 90 ]
+[v floorf@u u `S945  1 a 4 12 ]
 "7
-[v floorf@m m `ul  1 a 4 84 ]
+[v floorf@m m `ul  1 a 4 6 ]
 "6
-[v floorf@e e `i  1 a 2 88 ]
+[v floorf@e e `i  1 a 2 10 ]
 "3
-[v floorf@x x `f  1 p 4 74 ]
+[v floorf@x x `f  1 p 4 88 ]
 "4
-[v floorf@F527 F527 `S847  1 s 4 F527 ]
+[v floorf@F527 F527 `S945  1 s 4 F527 ]
 "27
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\__fpclassifyf.c
+[v ___fpclassifyf __fpclassifyf `(i  1 e 2 0 ]
+{
+[u S945 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+"6
+[v ___fpclassifyf@u u `S945  1 a 4 10 ]
+"7
+[v ___fpclassifyf@e e `i  1 a 2 8 ]
+"4
+[v ___fpclassifyf@x x `f  1 p 4 0 ]
+"5
+[v ___fpclassifyf@F465 F465 `S945  1 s 4 F465 ]
+"11
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 9 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 8 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 0 ]
+"70
+} 0
+"245 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\sprcadd.c
+[v ___flsub __flsub `(d  1 e 4 0 ]
+{
+[v ___flsub@b b `d  1 p 4 55 ]
+[v ___flsub@a a `d  1 p 4 59 ]
+"250
+} 0
+"10
+[v ___fladd __fladd `(d  1 e 4 0 ]
+{
+"17
+[v ___fladd@grs grs `uc  1 a 1 54 ]
+"15
+[v ___fladd@bexp bexp `uc  1 a 1 53 ]
+"16
+[v ___fladd@aexp aexp `uc  1 a 1 52 ]
+"13
+[v ___fladd@signs signs `uc  1 a 1 51 ]
+"10
+[v ___fladd@b b `d  1 p 4 39 ]
+[v ___fladd@a a `d  1 p 4 43 ]
+"237
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\flneg.c
+[v ___flneg __flneg `(d  1 e 4 0 ]
+{
+[v ___flneg@f1 f1 `d  1 p 4 0 ]
+"20
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S659 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S664 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S667 . 4 `l 1 i 4 0 `d 1 f 4 0 `S659 1 fAsBytes 4 0 `S664 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S667  1 a 4 33 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 27 ]
+[s S735 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S738 . 2 `s 1 i 2 0 `us 1 n 2 0 `S735 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S738  1 a 2 37 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 32 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 31 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 26 ]
+"8
+[v ___flmul@b b `d  1 p 4 14 ]
+[v ___flmul@a a `d  1 p 4 18 ]
+"205
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+{
+[v ___flge@ff1 ff1 `d  1 p 4 39 ]
+[v ___flge@ff2 ff2 `d  1 p 4 43 ]
+"19
 } 0
 "4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
@@ -593,6 +672,26 @@
 [v ___fleq@ff1 ff1 `d  1 p 4 0 ]
 [v ___fleq@ff2 ff2 `d  1 p 4 4 ]
 "12
+} 0
+"11 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 82 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 75 ]
+"20
+[v ___fldiv@new_exp new_exp `s  1 a 2 80 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 87 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 86 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 79 ]
+"11
+[v ___fldiv@b b `d  1 p 4 63 ]
+[v ___fldiv@a a `d  1 p 4 67 ]
+"185
 } 0
 "7 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awmod.c
 [v ___awmod __awmod `(i  1 e 2 0 ]
@@ -618,179 +717,6 @@
 [v ___awdiv@divisor divisor `i  1 p 2 2 ]
 "41
 } 0
-"52 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\powf.c
-[v _powf powf `JJ(f  1 e 4 0 ]
-{
-"151
-[v powf@s2 s2 `f  1 a 4 140 ]
-[v powf@s_h s_h `f  1 a 4 108 ]
-[v powf@t_h t_h `f  1 a 4 104 ]
-[v powf@t_l t_l `f  1 a 4 52 ]
-[v powf@s_l s_l `f  1 a 4 48 ]
-[u S817 . 4 `f 1 f 4 0 `l 1 s 4 0 `ul 1 u 4 0 ]
-"58
-[v powf@__xc8_float_word __xc8_float_word `S817  1 a 4 184 ]
-"54
-[v powf@z z `f  1 a 4 180 ]
-"55
-[v powf@t t `f  1 a 4 176 ]
-"56
-[v powf@j j `l  1 a 4 172 ]
-"57
-[v powf@ix ix `l  1 a 4 168 ]
-"56
-[v powf@k k `l  1 a 4 160 ]
-"54
-[v powf@p_h p_h `f  1 a 4 156 ]
-"57
-[v powf@iy iy `l  1 a 4 152 ]
-[v powf@is is `l  1 a 4 144 ]
-"55
-[v powf@sn sn `f  1 a 4 136 ]
-"57
-[v powf@hy hy `l  1 a 4 132 ]
-"55
-[v powf@t1 t1 `f  1 a 4 128 ]
-"56
-[v powf@n n `l  1 a 4 124 ]
-"55
-[v powf@v v `f  1 a 4 120 ]
-[v powf@u u `f  1 a 4 116 ]
-"54
-[v powf@ax ax `f  1 a 4 112 ]
-[v powf@p_l p_l `f  1 a 4 100 ]
-"57
-[v powf@hx hx `l  1 a 4 96 ]
-"55
-[v powf@s s `f  1 a 4 92 ]
-"56
-[v powf@yisint yisint `l  1 a 4 80 ]
-"55
-[v powf@r r `f  1 a 4 76 ]
-[v powf@w w `f  1 a 4 68 ]
-"56
-[v powf@i i `l  1 a 4 44 ]
-"55
-[v powf@y1 y1 `f  1 a 4 40 ]
-"54
-[v powf@z_l z_l `f  1 a 4 36 ]
-[v powf@z_h z_h `f  1 a 4 32 ]
-"55
-[v powf@t2 t2 `f  1 a 4 28 ]
-"52
-[v powf@x x `f  1 p 4 119 ]
-[v powf@y y `f  1 p 4 123 ]
-"264
-} 0
-"22 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\sqrtf.c
-[v _sqrtf sqrtf `(f  1 e 4 0 ]
-{
-"26
-[v sqrtf@ix ix `l  1 a 4 115 ]
-"27
-[v sqrtf@r r `ul  1 a 4 111 ]
-"26
-[v sqrtf@m m `l  1 a 4 107 ]
-"24
-[v sqrtf@z z `f  1 a 4 103 ]
-"26
-[v sqrtf@t t `l  1 a 4 99 ]
-[v sqrtf@q q `l  1 a 4 95 ]
-[u S817 . 4 `f 1 f 4 0 `l 1 s 4 0 `ul 1 u 4 0 ]
-"28
-[v sqrtf@__xc8_float_word __xc8_float_word `S817  1 a 4 91 ]
-"26
-[v sqrtf@i i `l  1 a 4 87 ]
-[v sqrtf@s s `l  1 a 4 83 ]
-"22
-[v sqrtf@x x `f  1 p 4 91 ]
-"89
-} 0
-"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\nanf.c
-[v _nanf nanf `(f  1 e 4 0 ]
-{
-[u S847 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
-"6
-[v nanf@u u `S847  1 a 4 4 ]
-"4
-[v nanf@s s `*.32Cuc  1 p 2 0 ]
-"9
-} 0
-"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\flge.c
-[v ___flge __flge `(b  1 e 0 0 ]
-{
-[v ___flge@ff1 ff1 `d  1 p 4 49 ]
-[v ___flge@ff2 ff2 `d  1 p 4 53 ]
-"19
-} 0
-"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\scalbnf.c
-[v _scalbnf scalbnf `(f  1 e 4 0 ]
-{
-"7
-[v scalbnf@y y `f  1 a 4 39 ]
-[u S847 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
-"6
-[v scalbnf@u u `S847  1 a 4 35 ]
-"4
-[v scalbnf@x x `f  1 p 4 25 ]
-[v scalbnf@n n `i  1 p 2 29 ]
-"31
-} 0
-"26 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\cosf.c
-[v _cosf cosf `(f  1 e 4 0 ]
-{
-"30
-[v cosf@ix ix `ul  1 a 4 56 ]
-"28
-[v cosf@y y `d  1 a 4 52 ]
-[u S817 . 4 `f 1 f 4 0 `l 1 s 4 0 `ul 1 u 4 0 ]
-"32
-[v cosf@__xc8_float_word __xc8_float_word `S817  1 a 4 34 ]
-"29
-[v cosf@n n `l  1 a 4 30 ]
-"31
-[v cosf@sign sign `ui  1 a 2 50 ]
-"26
-[v cosf@x x `f  1 p 4 83 ]
-"80
-} 0
-"26 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\__sindf.c
-[v ___sindf __sindf `(f  1 e 4 0 ]
-{
-"28
-[v ___sindf@z z `d  1 a 4 24 ]
-[v ___sindf@s s `d  1 a 4 20 ]
-[v ___sindf@w w `d  1 a 4 4 ]
-[v ___sindf@r r `d  1 a 4 0 ]
-"26
-[v ___sindf@x x `d  1 p 4 73 ]
-"36
-} 0
-"43 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\__rem_pio2f.c
-[v ___rem_pio2f __rem_pio2f `(i  1 e 2 0 ]
-{
-"49
-[v ___rem_pio2f@n n `l  1 a 4 26 ]
-"54
-[v ___rem_pio2f@t t `f  1 a 4 22 ]
-"47
-[v ___rem_pio2f@fn fn `d  1 a 4 18 ]
-[u S847 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
-"45
-[v ___rem_pio2f@u u `S847  1 a 4 10 ]
-"48
-[v ___rem_pio2f@ix ix `ul  1 a 4 4 ]
-"46
-[v ___rem_pio2f@ty ty `[1]d  1 a 4 0 ]
-"50
-[v ___rem_pio2f@sign sign `i  1 a 2 8 ]
-"43
-[v ___rem_pio2f@x x `f  1 p 4 73 ]
-[v ___rem_pio2f@y y `*.39d  1 p 2 77 ]
-"44
-[v ___rem_pio2f@F533 F533 `S847  1 s 4 F533 ]
-"94
-} 0
 "10 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
 {
@@ -806,146 +732,46 @@
 [v ___xxtofl@sign sign `uc  1 a 1 8 ]
 "44
 } 0
-"43 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\fltol.c
-[v ___fltol __fltol `(l  1 e 4 0 ]
+"50 C:\MinGW\msys\1.0\home\manmo\Phys1600\Assignment_2.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
-"45
-[v ___fltol@exp1 exp1 `uc  1 a 1 50 ]
-[v ___fltol@sign1 sign1 `uc  1 a 1 49 ]
-"43
-[v ___fltol@f1 f1 `d  1 p 4 41 ]
+"56
+} 0
+"66 C:\MinGW\msys\1.0\home\manmo\Phys1600\Assignment_2.X\mcc_generated_files/uart2.c
+[v _UART2_Initialize UART2_Initialize `(v  1 e 1 0 ]
+{
+"115
+} 0
+"195
+[v _UART2_SetOverrunErrorHandler UART2_SetOverrunErrorHandler `(v  1 e 1 0 ]
+{
+[v UART2_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"197
+} 0
+"191
+[v _UART2_SetFramingErrorHandler UART2_SetFramingErrorHandler `(v  1 e 1 0 ]
+{
+[v UART2_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"193
+} 0
+"199
+[v _UART2_SetErrorHandler UART2_SetErrorHandler `(v  1 e 1 0 ]
+{
+[v UART2_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"201
+} 0
+"72 C:\MinGW\msys\1.0\home\manmo\Phys1600\Assignment_2.X\mcc_generated_files/mcc.c
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"90
+} 0
+"55 C:\MinGW\msys\1.0\home\manmo\Phys1600\Assignment_2.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"139
+} 0
+"58 C:\MinGW\msys\1.0\home\manmo\Phys1600\Assignment_2.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
 "70
-} 0
-"26 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\__cosdf.c
-[v ___cosdf __cosdf `(f  1 e 4 0 ]
-{
-"28
-[v ___cosdf@z z `d  1 a 4 65 ]
-[v ___cosdf@w w `d  1 a 4 61 ]
-[v ___cosdf@r r `d  1 a 4 45 ]
-"26
-[v ___cosdf@x x `d  1 p 4 41 ]
-"35
-} 0
-"41 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\atanf.c
-[v _atanf atanf `(f  1 e 4 0 ]
-{
-"44
-[v atanf@ix ix `ul  1 a 4 46 ]
-"43
-[v atanf@z z `f  1 a 4 42 ]
-[v atanf@w w `f  1 a 4 36 ]
-"44
-[v atanf@sign sign `ul  1 a 4 24 ]
-"43
-[v atanf@s2 s2 `f  1 a 4 20 ]
-[v atanf@s1 s1 `f  1 a 4 16 ]
-[u S817 . 4 `f 1 f 4 0 `l 1 s 4 0 `ul 1 u 4 0 ]
-"46
-[v atanf@__xc8_float_word __xc8_float_word `S817  1 a 4 0 ]
-"45
-[v atanf@id id `i  1 a 2 40 ]
-"41
-[v atanf@x x `f  1 p 4 74 ]
-"95
-} 0
-"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\fabsf.c
-[v _fabsf fabsf `(f  1 e 4 0 ]
-{
-[u S847 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
-"6
-[v fabsf@u u `S847  1 a 4 4 ]
-"4
-[v fabsf@x x `f  1 p 4 0 ]
-"5
-[v fabsf@F465 F465 `S847  1 s 4 F465 ]
-"9
-} 0
-"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\__fpclassifyf.c
-[v ___fpclassifyf __fpclassifyf `(i  1 e 2 0 ]
-{
-[u S847 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
-"6
-[v ___fpclassifyf@u u `S847  1 a 4 10 ]
-"7
-[v ___fpclassifyf@e e `i  1 a 2 8 ]
-"4
-[v ___fpclassifyf@x x `f  1 p 4 0 ]
-"5
-[v ___fpclassifyf@F465 F465 `S847  1 s 4 F465 ]
-"11
-} 0
-"245 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\sprcadd.c
-[v ___flsub __flsub `(d  1 e 4 0 ]
-{
-[v ___flsub@b b `d  1 p 4 41 ]
-[v ___flsub@a a `d  1 p 4 45 ]
-"250
-} 0
-"10
-[v ___fladd __fladd `(d  1 e 4 0 ]
-{
-"17
-[v ___fladd@grs grs `uc  1 a 1 40 ]
-"15
-[v ___fladd@bexp bexp `uc  1 a 1 39 ]
-"16
-[v ___fladd@aexp aexp `uc  1 a 1 38 ]
-"13
-[v ___fladd@signs signs `uc  1 a 1 37 ]
-"10
-[v ___fladd@b b `d  1 p 4 25 ]
-[v ___fladd@a a `d  1 p 4 29 ]
-"237
-} 0
-"15 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\flneg.c
-[v ___flneg __flneg `(d  1 e 4 0 ]
-{
-[v ___flneg@f1 f1 `d  1 p 4 69 ]
-"20
-} 0
-"8 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\sprcmul.c
-[v ___flmul __flmul `(d  1 e 4 0 ]
-{
-[s S682 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
-"13
-[s S687 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S690 . 4 `l 1 i 4 0 `d 1 f 4 0 `S682 1 fAsBytes 4 0 `S687 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S690  1 a 4 19 ]
-"12
-[v ___flmul@grs grs `ul  1 a 4 13 ]
-[s S758 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
-"14
-[u S761 . 2 `s 1 i 2 0 `us 1 n 2 0 `S758 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S761  1 a 2 23 ]
-"10
-[v ___flmul@bexp bexp `uc  1 a 1 18 ]
-"11
-[v ___flmul@aexp aexp `uc  1 a 1 17 ]
-"9
-[v ___flmul@sign sign `uc  1 a 1 12 ]
-"8
-[v ___flmul@b b `d  1 p 4 0 ]
-[v ___flmul@a a `d  1 p 4 4 ]
-"205
-} 0
-"11 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\sprcdiv.c
-[v ___fldiv __fldiv `(d  1 e 4 0 ]
-{
-"21
-[v ___fldiv@grs grs `ul  1 a 4 68 ]
-"22
-[v ___fldiv@rem rem `ul  1 a 4 61 ]
-"20
-[v ___fldiv@new_exp new_exp `s  1 a 2 66 ]
-"19
-[v ___fldiv@aexp aexp `uc  1 a 1 73 ]
-"18
-[v ___fldiv@bexp bexp `uc  1 a 1 72 ]
-"16
-[v ___fldiv@sign sign `uc  1 a 1 65 ]
-"11
-[v ___fldiv@b b `d  1 p 4 49 ]
-[v ___fldiv@a a `d  1 p 4 53 ]
-"185
 } 0
