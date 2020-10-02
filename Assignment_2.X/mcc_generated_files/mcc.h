@@ -5,19 +5,19 @@
     Microchip Technology Inc.
 
   @File Name:
-    mcc.c
+    mcc.h
 
   @Summary:
-    This is the device_config.h file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
+    This is the mcc.h file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
 
   @Description:
     This header file provides implementations for driver APIs for all modules selected in the GUI.
     Generation Information :
-        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.5
+        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.6
         Device            :  PIC18F46K42
         Driver Version    :  2.00
     The generated drivers are tested against the following:
-        Compiler          :  XC8 2.20 and above or later
+        Compiler          :  XC8 2.30 and above or later
         MPLAB             :  MPLAB X 5.40
 */
 
@@ -44,12 +44,59 @@
     SOFTWARE.
 */
 
-#ifndef DEVICE_CONFIG_H
-#define	DEVICE_CONFIG_H
+#ifndef MCC_H
+#define	MCC_H
+#include <xc.h>
+#include "device_config.h"
+#include "pin_manager.h"
+#include <stdint.h>
+#include <stdbool.h>
+#include <conio.h>
+#include "uart2.h"
 
-#define _XTAL_FREQ 2000000
 
-#endif	/* DEVICE_CONFIG_H */
+
+/**
+ * @Param
+    none
+ * @Returns
+    none
+ * @Description
+    Initializes the device to the default states configured in the
+ *                  MCC GUI
+ * @Example
+    SYSTEM_Initialize(void);
+ */
+void SYSTEM_Initialize(void);
+
+/**
+ * @Param
+    none
+ * @Returns
+    none
+ * @Description
+    Initializes the oscillator to the default states configured in the
+ *                  MCC GUI
+ * @Example
+    OSCILLATOR_Initialize(void);
+ */
+void OSCILLATOR_Initialize(void);
+
+/**
+ * @Param
+    none
+ * @Returns
+    none
+ * @Description
+    Initializes the PMD module to the default states configured in the
+ *                  MCC GUI
+ * @Example
+    PMD_Initialize(void);
+ */
+void PMD_Initialize(void);
+
+
+#endif	/* MCC_H */
 /**
  End of File
 */

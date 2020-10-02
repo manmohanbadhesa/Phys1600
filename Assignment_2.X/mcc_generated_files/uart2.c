@@ -13,11 +13,11 @@
   @Description
     This source file provides APIs for UART2.
     Generation Information :
-        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.5
+        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.6
         Device            :  PIC18F46K42
         Driver Version    :  2.4.0
     The generated drivers are tested against the following:
-        Compiler          :  XC8 2.20 and above
+        Compiler          :  XC8 2.30 and above
         MPLAB             :  MPLAB X 5.40
 */
 
@@ -87,8 +87,8 @@ void UART2_Initialize(void)
     // TXPOL not inverted; FLO off; RXPOL not inverted; RUNOVF RX input shifter stops all activity; STP Transmit 1Stop bit, receiver verifies first Stop bit; 
     U2CON2 = 0x00;
 
-    // BRGL 51; 
-    U2BRGL = 0x33;
+    // BRGL 25; 
+    U2BRGL = 0x19;
 
     // BRGH 0; 
     U2BRGH = 0x00;

@@ -13,11 +13,11 @@
   @Description:
     This header file provides implementations for driver APIs for all modules selected in the GUI.
     Generation Information :
-        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.5
+        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.6
         Device            :  PIC18F46K42
         Driver Version    :  2.00
     The generated drivers are tested against the following:
-        Compiler          :  XC8 2.20 and above or later
+        Compiler          :  XC8 2.30 and above or later
         MPLAB             :  MPLAB X 5.40
 */
 
@@ -57,8 +57,8 @@ void SYSTEM_Initialize(void)
 
 void OSCILLATOR_Initialize(void)
 {
-    // NOSC HFINTOSC; NDIV 2; 
-    OSCCON1 = 0x61;
+    // NOSC HFINTOSC; NDIV 4; 
+    OSCCON1 = 0x62;
     // CSWHOLD may proceed; SOSCPWR Low power; 
     OSCCON3 = 0x00;
     // MFOEN disabled; LFOEN disabled; ADOEN disabled; SOSCEN disabled; EXTOEN disabled; HFOEN disabled; 
