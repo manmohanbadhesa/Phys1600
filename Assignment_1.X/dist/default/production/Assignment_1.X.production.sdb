@@ -91,15 +91,15 @@
 [v ___omul __omul `(uo  1 e 8 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
-"9 C:\MinGW\msys\1.0\home\manmo\Phys1600\Assignment_1.X\main.c
+"9 C:\msys\1.0\home\Manmo\Phys1600\Assignment_1.X\main.c
 [v _main main `(i  1 e 2 0 ]
-"58 C:\MinGW\msys\1.0\home\manmo\Phys1600\Assignment_1.X\mcc_generated_files/mcc.c
+"58 C:\msys\1.0\home\Manmo\Phys1600\Assignment_1.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 "72
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
-"55 C:\MinGW\msys\1.0\home\manmo\Phys1600\Assignment_1.X\mcc_generated_files/pin_manager.c
+"55 C:\msys\1.0\home\Manmo\Phys1600\Assignment_1.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"66 C:\MinGW\msys\1.0\home\manmo\Phys1600\Assignment_1.X\mcc_generated_files/uart2.c
+"66 C:\msys\1.0\home\Manmo\Phys1600\Assignment_1.X\mcc_generated_files/uart2.c
 [v _UART2_Initialize UART2_Initialize `(v  1 e 1 0 ]
 "136
 [v _UART2_Read UART2_Read `(uc  1 e 1 0 ]
@@ -342,7 +342,7 @@
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
-"53 C:\MinGW\msys\1.0\home\manmo\Phys1600\Assignment_1.X\mcc_generated_files/uart2.c
+"53 C:\msys\1.0\home\Manmo\Phys1600\Assignment_1.X\mcc_generated_files/uart2.c
 [u S128 . 1 `S123 1 . 1 0 `uc 1 status 1 0 ]
 [v _uart2RxLastError uart2RxLastError `VES128  1 s 1 uart2RxLastError ]
 "58
@@ -351,7 +351,7 @@
 [v _UART2_OverrunErrorHandler UART2_OverrunErrorHandler `*.37(v  1 e 2 0 ]
 "60
 [v _UART2_ErrorHandler UART2_ErrorHandler `*.37(v  1 e 2 0 ]
-"9 C:\MinGW\msys\1.0\home\manmo\Phys1600\Assignment_1.X\main.c
+"9 C:\msys\1.0\home\Manmo\Phys1600\Assignment_1.X\main.c
 [v _main main `(i  1 e 2 0 ]
 {
 "26
@@ -554,7 +554,7 @@
 [v fputc@fp fp `*.2S1032  1 p 2 4 ]
 "24
 } 0
-"175 C:\MinGW\msys\1.0\home\manmo\Phys1600\Assignment_1.X\mcc_generated_files/uart2.c
+"175 C:\msys\1.0\home\Manmo\Phys1600\Assignment_1.X\mcc_generated_files/uart2.c
 [v _putch putch `(v  1 e 1 0 ]
 {
 [v putch@txData txData `uc  1 a 1 wreg ]
