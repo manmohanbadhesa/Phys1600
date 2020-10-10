@@ -31,7 +31,7 @@ void main()
 
 		if(i==0)
 		{
-			X1= 0.5*i;
+			X1= 0.5*a;
 			printf("\n X1 is: %f", X1);
 		}
 		else
@@ -42,7 +42,7 @@ void main()
 				*/
 				if(i%2 == 0)
 				{
-					sum1 +=  4*0.5*i;
+					sum1 +=  4*0.5*i*a;
 				}
 				else
 				{
@@ -70,5 +70,6 @@ void main()
 	area = sum3* deltax/3;
 
 	printf("\n The area under the function using Simpson's Rule is: %f",area);
+    while (1);
 //}
 } 

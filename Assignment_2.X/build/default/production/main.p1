@@ -2390,8 +2390,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 "72
 [; ;main.c: 72:  printf("\n The area under the function using Simpson's Rule is: %f",area);
 [e ( _printf , (. :s 5C -> _area `d ]
-"74
-[; ;main.c: 74: }
+"73
+[; ;main.c: 73:     while (1);
+[e :U 2248 ]
+[e :U 2247 ]
+[e $U 2248  ]
+[e :U 2249 ]
+"75
+[; ;main.c: 75: }
 [e :UE 2234 ]
 }
 [p f _printf 8396800 ]

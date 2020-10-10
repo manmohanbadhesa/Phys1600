@@ -27856,5 +27856,6 @@ void main()
  area = sum3* deltax/3;
 
  printf("\n The area under the function using Simpson's Rule is: %f",area);
+    while (1);
 
 }
