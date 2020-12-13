@@ -5,6 +5,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
 "111 C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\stdio.h
 [v _printf `(i ~T0 @X0 0 ev`*Cuc ]
+[v F972 `(f ~T0 @X0 1 tf2`f`f ]
+"319 C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\math.h
+[; ;C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\math.h: 319: __attribute__((nonreentrant)) float powf(float, float);
+[v _powf `JF972 ~T0 @X0 0 e ]
 "250 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f46k42.h
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f46k42.h: 250: __asm("STATUS_CSHAD equ 03880h");
 [; <" STATUS_CSHAD equ 03880h ;# ">
@@ -2249,160 +2253,82 @@ Version 4.0 HI-TECH Software Intermediate Code
 "11
 [; ;main.c: 11:    SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"15
-[; ;main.c: 15:  float a=1,b=3;
-[v _a `f ~T0 @X0 1 a ]
-[e = _a -> -> 1 `i `f ]
-[v _b `f ~T0 @X0 1 a ]
-[e = _b -> -> 3 `i `f ]
-"16
-[; ;main.c: 16:  int i=0;
-[v _i `i ~T0 @X0 1 a ]
-[e = _i -> 0 `i ]
-"18
-[; ;main.c: 18:  int n=100;
-[v _n `i ~T0 @X0 1 a ]
-[e = _n -> 100 `i ]
-"20
-[; ;main.c: 20:  float deltax= (b-a)/n;
-[v _deltax `f ~T0 @X0 1 a ]
-[e = _deltax / - _b _a -> _n `f ]
-"22
-[; ;main.c: 22:  printf("\n deltax is: %f \n", deltax);
-[e ( _printf , (. :s 1C -> _deltax `d ]
-"24
-[; ;main.c: 24:  float X=0, X1=0, Xn=0, sum1=0, sum2=0;
-[v _X `f ~T0 @X0 1 a ]
-[e = _X -> -> 0 `i `f ]
-[v _X1 `f ~T0 @X0 1 a ]
-[e = _X1 -> -> 0 `i `f ]
-[v _Xn `f ~T0 @X0 1 a ]
-[e = _Xn -> -> 0 `i `f ]
-[v _sum1 `f ~T0 @X0 1 a ]
-[e = _sum1 -> -> 0 `i `f ]
-[v _sum2 `f ~T0 @X0 1 a ]
-[e = _sum2 -> -> 0 `i `f ]
-"26
-[; ;main.c: 26:  for(i=0;i<n;i++)
+"85
+[; ;main.c: 85:     int l=0, sumL=0;
+[v _l `i ~T0 @X0 1 a ]
+[e = _l -> 0 `i ]
+[v _sumL `i ~T0 @X0 1 a ]
+[e = _sumL -> 0 `i ]
+"87
+[; ;main.c: 87:     for(l=0;l<101;l++)
 {
-[e = _i -> 0 `i ]
-[e $U 2238  ]
+[e = _l -> 0 `i ]
+[e $ < _l -> 101 `i 2235  ]
+[e $U 2236  ]
 [e :U 2235 ]
-"27
-[; ;main.c: 27:  {
+"88
+[; ;main.c: 88:     {
 {
-"32
-[; ;main.c: 32:   if(i==0)
-[e $ ! == _i -> 0 `i 2239  ]
-"33
-[; ;main.c: 33:   {
-{
-"34
-[; ;main.c: 34:    X1= 0.5*i;
-[e = _X1 -> * .0.5 -> _i `d `f ]
-"35
-[; ;main.c: 35:    printf("\n X1 is: %f", X1);
-[e ( _printf , (. :s 2C -> _X1 `d ]
-"36
-[; ;main.c: 36:   }
+"89
+[; ;main.c: 89:         sumL += l;
+[e =+ _sumL _l ]
+"90
+[; ;main.c: 90:     }
 }
-[e $U 2240  ]
-"37
-[; ;main.c: 37:   else
-[e :U 2239 ]
-"38
-[; ;main.c: 38:    {
-{
-"43
-[; ;main.c: 43:     if(i%2 == 0)
-[e $ ! == % _i -> 2 `i -> 0 `i 2241  ]
-"44
-[; ;main.c: 44:     {
-{
-"45
-[; ;main.c: 45:      sum1 += 4*0.5*i;
-[e =+ _sum1 -> * * -> -> 4 `i `d .0.5 -> _i `d `f ]
-"46
-[; ;main.c: 46:     }
-}
-[e $U 2242  ]
-"47
-[; ;main.c: 47:     else
-[e :U 2241 ]
-"48
-[; ;main.c: 48:     {
-{
-"49
-[; ;main.c: 49:      sum2 += 2*0.5*i;
-[e =+ _sum2 -> * * -> -> 2 `i `d .0.5 -> _i `d `f ]
-"50
-[; ;main.c: 50:     }
-}
-[e :U 2242 ]
-"54
-[; ;main.c: 54:    }
-}
-[e :U 2240 ]
-"56
-[; ;main.c: 56:  }
-}
-[e ++ _i -> 1 `i ]
-[e :U 2238 ]
-[e $ < _i _n 2235  ]
+[e ++ _l -> 1 `i ]
+[e $ < _l -> 101 `i 2235  ]
 [e :U 2236 ]
 }
-"58
-[; ;main.c: 58:   printf("\n sum 1 is: %f \n sum2 is: %f ", sum1, sum2);
-[e ( _printf , , (. :s 3C -> _sum1 `d -> _sum2 `d ]
-"60
-[; ;main.c: 60:  for(i=n;i<n+1;i++)
+"91
+[; ;main.c: 91:     printf("\n\r The Sum is %d", sumL);
+[e ( _printf , (. :s 1C _sumL ]
+"96
+[; ;main.c: 96:     int k=0;
+[v _k `i ~T0 @X0 1 a ]
+[e = _k -> 0 `i ]
+"97
+[; ;main.c: 97:     float sumK=0;
+[v _sumK `f ~T0 @X0 1 a ]
+[e = _sumK -> -> 0 `i `f ]
+"99
+[; ;main.c: 99:     for(k=0;k<21;k++)
 {
-[e = _i _n ]
-[e $U 2246  ]
+[e = _k -> 0 `i ]
+[e $ < _k -> 21 `i 2238  ]
+[e $U 2239  ]
+[e :U 2238 ]
+"100
+[; ;main.c: 100:     {
+{
+"101
+[; ;main.c: 101:         sumK += powf(0.5,k);
+[e =+ _sumK ( _powf (2 , -> .0.5 `f -> _k `f ]
+"102
+[; ;main.c: 102:     }
+}
+[e ++ _k -> 1 `i ]
+[e $ < _k -> 21 `i 2238  ]
+[e :U 2239 ]
+}
+"103
+[; ;main.c: 103:     printf("\n\r\n\r The Sum is %f", sumK);
+[e ( _printf , (. :s 2C -> _sumK `d ]
+"106
+[; ;main.c: 106:     while (1)
+[e :U 2242 ]
+"107
+[; ;main.c: 107:     {
+{
+"108
+[; ;main.c: 108:     }
+}
+[e :U 2241 ]
+[e $U 2242  ]
 [e :U 2243 ]
-"61
-[; ;main.c: 61:  {
-{
-"62
-[; ;main.c: 62:   Xn= 0.5*n;
-[e = _Xn -> * .0.5 -> _n `d `f ]
-"63
-[; ;main.c: 63:   printf("\n Xn is: %f", Xn);
-[e ( _printf , (. :s 4C -> _Xn `d ]
-"64
-[; ;main.c: 64:  }
-}
-[e ++ _i -> 1 `i ]
-[e :U 2246 ]
-[e $ < _i + _n -> 1 `i 2243  ]
-[e :U 2244 ]
-}
-"66
-[; ;main.c: 66:  float area, sum3;
-[v _area `f ~T0 @X0 1 a ]
-[v _sum3 `f ~T0 @X0 1 a ]
-"68
-[; ;main.c: 68:  sum3= X1 + Xn + sum1, sum2;
-[e ; = _sum3 + + _X1 _Xn _sum1 _sum2 ]
-"70
-[; ;main.c: 70:  area = sum3* deltax/3;
-[e = _area / * _sum3 _deltax -> -> 3 `i `f ]
-"72
-[; ;main.c: 72:  printf("\n The area under the function using Simpson's Rule is: %f",area);
-[e ( _printf , (. :s 5C -> _area `d ]
-"73
-[; ;main.c: 73:     while (1);
-[e :U 2248 ]
-[e :U 2247 ]
-[e $U 2248  ]
-[e :U 2249 ]
-"75
-[; ;main.c: 75: }
+"110
+[; ;main.c: 110: }
 [e :UE 2234 ]
 }
-[p f _printf 8396800 ]
-[a 4C 10 32 88 110 32 105 115 58 32 37 102 0 ]
-[a 5C 10 32 84 104 101 32 97 114 101 97 32 117 110 100 101 114 32 116 104 101 32 102 117 110 99 116 105 111 110 32 117 115 105 110 103 32 83 105 109 112 115 111 110 39 115 32 82 117 108 101 32 105 115 58 32 37 102 0 ]
-[a 2C 10 32 88 49 32 105 115 58 32 37 102 0 ]
-[a 3C 10 32 115 117 109 32 49 32 105 115 58 32 37 102 32 10 32 115 117 109 50 32 105 115 58 32 37 102 32 0 ]
-[a 1C 10 32 100 101 108 116 97 120 32 105 115 58 32 37 102 32 10 0 ]
+[p f _printf 8396928 ]
+[a 2C 10 13 10 13 32 84 104 101 32 83 117 109 32 105 115 32 37 102 0 ]
+[a 1C 10 13 32 84 104 101 32 83 117 109 32 105 115 32 37 100 0 ]

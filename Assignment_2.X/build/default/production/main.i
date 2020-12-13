@@ -27795,67 +27795,30 @@ void PMD_Initialize(void);
 void main()
 {
    SYSTEM_Initialize();
+# 85 "main.c"
+    int l=0, sumL=0;
 
-
-
- float a=1,b=3;
- int i=0;
-
- int n=100;
-
- float deltax= (b-a)/n;
-
- printf("\n deltax is: %f \n", deltax);
-
- float X=0, X1=0, Xn=0, sum1=0, sum2=0;
-
- for(i=0;i<n;i++)
- {
-
-
-
-
-  if(i==0)
-  {
-   X1= 0.5*i;
-   printf("\n X1 is: %f", X1);
-  }
-  else
-   {
-
-
-
-
-    if(i%2 == 0)
+    for(l=0;l<101;l++)
     {
-     sum1 += 4*0.5*i;
+        sumL += l;
     }
-    else
+    printf("\n\r The Sum is %d", sumL);
+
+
+
+
+    int k=0;
+    float sumK=0;
+
+    for(k=0;k<21;k++)
     {
-     sum2 += 2*0.5*i;
+        sumK += powf(0.5,k);
     }
+    printf("\n\r\n\r The Sum is %f", sumK);
 
 
-
-   }
-
- }
-
-  printf("\n sum 1 is: %f \n sum2 is: %f ", sum1, sum2);
-
- for(i=n;i<n+1;i++)
- {
-  Xn= 0.5*n;
-  printf("\n Xn is: %f", Xn);
- }
-
- float area, sum3;
-
- sum3= X1 + Xn + sum1, sum2;
-
- area = sum3* deltax/3;
-
- printf("\n The area under the function using Simpson's Rule is: %f",area);
-    while (1);
+    while (1)
+    {
+    }
 
 }

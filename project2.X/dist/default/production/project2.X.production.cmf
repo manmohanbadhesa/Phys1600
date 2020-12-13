@@ -1,0 +1,1143 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\Manmo\AppData\Local\Temp\scpoxe.o
+idloc IDLOC 5 200000 200000 10 1
+init CODE 0 FFFC FFFC 4 1
+reset_vec CODE 0 0 0 4 1
+config CONFIG 4 300000 300000 A 1
+$dist/default/production\project2.X.production.o
+cinit CODE 0 F1B8 F1B8 32 1
+idloc IDLOC 5 200000 200000 10 1
+text0 CODE 0 FC74 FC74 256 1
+text1 CODE 0 F22E F22E 50 1
+text2 CODE 0 F8C4 F8C4 EA 1
+text3 CODE 0 F4C6 F4C6 6E 1
+text4 CODE 0 F458 F458 6E 1
+text5 CODE 0 F32C F32C 5E 1
+text6 CODE 0 F1EA F1EA 44 1
+text7 CODE 0 F07C F07C E 1
+text8 CODE 0 F27E F27E 52 1
+text9 CODE 0 F3EE F3EE 6A 1
+nvCOMRAM COMRAM 1 3F 3F 8 1
+text10 CODE 0 F5A8 F5A8 7E 1
+text11 CODE 0 FADE FADE 196 1
+text12 CODE 0 F072 F072 A 1
+text13 CODE 0 F0CE F0CE 1A 1
+text14 CODE 0 F38A F38A 64 1
+text15 CODE 0 F534 F534 74 1
+text16 CODE 0 F9AE F9AE 130 1
+text17 CODE 0 F186 F186 32 1
+text18 CODE 0 F12E F12E 2A 1
+text19 CODE 0 F754 F754 B0 1
+text20 CODE 0 F04C F04C 4 1
+text21 CODE 0 F0E8 F0E8 22 1
+text22 CODE 0 F0A0 F0A0 16 1
+text23 CODE 0 F2D0 F2D0 5C 1
+text24 CODE 0 F068 F068 A 1
+text25 CODE 0 F05E F05E A 1
+text26 CODE 0 F054 F054 A 1
+text27 CODE 0 F158 F158 2E 1
+text28 CODE 0 F10A F10A 24 1
+text29 CODE 0 F6BC F6BC 98 1
+text30 CODE 0 F0B6 F0B6 18 1
+text31 CODE 0 F804 F804 C0 1
+text32 CODE 0 F08A F08A 16 1
+text33 CODE 0 F626 F626 96 1
+text34 CODE 0 F04A F04A 2 1
+text35 CODE 0 F048 F048 2 1
+text36 CODE 0 F046 F046 2 1
+idataCOMRAM CODE 0 F050 F050 4 1
+cstackCOMRAM COMRAM 1 1 1 3E 1
+dataCOMRAM COMRAM 1 4C 4C 4 1
+bssCOMRAM COMRAM 1 47 47 5 1
+mediumconst MEDIUMCONST 0 FECA FECA 132 1
+config CONFIG 4 300000 300000 A 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 60-FFF 1
+SFR 3800-3FFF 1
+BANK0 60-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 4-F045 1
+STACK 60-FFF 1
+SMALLCONST 1000-F045 1
+CODE 4-F045 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK13 D00-DFF 1
+BANK14 E00-EFF 1
+BANK15 F00-FFF 1
+BIGRAM 50-FFF 1
+COMRAM 50-5F 1
+EEDATA 310000-3103FF 1
+MEDIUMCONST 1000-F045 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\project2.X.production.o
+F046 text36 CODE >188:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F046 text36 CODE >189:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F048 text35 CODE >184:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F04A text34 CODE >186:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F626 text33 CODE >136:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F626 text33 CODE >138:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F626 text33 CODE >140:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F636 text33 CODE >142:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F63A text33 CODE >144:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F64A text33 CODE >145:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F64C text33 CODE >146:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F664 text33 CODE >149:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F674 text33 CODE >150:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F676 text33 CODE >151:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F68E text33 CODE >154:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F69E text33 CODE >155:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F6B6 text33 CODE >158:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F6BA text33 CODE >159:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F08A text32 CODE >117:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F08A text32 CODE >119:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F09E text32 CODE >120:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F804 text31 CODE >27:C:\MinGW\msys\1.0\home\manmo\Phys1600/exercise10.X/myUART.c
+F804 text31 CODE >29:C:\MinGW\msys\1.0\home\manmo\Phys1600/exercise10.X/myUART.c
+F80C text31 CODE >34:C:\MinGW\msys\1.0\home\manmo\Phys1600/exercise10.X/myUART.c
+F820 text31 CODE >36:C:\MinGW\msys\1.0\home\manmo\Phys1600/exercise10.X/myUART.c
+F82C text31 CODE >38:C:\MinGW\msys\1.0\home\manmo\Phys1600/exercise10.X/myUART.c
+F840 text31 CODE >41:C:\MinGW\msys\1.0\home\manmo\Phys1600/exercise10.X/myUART.c
+F846 text31 CODE >42:C:\MinGW\msys\1.0\home\manmo\Phys1600/exercise10.X/myUART.c
+F85A text31 CODE >44:C:\MinGW\msys\1.0\home\manmo\Phys1600/exercise10.X/myUART.c
+F866 text31 CODE >49:C:\MinGW\msys\1.0\home\manmo\Phys1600/exercise10.X/myUART.c
+F878 text31 CODE >50:C:\MinGW\msys\1.0\home\manmo\Phys1600/exercise10.X/myUART.c
+F87C text31 CODE >53:C:\MinGW\msys\1.0\home\manmo\Phys1600/exercise10.X/myUART.c
+F8A6 text31 CODE >55:C:\MinGW\msys\1.0\home\manmo\Phys1600/exercise10.X/myUART.c
+F8C2 text31 CODE >57:C:\MinGW\msys\1.0\home\manmo\Phys1600/exercise10.X/myUART.c
+F0B6 text30 CODE >59:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/mcc.c
+F0B6 text30 CODE >62:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/mcc.c
+F0BC text30 CODE >64:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/mcc.c
+F0C0 text30 CODE >66:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/mcc.c
+F0C4 text30 CODE >68:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/mcc.c
+F0C8 text30 CODE >70:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/mcc.c
+F0CC text30 CODE >71:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/mcc.c
+F6BC text29 CODE >55:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F6BC text29 CODE >60:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F6C0 text29 CODE >61:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F6C4 text29 CODE >62:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F6C8 text29 CODE >63:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F6CC text29 CODE >64:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F6D0 text29 CODE >69:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F6D4 text29 CODE >70:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F6D6 text29 CODE >71:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F6DA text29 CODE >72:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F6DC text29 CODE >73:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F6E0 text29 CODE >78:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F6E6 text29 CODE >79:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F6E8 text29 CODE >80:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F6EC text29 CODE >81:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F6F0 text29 CODE >82:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F6F2 text29 CODE >87:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F6F6 text29 CODE >88:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F6FA text29 CODE >89:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F6FE text29 CODE >90:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F702 text29 CODE >91:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F706 text29 CODE >96:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F70A text29 CODE >97:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F70E text29 CODE >98:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F712 text29 CODE >99:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F716 text29 CODE >100:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F71A text29 CODE >101:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F71E text29 CODE >106:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F722 text29 CODE >107:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F726 text29 CODE >108:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F72A text29 CODE >109:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F72E text29 CODE >110:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F732 text29 CODE >115:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F734 text29 CODE >116:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F736 text29 CODE >117:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F738 text29 CODE >118:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F73A text29 CODE >119:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F73E text29 CODE >124:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F740 text29 CODE >125:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F742 text29 CODE >126:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F744 text29 CODE >127:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F746 text29 CODE >128:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F74A text29 CODE >137:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F74E text29 CODE >138:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F752 text29 CODE >139:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/pin_manager.c
+F10A text28 CODE >73:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/mcc.c
+F10A text28 CODE >76:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/mcc.c
+F110 text28 CODE >78:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/mcc.c
+F114 text28 CODE >80:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/mcc.c
+F118 text28 CODE >82:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/mcc.c
+F11C text28 CODE >84:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/mcc.c
+F120 text28 CODE >86:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/mcc.c
+F124 text28 CODE >88:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/mcc.c
+F128 text28 CODE >90:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/mcc.c
+F12C text28 CODE >91:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/mcc.c
+F158 text27 CODE >65:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/tmr0.c
+F158 text27 CODE >70:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/tmr0.c
+F15C text27 CODE >73:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/tmr0.c
+F160 text27 CODE >76:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/tmr0.c
+F164 text27 CODE >79:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/tmr0.c
+F17C text27 CODE >82:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/tmr0.c
+F180 text27 CODE >85:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/tmr0.c
+F184 text27 CODE >86:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/tmr0.c
+F054 text26 CODE >199:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F054 text26 CODE >200:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F05C text26 CODE >201:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F05E text25 CODE >191:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F05E text25 CODE >192:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F066 text25 CODE >193:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F068 text24 CODE >195:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F068 text24 CODE >196:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F070 text24 CODE >197:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F2D0 text23 CODE >66:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F2D0 text23 CODE >73:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F2D6 text23 CODE >76:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F2DA text23 CODE >79:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F2DE text23 CODE >82:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F2E2 text23 CODE >85:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F2E6 text23 CODE >88:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F2EA text23 CODE >91:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F2EE text23 CODE >94:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F2F2 text23 CODE >97:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F2F6 text23 CODE >100:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F2FA text23 CODE >103:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F2FE text23 CODE >106:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F302 text23 CODE >109:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F30E text23 CODE >110:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F31A text23 CODE >111:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F326 text23 CODE >113:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F32A text23 CODE >115:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F0A0 text22 CODE >50:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/mcc.c
+F0A0 text22 CODE >52:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/mcc.c
+F0A4 text22 CODE >53:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/mcc.c
+F0A8 text22 CODE >54:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/mcc.c
+F0AC text22 CODE >55:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/mcc.c
+F0B0 text22 CODE >56:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/mcc.c
+F0B4 text22 CODE >57:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/mcc.c
+F0E8 text21 CODE >100:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/tmr0.c
+F0E8 text21 CODE >106:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/tmr0.c
+F0EE text21 CODE >107:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/tmr0.c
+F0F4 text21 CODE >108:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/tmr0.c
+F100 text21 CODE >110:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/tmr0.c
+F108 text21 CODE >111:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/tmr0.c
+F04C text20 CODE >88:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/tmr0.c
+F04C text20 CODE >91:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/tmr0.c
+F04E text20 CODE >92:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/tmr0.c
+F754 text19 CODE >7:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\awmod.c
+F754 text19 CODE >12:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\awmod.c
+F758 text19 CODE >13:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\awmod.c
+F766 text19 CODE >14:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\awmod.c
+F76E text19 CODE >15:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\awmod.c
+F772 text19 CODE >17:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\awmod.c
+F780 text19 CODE >18:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\awmod.c
+F788 text19 CODE >19:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\awmod.c
+F79A text19 CODE >20:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\awmod.c
+F79E text19 CODE >21:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\awmod.c
+F7A2 text19 CODE >22:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\awmod.c
+F7A8 text19 CODE >23:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\awmod.c
+F7AA text19 CODE >21:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\awmod.c
+F7B8 text19 CODE >26:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\awmod.c
+F7CE text19 CODE >27:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\awmod.c
+F7D6 text19 CODE >28:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\awmod.c
+F7DC text19 CODE >29:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\awmod.c
+F7E2 text19 CODE >31:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\awmod.c
+F7F2 text19 CODE >32:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\awmod.c
+F7FA text19 CODE >33:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\awmod.c
+F802 text19 CODE >34:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\awmod.c
+F12E text18 CODE >15:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\Umul16.c
+F12E text18 CODE >37:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\Umul16.c
+F13E text18 CODE >38:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\Umul16.c
+F146 text18 CODE >39:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\Umul16.c
+F14E text18 CODE >52:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\Umul16.c
+F156 text18 CODE >53:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\Umul16.c
+F186 text17 CODE >8:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\isdigit.c
+F188 text17 CODE >14:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\isdigit.c
+F1B6 text17 CODE >15:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\isdigit.c
+F9AE text16 CODE >5:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\atoi.c
+F9AE text16 CODE >10:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\atoi.c
+F9B2 text16 CODE >11:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\atoi.c
+F9B6 text16 CODE >10:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\atoi.c
+F9F2 text16 CODE >12:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\atoi.c
+F9FA text16 CODE >13:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\atoi.c
+F9FE text16 CODE >14:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\atoi.c
+FA1C text16 CODE >15:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\atoi.c
+FA1E text16 CODE >16:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\atoi.c
+FA22 text16 CODE >17:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\atoi.c
+FA44 text16 CODE >18:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\atoi.c
+FA4C text16 CODE >20:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\atoi.c
+FA88 text16 CODE >19:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\atoi.c
+FAA8 text16 CODE >21:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\atoi.c
+FAB8 text16 CODE >22:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\atoi.c
+FAD4 text16 CODE >23:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\atoi.c
+FADC text16 CODE >24:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\atoi.c
+F534 text15 CODE >7:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+F534 text15 CODE >13:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+F53C text15 CODE >14:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+F54E text15 CODE >15:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+F552 text15 CODE >16:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+F556 text15 CODE >17:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+F55C text15 CODE >18:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+F55E text15 CODE >16:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+F56C text15 CODE >21:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+F572 text15 CODE >22:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+F588 text15 CODE >23:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+F590 text15 CODE >24:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+F592 text15 CODE >26:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+F598 text15 CODE >27:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+F59E text15 CODE >28:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+F59E text15 CODE >29:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+F5A6 text15 CODE >30:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+F38A text14 CODE >7:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+F38A text14 CODE >12:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+F39C text14 CODE >13:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+F3A0 text14 CODE >14:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+F3A4 text14 CODE >15:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+F3AA text14 CODE >16:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+F3AC text14 CODE >14:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+F3BA text14 CODE >19:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+F3D0 text14 CODE >20:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+F3D8 text14 CODE >21:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+F3DE text14 CODE >22:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+F3E4 text14 CODE >23:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+F3E4 text14 CODE >24:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+F3EC text14 CODE >25:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+F0CE text13 CODE >161:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F0D0 text13 CODE >163:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F0D0 text13 CODE >165:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F0E0 text13 CODE >167:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F0E6 text13 CODE >168:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F072 text12 CODE >175:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F074 text12 CODE >177:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+F07A text12 CODE >178:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\mcc_generated_files/uart2.c
+FADE text11 CODE >477:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\doprnt.c
+FADE text11 CODE >550:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\doprnt.c
+FAE6 text11 CODE >553:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\doprnt.c
+FAEA text11 CODE >555:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\doprnt.c
+FAFC text11 CODE >558:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\doprnt.c
+FB02 text11 CODE >559:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\doprnt.c
+FB06 text11 CODE >565:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\doprnt.c
+FB0A text11 CODE >661:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\doprnt.c
+FB0E text11 CODE >825:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\doprnt.c
+FB26 text11 CODE >835:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\doprnt.c
+FB2C text11 CODE >836:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\doprnt.c
+FB30 text11 CODE >844:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\doprnt.c
+FB34 text11 CODE >845:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\doprnt.c
+FB38 text11 CODE >661:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\doprnt.c
+FB70 text11 CODE >1312:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\doprnt.c
+FB90 text11 CODE >1331:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\doprnt.c
+FB94 text11 CODE >1332:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\doprnt.c
+FBC8 text11 CODE >1331:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\doprnt.c
+FBDC text11 CODE >1498:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\doprnt.c
+FBE0 text11 CODE >1500:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\doprnt.c
+FBE4 text11 CODE >1515:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\doprnt.c
+FC30 text11 CODE >1550:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\doprnt.c
+FC36 text11 CODE >1500:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\doprnt.c
+FC48 text11 CODE >553:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\doprnt.c
+FC72 text11 CODE >1567:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\doprnt.c
+F5A8 text10 CODE >4:C:\MinGW\msys\1.0\home\manmo\Phys1600/exercise10.X/putty.c
+F5A8 text10 CODE >6:C:\MinGW\msys\1.0\home\manmo\Phys1600/exercise10.X/putty.c
+F5D4 text10 CODE >7:C:\MinGW\msys\1.0\home\manmo\Phys1600/exercise10.X/putty.c
+F600 text10 CODE >8:C:\MinGW\msys\1.0\home\manmo\Phys1600/exercise10.X/putty.c
+F624 text10 CODE >9:C:\MinGW\msys\1.0\home\manmo\Phys1600/exercise10.X/putty.c
+F3EE text9 CODE >15:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\Umul32.c
+F3EE text9 CODE >119:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\Umul32.c
+F3FE text9 CODE >121:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\Umul32.c
+F40C text9 CODE >122:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\Umul32.c
+F41C text9 CODE >123:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\Umul32.c
+F426 text9 CODE >124:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\Umul32.c
+F430 text9 CODE >125:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\Umul32.c
+F446 text9 CODE >128:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\Umul32.c
+F456 text9 CODE >129:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\Umul32.c
+F27E text8 CODE >12:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\rand.c
+F27E text8 CODE >14:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\rand.c
+F2B2 text8 CODE >15:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\rand.c
+F2C2 text8 CODE >16:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\rand.c
+F2CE text8 CODE >17:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\rand.c
+F07C text7 CODE >6:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\rand.c
+F07C text7 CODE >8:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\rand.c
+F088 text7 CODE >9:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\rand.c
+F1EA text6 CODE >8:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strcpy.c
+F1EA text6 CODE >18:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strcpy.c
+F1F2 text6 CODE >19:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strcpy.c
+F1F6 text6 CODE >20:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strcpy.c
+F1FA text6 CODE >21:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strcpy.c
+F1FE text6 CODE >19:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strcpy.c
+F22C text6 CODE >24:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strcpy.c
+F32C text5 CODE >4:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strchr.c
+F32C text5 CODE >6:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strchr.c
+F32C text5 CODE >7:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strchr.c
+F34E text5 CODE >8:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strchr.c
+F35A text5 CODE >9:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strchr.c
+F380 text5 CODE >10:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strchr.c
+F388 text5 CODE >11:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strchr.c
+F458 text4 CODE >4:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strcspn.c
+F458 text4 CODE >8:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strcspn.c
+F460 text4 CODE >9:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strcspn.c
+F464 text4 CODE >10:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strcspn.c
+F468 text4 CODE >11:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strcspn.c
+F46C text4 CODE >9:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strcspn.c
+F4BC text4 CODE >13:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strcspn.c
+F4C4 text4 CODE >14:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strcspn.c
+F4C6 text3 CODE >4:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strspn.c
+F4C6 text3 CODE >8:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strspn.c
+F4CE text3 CODE >9:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strspn.c
+F4D2 text3 CODE >10:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strspn.c
+F4D6 text3 CODE >11:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strspn.c
+F4DA text3 CODE >9:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strspn.c
+F52A text3 CODE >13:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strspn.c
+F532 text3 CODE >14:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strspn.c
+F8C4 text2 CODE >8:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strtok.c
+F8C4 text2 CODE >18:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strtok.c
+F8D6 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strtok.c
+F8DE text2 CODE >20:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strtok.c
+F8F0 text2 CODE >21:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strtok.c
+F8FC text2 CODE >22:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strtok.c
+F918 text2 CODE >23:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strtok.c
+F934 text2 CODE >24:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strtok.c
+F948 text2 CODE >25:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strtok.c
+F968 text2 CODE >26:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strtok.c
+F984 text2 CODE >27:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strtok.c
+F99C text2 CODE >29:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strtok.c
+F9A4 text2 CODE >30:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strtok.c
+F9AC text2 CODE >31:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strtok.c
+F22E text1 CODE >5:C:\MinGW\msys\1.0\home\manmo\Phys1600/exercise10.X/myUART.c
+F22E text1 CODE >8:C:\MinGW\msys\1.0\home\manmo\Phys1600/exercise10.X/myUART.c
+F246 text1 CODE >10:C:\MinGW\msys\1.0\home\manmo\Phys1600/exercise10.X/myUART.c
+F27C text1 CODE >12:C:\MinGW\msys\1.0\home\manmo\Phys1600/exercise10.X/myUART.c
+FC74 text0 CODE >16:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FC74 text0 CODE >19:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FC78 text0 CODE >20:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FC7C text0 CODE >21:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FC7C text0 CODE >26:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FC80 text0 CODE >27:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FC8C text0 CODE >28:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FC90 text0 CODE >29:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FCA0 text0 CODE >32:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FCAC text0 CODE >37:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FCB8 text0 CODE >39:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FCCC text0 CODE >40:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FCEC text0 CODE >41:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FD00 text0 CODE >42:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FD08 text0 CODE >43:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FD10 text0 CODE >46:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FD14 text0 CODE >47:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FD28 text0 CODE >48:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FD44 text0 CODE >49:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FD6A text0 CODE >50:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FD86 text0 CODE >51:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FDAC text0 CODE >55:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FDC0 text0 CODE >58:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FDEA text0 CODE >60:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FDFE text0 CODE >61:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FE12 text0 CODE >62:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FE12 text0 CODE >63:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FE16 text0 CODE >67:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FE46 text0 CODE >69:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FE52 text0 CODE >70:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FE56 text0 CODE >73:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FE86 text0 CODE >75:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FE92 text0 CODE >76:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FE96 text0 CODE >79:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FEA2 text0 CODE >80:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+FEAE text0 CODE >87:C:\MinGW\msys\1.0\home\manmo\Phys1600\project2.X\main.c
+F1B8 cinit CODE >11135:C:\Users\Manmo\AppData\Local\Temp\scpox.s
+F1B8 cinit CODE >11137:C:\Users\Manmo\AppData\Local\Temp\scpox.s
+F1B8 cinit CODE >11140:C:\Users\Manmo\AppData\Local\Temp\scpox.s
+F1B8 cinit CODE >11164:C:\Users\Manmo\AppData\Local\Temp\scpox.s
+F1BA cinit CODE >11165:C:\Users\Manmo\AppData\Local\Temp\scpox.s
+F1BC cinit CODE >11166:C:\Users\Manmo\AppData\Local\Temp\scpox.s
+F1BE cinit CODE >11167:C:\Users\Manmo\AppData\Local\Temp\scpox.s
+F1C0 cinit CODE >11168:C:\Users\Manmo\AppData\Local\Temp\scpox.s
+F1C2 cinit CODE >11169:C:\Users\Manmo\AppData\Local\Temp\scpox.s
+F1C4 cinit CODE >11170:C:\Users\Manmo\AppData\Local\Temp\scpox.s
+F1C8 cinit CODE >11171:C:\Users\Manmo\AppData\Local\Temp\scpox.s
+F1CC cinit CODE >11172:C:\Users\Manmo\AppData\Local\Temp\scpox.s
+F1CC cinit CODE >11173:C:\Users\Manmo\AppData\Local\Temp\scpox.s
+F1CE cinit CODE >11174:C:\Users\Manmo\AppData\Local\Temp\scpox.s
+F1D4 cinit CODE >11175:C:\Users\Manmo\AppData\Local\Temp\scpox.s
+F1D6 cinit CODE >11176:C:\Users\Manmo\AppData\Local\Temp\scpox.s
+F1D8 cinit CODE >11177:C:\Users\Manmo\AppData\Local\Temp\scpox.s
+F1DA cinit CODE >11181:C:\Users\Manmo\AppData\Local\Temp\scpox.s
+F1DC cinit CODE >11182:C:\Users\Manmo\AppData\Local\Temp\scpox.s
+F1DE cinit CODE >11183:C:\Users\Manmo\AppData\Local\Temp\scpox.s
+F1E0 cinit CODE >11184:C:\Users\Manmo\AppData\Local\Temp\scpox.s
+F1E2 cinit CODE >11185:C:\Users\Manmo\AppData\Local\Temp\scpox.s
+F1E4 cinit CODE >11191:C:\Users\Manmo\AppData\Local\Temp\scpox.s
+F1E4 cinit CODE >11193:C:\Users\Manmo\AppData\Local\Temp\scpox.s
+F1E6 cinit CODE >11194:C:\Users\Manmo\AppData\Local\Temp\scpox.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___lwmod@counter C 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__Lmediumconst FECA 0 MEDIUMCONST 0 mediumconst dist/default/production\project2.X.production.o
+__Hspace_0 10000 0 ABS 0 - dist/default/production\project2.X.production.o
+__Hspace_1 50 0 ABS 0 - dist/default/production\project2.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__Hspace_4 60000A 0 ABS 0 - dist/default/production\project2.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\project2.X.production.o
+__mediumconst FECA 0 MEDIUMCONST 0 mediumconst C:\Users\Manmo\AppData\Local\Temp\scpoxe.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\project2.X.production.o
+_PMD_Initialize F10A 0 CODE 0 text28 dist/default/production\project2.X.production.o
+main@k 35 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\project2.X.production.o
+_LATA 3FBA 0 ABS 0 - dist/default/production\project2.X.production.o
+_LATB 3FBB 0 ABS 0 - dist/default/production\project2.X.production.o
+_LATC 3FBC 0 ABS 0 - dist/default/production\project2.X.production.o
+_LATD 3FBD 0 ABS 0 - dist/default/production\project2.X.production.o
+_LATE 3FBE 0 ABS 0 - dist/default/production\project2.X.production.o
+_PMD0 39C0 0 ABS 0 - dist/default/production\project2.X.production.o
+_PMD1 39C1 0 ABS 0 - dist/default/production\project2.X.production.o
+_PMD2 39C2 0 ABS 0 - dist/default/production\project2.X.production.o
+_PMD3 39C3 0 ABS 0 - dist/default/production\project2.X.production.o
+_PMD4 39C4 0 ABS 0 - dist/default/production\project2.X.production.o
+_PMD5 39C5 0 ABS 0 - dist/default/production\project2.X.production.o
+_PMD6 39C6 0 ABS 0 - dist/default/production\project2.X.production.o
+_PMD7 39C7 0 ABS 0 - dist/default/production\project2.X.production.o
+_WPUA 3A41 0 ABS 0 - dist/default/production\project2.X.production.o
+_WPUB 3A51 0 ABS 0 - dist/default/production\project2.X.production.o
+_WPUC 3A61 0 ABS 0 - dist/default/production\project2.X.production.o
+_WPUD 3A71 0 ABS 0 - dist/default/production\project2.X.production.o
+_WPUE 3A81 0 ABS 0 - dist/default/production\project2.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Manmo\AppData\Local\Temp\scpoxe.o
+_atoi F9AE 0 CODE 0 text16 dist/default/production\project2.X.production.o
+_main FC74 0 CODE 0 text0 dist/default/production\project2.X.production.o
+_rand F27E 0 CODE 0 text8 dist/default/production\project2.X.production.o
+start FFFC 0 CODE 0 init C:\Users\Manmo\AppData\Local\Temp\scpoxe.o
+__size_of___awmod 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__size_of_atoi 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__size_of_rand 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__size_of___lwmod 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\project2.X.production.o
+_UART2_FramingErrorHandler 43 0 COMRAM 1 nvCOMRAM dist/default/production\project2.X.production.o
+_UART2_OverrunErrorHandler 41 0 COMRAM 1 nvCOMRAM dist/default/production\project2.X.production.o
+?___lmul 1 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+?___wmul 1 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+main@integer 29 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__Hpowerup 0 0 CODE 0 powerup dist/default/production\project2.X.production.o
+printf@c 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+printf@f D 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+___awmod@sign 6 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__end_of_ReadNUART2 F8C4 0 CODE 0 text31 dist/default/production\project2.X.production.o
+UART2_SetOverrunErrorHandler@interruptHandler 1 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+_UART2_DefaultErrorHandler F046 0 CODE 0 text36 dist/default/production\project2.X.production.o
+__LnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\project2.X.production.o
+__size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\project2.X.production.o
+__accesstop 60 0 ABS 0 - C:\Users\Manmo\AppData\Local\Temp\scpoxe.o
+intlevel0 0 0 CODE 0 text C:\Users\Manmo\AppData\Local\Temp\scpoxe.o
+intlevel1 0 0 CODE 0 text C:\Users\Manmo\AppData\Local\Temp\scpoxe.o
+intlevel2 0 0 CODE 0 text C:\Users\Manmo\AppData\Local\Temp\scpoxe.o
+intlevel3 0 0 CODE 0 text C:\Users\Manmo\AppData\Local\Temp\scpoxe.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\project2.X.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\project2.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\project2.X.production.o
+__end_of_PMD_Initialize F12E 0 CODE 0 text28 dist/default/production\project2.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\project2.X.production.o
+__pidataCOMRAM F050 0 CODE 0 idataCOMRAM dist/default/production\project2.X.production.o
+___wmul@multiplicand 3 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+printf@flag 17 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+printf@prec 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__size_of_UART2_Read 0 0 ABS 0 - dist/default/production\project2.X.production.o
+_U2ERRIE 3DE2 0 ABS 0 - dist/default/production\project2.X.production.o
+_U2ERRIR 3DE1 0 ABS 0 - dist/default/production\project2.X.production.o
+ReadNUART2@length_N 3 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+_timer0ReloadVal16bit 45 0 COMRAM 1 nvCOMRAM dist/default/production\project2.X.production.o
+_U2RXPPS 3AE8 0 ABS 0 - dist/default/production\project2.X.production.o
+_ANSELA 3A40 0 ABS 0 - dist/default/production\project2.X.production.o
+_ANSELB 3A50 0 ABS 0 - dist/default/production\project2.X.production.o
+_ANSELC 3A60 0 ABS 0 - dist/default/production\project2.X.production.o
+_ANSELD 3A70 0 ABS 0 - dist/default/production\project2.X.production.o
+_ANSELE 3A80 0 ABS 0 - dist/default/production\project2.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\Manmo\AppData\Local\Temp\scpoxe.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\Manmo\AppData\Local\Temp\scpoxe.o
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\project2.X.production.o
+__end_of___lmul F458 0 CODE 0 text9 dist/default/production\project2.X.production.o
+__end_of___wmul F158 0 CODE 0 text18 dist/default/production\project2.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\project2.X.production.o
+UART2_Write@txData 1 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__Hmediumconst FFFC 0 MEDIUMCONST 0 mediumconst dist/default/production\project2.X.production.o
+?_printf D 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__size_of_UART2_Write 0 0 ABS 0 - dist/default/production\project2.X.production.o
+___lwmod@divisor A 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__end_of___awmod F804 0 CODE 0 text19 dist/default/production\project2.X.production.o
+__end_of___lwdiv F5A8 0 CODE 0 text15 dist/default/production\project2.X.production.o
+__end_of___lwmod F3EE 0 CODE 0 text14 dist/default/production\project2.X.production.o
+__size_of_isdigit 0 0 ABS 0 - dist/default/production\project2.X.production.o
+_INLVLA 3A44 0 ABS 0 - dist/default/production\project2.X.production.o
+_INLVLB 3A54 0 ABS 0 - dist/default/production\project2.X.production.o
+_INLVLC 3A64 0 ABS 0 - dist/default/production\project2.X.production.o
+_INLVLD 3A74 0 ABS 0 - dist/default/production\project2.X.production.o
+_INLVLE 3A84 0 ABS 0 - dist/default/production\project2.X.production.o
+?_strchr 1 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+?_strspn 5 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+?_strtok C 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__size_of_strcspn 0 0 ABS 0 - dist/default/production\project2.X.production.o
+_dpowers FECB 0 MEDIUMCONST 0 mediumconst dist/default/production\project2.X.production.o
+TMR0_ReadTimer@readValHigh 8 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+___lwdiv@quotient 5 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\project2.X.production.o
+__size_of_putch 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__size_of_srand 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__HnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\project2.X.production.o
+main@counter 33 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+___lwmod@dividend 8 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+_PIN_MANAGER_Initialize F6BC 0 CODE 0 text29 dist/default/production\project2.X.production.o
+_TMR0_ReadTimer F0E8 0 CODE 0 text21 dist/default/production\project2.X.production.o
+start_initialization F1B8 0 CODE 0 cinit dist/default/production\project2.X.production.o
+_ODCONA 3A42 0 ABS 0 - dist/default/production\project2.X.production.o
+_ODCONB 3A52 0 ABS 0 - dist/default/production\project2.X.production.o
+_ODCONC 3A62 0 ABS 0 - dist/default/production\project2.X.production.o
+_ODCOND 3A72 0 ABS 0 - dist/default/production\project2.X.production.o
+_ODCONE 3A82 0 ABS 0 - dist/default/production\project2.X.production.o
+_OSCFRQ 39DF 0 ABS 0 - dist/default/production\project2.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\project2.X.production.o
+_UART2_ErrorHandler 3F 0 COMRAM 1 nvCOMRAM dist/default/production\project2.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production\project2.X.production.o
+_RB1I2C 3A5A 0 ABS 0 - dist/default/production\project2.X.production.o
+_RB2I2C 3A5B 0 ABS 0 - dist/default/production\project2.X.production.o
+_RB6PPS 3A0E 0 ABS 0 - dist/default/production\project2.X.production.o
+_RC3I2C 3A6A 0 ABS 0 - dist/default/production\project2.X.production.o
+_RC4I2C 3A6B 0 ABS 0 - dist/default/production\project2.X.production.o
+_RD0I2C 3A7A 0 ABS 0 - dist/default/production\project2.X.production.o
+_RD1I2C 3A7B 0 ABS 0 - dist/default/production\project2.X.production.o
+__end_of_SYSTEM_Initialize F0B6 0 CODE 0 text22 dist/default/production\project2.X.production.o
+_T0CON0 3FB8 0 ABS 0 - dist/default/production\project2.X.production.o
+_T0CON1 3FB9 0 ABS 0 - dist/default/production\project2.X.production.o
+_UART2_DefaultFramingErrorHandler F048 0 CODE 0 text35 dist/default/production\project2.X.production.o
+_UART2_DefaultOverrunErrorHandler F04A 0 CODE 0 text34 dist/default/production\project2.X.production.o
+_U2BRGH 3DDE 0 ABS 0 - dist/default/production\project2.X.production.o
+_U2BRGL 3DDD 0 ABS 0 - dist/default/production\project2.X.production.o
+_U2CON0 3DDA 0 ABS 0 - dist/default/production\project2.X.production.o
+_U2CON1 3DDB 0 ABS 0 - dist/default/production\project2.X.production.o
+_U2CON2 3DDC 0 ABS 0 - dist/default/production\project2.X.production.o
+_U2FIFO 3DDF 0 ABS 0 - dist/default/production\project2.X.production.o
+__end_of_printf FC74 0 CODE 0 text11 dist/default/production\project2.X.production.o
+__size_of_wait_for_ENTER 0 0 ABS 0 - dist/default/production\project2.X.production.o
+UART2_SetFramingErrorHandler@interruptHandler 1 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\project2.X.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\project2.X.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\project2.X.production.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\project2.X.production.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\project2.X.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\project2.X.production.o
+__Hbank6 0 0 ABS 0 bank6 dist/default/production\project2.X.production.o
+__Hbank7 0 0 ABS 0 bank7 dist/default/production\project2.X.production.o
+__Hbank8 0 0 ABS 0 bank8 dist/default/production\project2.X.production.o
+__Hbank9 0 0 ABS 0 bank9 dist/default/production\project2.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production\project2.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production\project2.X.production.o
+__end_of_strchr F38A 0 CODE 0 text5 dist/default/production\project2.X.production.o
+__end_of_strcpy F22E 0 CODE 0 text6 dist/default/production\project2.X.production.o
+__end_of_strspn F534 0 CODE 0 text3 dist/default/production\project2.X.production.o
+__end_of_strtok F9AE 0 CODE 0 text2 dist/default/production\project2.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production\project2.X.production.o
+__Hidloc 200010 0 IDLOC 5 idloc dist/default/production\project2.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\project2.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\project2.X.production.o
+__size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\project2.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production\project2.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production\project2.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production\project2.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\project2.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\project2.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\project2.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\project2.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\project2.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production\project2.X.production.o
+__Htext8 0 0 ABS 0 text8 dist/default/production\project2.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production\project2.X.production.o
+___lwdiv@counter 7 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__Hbank10 0 0 ABS 0 bank10 dist/default/production\project2.X.production.o
+__Hbank11 0 0 ABS 0 bank11 dist/default/production\project2.X.production.o
+__Hbank12 0 0 ABS 0 bank12 dist/default/production\project2.X.production.o
+__Hbank13 0 0 ABS 0 bank13 dist/default/production\project2.X.production.o
+__Hbank14 0 0 ABS 0 bank14 dist/default/production\project2.X.production.o
+__Hbank15 0 0 ABS 0 bank15 dist/default/production\project2.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\project2.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production\project2.X.production.o
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\Manmo\AppData\Local\Temp\scpoxe.o
+__size_of_ReadNUART2 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__Hcomram 0 0 ABS 0 comram dist/default/production\project2.X.production.o
+__Hconfig 30000A 0 CONFIG 4 config dist/default/production\project2.X.production.o
+__end_of_TMR0_ReadTimer F10A 0 CODE 0 text21 dist/default/production\project2.X.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\project2.X.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\project2.X.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\project2.X.production.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\project2.X.production.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\project2.X.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\project2.X.production.o
+__Lbank6 0 0 ABS 0 bank6 dist/default/production\project2.X.production.o
+__Lbank7 0 0 ABS 0 bank7 dist/default/production\project2.X.production.o
+__Lbank8 0 0 ABS 0 bank8 dist/default/production\project2.X.production.o
+__Lbank9 0 0 ABS 0 bank9 dist/default/production\project2.X.production.o
+__end_of_isdigit F1B8 0 CODE 0 text17 dist/default/production\project2.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production\project2.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production\project2.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production\project2.X.production.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/production\project2.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\project2.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\project2.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\project2.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production\project2.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production\project2.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production\project2.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\project2.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\project2.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\project2.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\project2.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\project2.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production\project2.X.production.o
+__Ltext8 0 0 ABS 0 text8 dist/default/production\project2.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production\project2.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\project2.X.production.o
+?_TMR0_ReadTimer 1 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__end_of_strcspn F4C6 0 CODE 0 text4 dist/default/production\project2.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production\project2.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production\project2.X.production.o
+__Hinit 10000 0 CODE 0 init dist/default/production\project2.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\project2.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\project2.X.production.o
+__Htemp 0 0 COMRAM 1 temp dist/default/production\project2.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production\project2.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production\project2.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production\project2.X.production.o
+__Linit FFFC 0 CODE 0 init dist/default/production\project2.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\project2.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\project2.X.production.o
+__Ltemp 0 0 COMRAM 1 temp dist/default/production\project2.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production\project2.X.production.o
+___lmul F3EE 0 CODE 0 text9 dist/default/production\project2.X.production.o
+___wmul F12E 0 CODE 0 text18 dist/default/production\project2.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\project2.X.production.o
+__end_of_UART2_SetErrorHandler F05E 0 CODE 0 text26 dist/default/production\project2.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production\project2.X.production.o
+__S0 10000 0 ABS 0 - dist/default/production\project2.X.production.o
+__S1 50 0 ABS 0 - dist/default/production\project2.X.production.o
+__S2 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__S4 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__S5 0 0 ABS 0 - dist/default/production\project2.X.production.o
+atoi@sign B 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__pnvCOMRAM 3F 0 COMRAM 1 nvCOMRAM dist/default/production\project2.X.production.o
+__size_of_UART2_is_rx_ready 0 0 ABS 0 - dist/default/production\project2.X.production.o
+_UART2_Initialize F2D0 0 CODE 0 text23 dist/default/production\project2.X.production.o
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\project2.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\project2.X.production.o
+_UART2_SetFramingErrorHandler F05E 0 CODE 0 text25 dist/default/production\project2.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\project2.X.production.o
+_UART2_SetOverrunErrorHandler F068 0 CODE 0 text24 dist/default/production\project2.X.production.o
+_UART2_SetErrorHandler F054 0 CODE 0 text26 dist/default/production\project2.X.production.o
+_SYSTEM_Initialize F0A0 0 CODE 0 text22 dist/default/production\project2.X.production.o
+strcpy@cp 5 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+strcpy@to 1 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+strcspn@i A 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+ReadNUART2@letter 7 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+_clearPuTTY F5A8 0 CODE 0 text10 dist/default/production\project2.X.production.o
+__Hramtop 1000 0 RAM 0 ramtop dist/default/production\project2.X.production.o
+strspn@i A 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\project2.X.production.o
+__activetblptr 3 0 ABS 0 - dist/default/production\project2.X.production.o
+_UART2_Write F0CE 0 CODE 0 text13 dist/default/production\project2.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\project2.X.production.o
+__size_of___lmul 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__size_of___wmul 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production\project2.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production\project2.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production\project2.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production\project2.X.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production\project2.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production\project2.X.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production\project2.X.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production\project2.X.production.o
+__Htext18 0 0 ABS 0 text18 dist/default/production\project2.X.production.o
+__Htext19 0 0 ABS 0 text19 dist/default/production\project2.X.production.o
+__Htext20 0 0 ABS 0 text20 dist/default/production\project2.X.production.o
+__Htext21 0 0 ABS 0 text21 dist/default/production\project2.X.production.o
+__Htext22 0 0 ABS 0 text22 dist/default/production\project2.X.production.o
+__Htext23 0 0 ABS 0 text23 dist/default/production\project2.X.production.o
+__Htext24 0 0 ABS 0 text24 dist/default/production\project2.X.production.o
+__Htext25 0 0 ABS 0 text25 dist/default/production\project2.X.production.o
+__Htext26 0 0 ABS 0 text26 dist/default/production\project2.X.production.o
+__Htext27 0 0 ABS 0 text27 dist/default/production\project2.X.production.o
+__Htext28 0 0 ABS 0 text28 dist/default/production\project2.X.production.o
+__Htext29 0 0 ABS 0 text29 dist/default/production\project2.X.production.o
+__Htext30 0 0 ABS 0 text30 dist/default/production\project2.X.production.o
+__Htext31 0 0 ABS 0 text31 dist/default/production\project2.X.production.o
+__Htext32 0 0 ABS 0 text32 dist/default/production\project2.X.production.o
+__Htext33 0 0 ABS 0 text33 dist/default/production\project2.X.production.o
+__Htext34 0 0 ABS 0 text34 dist/default/production\project2.X.production.o
+__Htext35 0 0 ABS 0 text35 dist/default/production\project2.X.production.o
+__Htext36 0 0 ABS 0 text36 dist/default/production\project2.X.production.o
+__Htext37 0 0 ABS 0 text37 dist/default/production\project2.X.production.o
+___awmod@counter 5 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__size_of_PMD_Initialize 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__ptext10 F5A8 0 CODE 0 text10 dist/default/production\project2.X.production.o
+__ptext11 FADE 0 CODE 0 text11 dist/default/production\project2.X.production.o
+__ptext12 F072 0 CODE 0 text12 dist/default/production\project2.X.production.o
+__ptext13 F0CE 0 CODE 0 text13 dist/default/production\project2.X.production.o
+__ptext14 F38A 0 CODE 0 text14 dist/default/production\project2.X.production.o
+__ptext15 F534 0 CODE 0 text15 dist/default/production\project2.X.production.o
+__ptext16 F9AE 0 CODE 0 text16 dist/default/production\project2.X.production.o
+__ptext17 F186 0 CODE 0 text17 dist/default/production\project2.X.production.o
+__ptext18 F12E 0 CODE 0 text18 dist/default/production\project2.X.production.o
+__ptext19 F754 0 CODE 0 text19 dist/default/production\project2.X.production.o
+__ptext20 F04C 0 CODE 0 text20 dist/default/production\project2.X.production.o
+__ptext21 F0E8 0 CODE 0 text21 dist/default/production\project2.X.production.o
+__ptext22 F0A0 0 CODE 0 text22 dist/default/production\project2.X.production.o
+__ptext23 F2D0 0 CODE 0 text23 dist/default/production\project2.X.production.o
+__ptext24 F068 0 CODE 0 text24 dist/default/production\project2.X.production.o
+__ptext25 F05E 0 CODE 0 text25 dist/default/production\project2.X.production.o
+__ptext26 F054 0 CODE 0 text26 dist/default/production\project2.X.production.o
+__ptext27 F158 0 CODE 0 text27 dist/default/production\project2.X.production.o
+__ptext28 F10A 0 CODE 0 text28 dist/default/production\project2.X.production.o
+__ptext29 F6BC 0 CODE 0 text29 dist/default/production\project2.X.production.o
+__ptext30 F0B6 0 CODE 0 text30 dist/default/production\project2.X.production.o
+__ptext31 F804 0 CODE 0 text31 dist/default/production\project2.X.production.o
+__ptext32 F08A 0 CODE 0 text32 dist/default/production\project2.X.production.o
+__ptext33 F626 0 CODE 0 text33 dist/default/production\project2.X.production.o
+__ptext34 F04A 0 CODE 0 text34 dist/default/production\project2.X.production.o
+__ptext35 F048 0 CODE 0 text35 dist/default/production\project2.X.production.o
+__ptext36 F046 0 CODE 0 text36 dist/default/production\project2.X.production.o
+__ptext37 0 0 CODE 0 text37 dist/default/production\project2.X.production.o
+__end_of_PIN_MANAGER_Initialize F754 0 CODE 0 text29 dist/default/production\project2.X.production.o
+___awmod F754 0 CODE 0 text19 dist/default/production\project2.X.production.o
+__end_of_TMR0_Initialize F186 0 CODE 0 text27 dist/default/production\project2.X.production.o
+__end_of_TMR0_StartTimer F050 0 CODE 0 text20 dist/default/production\project2.X.production.o
+___lwdiv F534 0 CODE 0 text15 dist/default/production\project2.X.production.o
+___lwmod F38A 0 CODE 0 text14 dist/default/production\project2.X.production.o
+__Lbank10 0 0 ABS 0 bank10 dist/default/production\project2.X.production.o
+__Lbank11 0 0 ABS 0 bank11 dist/default/production\project2.X.production.o
+__Lbank12 0 0 ABS 0 bank12 dist/default/production\project2.X.production.o
+__Lbank13 0 0 ABS 0 bank13 dist/default/production\project2.X.production.o
+__Lbank14 0 0 ABS 0 bank14 dist/default/production\project2.X.production.o
+__Lbank15 0 0 ABS 0 bank15 dist/default/production\project2.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\project2.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production\project2.X.production.o
+___lmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+?_atoi 7 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+?_rand D 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production\project2.X.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production\project2.X.production.o
+wait_for_ENTER@i 1 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+_printf FADE 0 CODE 0 text11 dist/default/production\project2.X.production.o
+___wmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\project2.X.production.o
+main@guess 39 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+___lwdiv@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+main@input 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+srand@x 9 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+_strchr F32C 0 CODE 0 text5 dist/default/production\project2.X.production.o
+_strcpy F1EA 0 CODE 0 text6 dist/default/production\project2.X.production.o
+_strspn F4C6 0 CODE 0 text3 dist/default/production\project2.X.production.o
+_strtok F8C4 0 CODE 0 text2 dist/default/production\project2.X.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\project2.X.production.o
+main@token 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+main@number1 37 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+stackhi FFF 0 ABS 0 - C:\Users\Manmo\AppData\Local\Temp\scpoxe.o
+stacklo 60 0 ABS 0 - C:\Users\Manmo\AppData\Local\Temp\scpoxe.o
+strspn@s1 5 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+strspn@s2 7 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+_OSCCON1 39D9 0 ABS 0 - dist/default/production\project2.X.production.o
+_OSCCON3 39DB 0 ABS 0 - dist/default/production\project2.X.production.o
+_OSCTUNE 39DE 0 ABS 0 - dist/default/production\project2.X.production.o
+__end_of_clearPuTTY F626 0 CODE 0 text10 dist/default/production\project2.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production\project2.X.production.o
+_uart2RxLastError 4B 0 COMRAM 1 bssCOMRAM dist/default/production\project2.X.production.o
+__end_of_UART2_Initialize F32C 0 CODE 0 text23 dist/default/production\project2.X.production.o
+strtok@s1 C 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+strtok@s2 E 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+strtok@sp 47 0 COMRAM 1 bssCOMRAM dist/default/production\project2.X.production.o
+strcpy@from 3 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__pbssCOMRAM 47 0 COMRAM 1 bssCOMRAM dist/default/production\project2.X.production.o
+_PIR3bits 39A3 0 ABS 0 - dist/default/production\project2.X.production.o
+_PIR6bits 39A6 0 ABS 0 - dist/default/production\project2.X.production.o
+__size_of_UART2_Initialize 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\project2.X.production.o
+printf@ap 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+end_of_initialization F1E4 0 CODE 0 cinit dist/default/production\project2.X.production.o
+_TMR0_Initialize F158 0 CODE 0 text27 dist/default/production\project2.X.production.o
+_TMR0_StartTimer F04C 0 CODE 0 text20 dist/default/production\project2.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\project2.X.production.o
+TMR0_ReadTimer@readValLow 7 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__end_of_UART2_is_rx_ready F0A0 0 CODE 0 text32 dist/default/production\project2.X.production.o
+__size_of_printf 0 0 ABS 0 - dist/default/production\project2.X.production.o
+_UART2_Read F626 0 CODE 0 text33 dist/default/production\project2.X.production.o
+?___awmod 1 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+___lwdiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__end_of_UART2_DefaultErrorHandler F048 0 CODE 0 text36 dist/default/production\project2.X.production.o
+?___lwdiv 1 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+?___lwmod 8 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+TMR0_ReadTimer@readVal 5 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\project2.X.production.o
+main@comparison 2E 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+___awmod@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+strchr@chr 3 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+strchr@ptr 1 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__Lramtop 1000 0 RAM 0 ramtop dist/default/production\project2.X.production.o
+__size_of_strchr 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__size_of_strcpy 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__size_of_strspn 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__size_of_strtok 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\project2.X.production.o
+__pcinit F1B8 0 CODE 0 cinit dist/default/production\project2.X.production.o
+__ptext0 FC74 0 CODE 0 text0 dist/default/production\project2.X.production.o
+__ptext1 F22E 0 CODE 0 text1 dist/default/production\project2.X.production.o
+__ptext2 F8C4 0 CODE 0 text2 dist/default/production\project2.X.production.o
+__ptext3 F4C6 0 CODE 0 text3 dist/default/production\project2.X.production.o
+__ptext4 F458 0 CODE 0 text4 dist/default/production\project2.X.production.o
+__ptext5 F32C 0 CODE 0 text5 dist/default/production\project2.X.production.o
+__ptext6 F1EA 0 CODE 0 text6 dist/default/production\project2.X.production.o
+__ptext7 F07C 0 CODE 0 text7 dist/default/production\project2.X.production.o
+__ptext8 F27E 0 CODE 0 text8 dist/default/production\project2.X.production.o
+__ptext9 F3EE 0 CODE 0 text9 dist/default/production\project2.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\project2.X.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production\project2.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production\project2.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production\project2.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production\project2.X.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production\project2.X.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production\project2.X.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production\project2.X.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production\project2.X.production.o
+__Ltext18 0 0 ABS 0 text18 dist/default/production\project2.X.production.o
+__Ltext19 0 0 ABS 0 text19 dist/default/production\project2.X.production.o
+__Ltext20 0 0 ABS 0 text20 dist/default/production\project2.X.production.o
+__Ltext21 0 0 ABS 0 text21 dist/default/production\project2.X.production.o
+__Ltext22 0 0 ABS 0 text22 dist/default/production\project2.X.production.o
+__Ltext23 0 0 ABS 0 text23 dist/default/production\project2.X.production.o
+__Ltext24 0 0 ABS 0 text24 dist/default/production\project2.X.production.o
+__Ltext25 0 0 ABS 0 text25 dist/default/production\project2.X.production.o
+__Ltext26 0 0 ABS 0 text26 dist/default/production\project2.X.production.o
+__Ltext27 0 0 ABS 0 text27 dist/default/production\project2.X.production.o
+__Ltext28 0 0 ABS 0 text28 dist/default/production\project2.X.production.o
+__Ltext29 0 0 ABS 0 text29 dist/default/production\project2.X.production.o
+__Ltext30 0 0 ABS 0 text30 dist/default/production\project2.X.production.o
+__Ltext31 0 0 ABS 0 text31 dist/default/production\project2.X.production.o
+__Ltext32 0 0 ABS 0 text32 dist/default/production\project2.X.production.o
+__Ltext33 0 0 ABS 0 text33 dist/default/production\project2.X.production.o
+__Ltext34 0 0 ABS 0 text34 dist/default/production\project2.X.production.o
+__Ltext35 0 0 ABS 0 text35 dist/default/production\project2.X.production.o
+__Ltext36 0 0 ABS 0 text36 dist/default/production\project2.X.production.o
+__Ltext37 0 0 ABS 0 text37 dist/default/production\project2.X.production.o
+__ramtop 1000 0 RAM 0 ramtop C:\Users\Manmo\AppData\Local\Temp\scpoxe.o
+__Lpowerup 0 0 CODE 0 powerup dist/default/production\project2.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\project2.X.production.o
+_isdigit F186 0 CODE 0 text17 dist/default/production\project2.X.production.o
+main@number 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+_U2CON0bits 3DDA 0 ABS 0 - dist/default/production\project2.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\project2.X.production.o
+__size_of_UART2_SetFramingErrorHandler 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__end_of_UART2_DefaultFramingErrorHandler F04A 0 CODE 0 text35 dist/default/production\project2.X.production.o
+__size_of_UART2_SetOverrunErrorHandler 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__end_of_UART2_DefaultOverrunErrorHandler F04C 0 CODE 0 text34 dist/default/production\project2.X.production.o
+_strcspn F458 0 CODE 0 text4 dist/default/production\project2.X.production.o
+_wait_for_ENTER F22E 0 CODE 0 text1 dist/default/production\project2.X.production.o
+_SLRCONA 3A43 0 ABS 0 - dist/default/production\project2.X.production.o
+_SLRCONB 3A53 0 ABS 0 - dist/default/production\project2.X.production.o
+_SLRCONC 3A63 0 ABS 0 - dist/default/production\project2.X.production.o
+_SLRCOND 3A73 0 ABS 0 - dist/default/production\project2.X.production.o
+_SLRCONE 3A83 0 ABS 0 - dist/default/production\project2.X.production.o
+ReadNUART2@i 9 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+___param_bank 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__size_of_UART2_DefaultFramingErrorHandler 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\project2.X.production.o
+__size_of_UART2_DefaultOverrunErrorHandler 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__end_of__initialization F1E4 0 CODE 0 cinit dist/default/production\project2.X.production.o
+___awmod@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+ReadNUART2@holds_string 1 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__end_of_UART2_SetFramingErrorHandler F068 0 CODE 0 text25 dist/default/production\project2.X.production.o
+__end_of_UART2_SetOverrunErrorHandler F072 0 CODE 0 text24 dist/default/production\project2.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\project2.X.production.o
+UART2_SetErrorHandler@interruptHandler 1 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\project2.X.production.o
+strcspn@s1 5 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+strcspn@s2 7 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__size_of_TMR0_ReadTimer 0 0 ABS 0 - dist/default/production\project2.X.production.o
+___lmul@product 9 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+___lmul@multiplicand 5 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__end_of_UART2_Read F6BC 0 CODE 0 text33 dist/default/production\project2.X.production.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+_T0CON0bits 3FB8 0 ABS 0 - dist/default/production\project2.X.production.o
+__pmediumconst FECA 0 MEDIUMCONST 0 mediumconst dist/default/production\project2.X.production.o
+putch@txData 2 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__end_of_atoi FADE 0 CODE 0 text16 dist/default/production\project2.X.production.o
+__end_of_main FECA 0 CODE 0 text0 dist/default/production\project2.X.production.o
+__end_of_rand F2D0 0 CODE 0 text8 dist/default/production\project2.X.production.o
+__size_of_UART2_DefaultErrorHandler 0 0 ABS 0 - dist/default/production\project2.X.production.o
+isdigit@c 3 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+printf@val 18 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__end_of_dpowers FED5 0 MEDIUMCONST 0 mediumconst dist/default/production\project2.X.production.o
+_OSCEN 39DD 0 ABS 0 - dist/default/production\project2.X.production.o
+_isdigit$1016 2 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+_TMR0H 3FB7 0 ABS 0 - dist/default/production\project2.X.production.o
+_TMR0L 3FB6 0 ABS 0 - dist/default/production\project2.X.production.o
+_TRISA 3FC2 0 ABS 0 - dist/default/production\project2.X.production.o
+_TRISB 3FC3 0 ABS 0 - dist/default/production\project2.X.production.o
+_TRISC 3FC4 0 ABS 0 - dist/default/production\project2.X.production.o
+_TRISD 3FC5 0 ABS 0 - dist/default/production\project2.X.production.o
+_TRISE 3FC6 0 ABS 0 - dist/default/production\project2.X.production.o
+_U2P1L 3DD4 0 ABS 0 - dist/default/production\project2.X.production.o
+_U2P2L 3DD6 0 ABS 0 - dist/default/production\project2.X.production.o
+_U2P3L 3DD8 0 ABS 0 - dist/default/production\project2.X.production.o
+_U2RXB 3DD0 0 ABS 0 - dist/default/production\project2.X.production.o
+_U2TXB 3DD2 0 ABS 0 - dist/default/production\project2.X.production.o
+_U2UIR 3DE0 0 ABS 0 - dist/default/production\project2.X.production.o
+__end_of_putch F07C 0 CODE 0 text12 dist/default/production\project2.X.production.o
+__size_of_TMR0_Initialize 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__size_of_TMR0_StartTimer 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__end_of_srand F08A 0 CODE 0 text7 dist/default/production\project2.X.production.o
+_UART2_is_rx_ready F08A 0 CODE 0 text32 dist/default/production\project2.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production\project2.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production\project2.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production\project2.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production\project2.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production\project2.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production\project2.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production\project2.X.production.o
+_putch F072 0 CODE 0 text12 dist/default/production\project2.X.production.o
+_randx 4C 0 COMRAM 1 dataCOMRAM dist/default/production\project2.X.production.o
+_srand F07C 0 CODE 0 text7 dist/default/production\project2.X.production.o
+__size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\project2.X.production.o
+__end_of_OSCILLATOR_Initialize F0CE 0 CODE 0 text30 dist/default/production\project2.X.production.o
+__size_of_UART2_SetErrorHandler 0 0 ABS 0 - dist/default/production\project2.X.production.o
+atoi@a C 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+atoi@s 7 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__end_of_wait_for_ENTER F27E 0 CODE 0 text1 dist/default/production\project2.X.production.o
+?_strcspn 5 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__initialization F1B8 0 CODE 0 cinit dist/default/production\project2.X.production.o
+__pdataCOMRAM 4C 0 COMRAM 1 dataCOMRAM dist/default/production\project2.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\project2.X.production.o
+___wmul@product 5 0 COMRAM 1 cstackCOMRAM dist/default/production\project2.X.production.o
+__Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\project2.X.production.o
+_last_switch1_value 49 0 COMRAM 1 bssCOMRAM dist/default/production\project2.X.production.o
+__end_of_UART2_Write F0E8 0 CODE 0 text13 dist/default/production\project2.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\project2.X.production.o
+_ReadNUART2 F804 0 CODE 0 text31 dist/default/production\project2.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\project2.X.production.o
+_OSCILLATOR_Initialize F0B6 0 CODE 0 text30 dist/default/production\project2.X.production.o
+__size_of_clearPuTTY 0 0 ABS 0 - dist/default/production\project2.X.production.o
+_U2ERRIRbits 3DE1 0 ABS 0 - dist/default/production\project2.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 F1B8 F1B8 32 1
+text0 0 FC74 FC74 256 1
+text1 0 F22E F22E 50 1
+text2 0 F8C4 F8C4 EA 1
+text3 0 F4C6 F4C6 6E 1
+text4 0 F458 F458 6E 1
+text5 0 F32C F32C 5E 1
+text6 0 F1EA F1EA 44 1
+text7 0 F07C F07C E 1
+text8 0 F27E F27E 52 1
+text9 0 F3EE F3EE 6A 1
+text10 0 F5A8 F5A8 7E 1
+text11 0 FADE FADE 196 1
+text12 0 F072 F072 A 1
+text13 0 F0CE F0CE 1A 1
+text14 0 F38A F38A 64 1
+text15 0 F534 F534 74 1
+text16 0 F9AE F9AE 130 1
+text17 0 F186 F186 32 1
+text18 0 F12E F12E 2A 1
+text19 0 F754 F754 B0 1
+text20 0 F04C F04C 4 1
+text21 0 F0E8 F0E8 22 1
+text22 0 F0A0 F0A0 16 1
+text23 0 F2D0 F2D0 5C 1
+text24 0 F068 F068 A 1
+text25 0 F05E F05E A 1
+text26 0 F054 F054 A 1
+text27 0 F158 F158 2E 1
+text28 0 F10A F10A 24 1
+text29 0 F6BC F6BC 98 1
+text30 0 F0B6 F0B6 18 1
+text31 0 F804 F804 C0 1
+text32 0 F08A F08A 16 1
+text33 0 F626 F626 96 1
+text34 0 F04A F04A 2 1
+text35 0 F048 F048 2 1
+text36 0 F046 F046 2 1
+idataCOMRAM 0 F050 F050 4 1
+cstackCOMRAM 1 1 1 4F 1
+init 0 FFFC FFFC 4 1
+reset_vec 0 0 0 4 1
+mediumconst 0 FECA FECA 132 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

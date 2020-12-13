@@ -1,0 +1,237 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"373 C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\math.h
+[; ;C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\math.h: 373: float sqrtf(float);
+[v _sqrtf `(f ~T0 @X0 0 ef1`f ]
+"7 array_functions.c
+[; ;array_functions.c: 7: float norm(float A[], int array_size)
+[v _norm `(f ~T0 @X0 1 ef2`*f`i ]
+"8
+[; ;array_functions.c: 8: {
+{
+[e :U _norm ]
+"7
+[; ;array_functions.c: 7: float norm(float A[], int array_size)
+[v _A `*f ~T0 @X0 1 r1 ]
+[v _array_size `i ~T0 @X0 1 r2 ]
+"8
+[; ;array_functions.c: 8: {
+[f ]
+"9
+[; ;array_functions.c: 9:     int i;
+[v _i `i ~T0 @X0 1 a ]
+"10
+[; ;array_functions.c: 10:     float normvalue=0.0;
+[v _normvalue `f ~T0 @X0 1 a ]
+[e = _normvalue -> .0.0 `f ]
+"11
+[; ;array_functions.c: 11:     for(i=0;i<array_size;i++)
+{
+[e = _i -> 0 `i ]
+[e $U 13  ]
+[e :U 10 ]
+"12
+[; ;array_functions.c: 12:     {
+{
+"13
+[; ;array_functions.c: 13:         normvalue += A[i]*A[i];
+[e =+ _normvalue * *U + _A * -> _i `x -> -> # *U _A `i `x *U + _A * -> _i `x -> -> # *U _A `i `x ]
+"14
+[; ;array_functions.c: 14:     }
+}
+[e ++ _i -> 1 `i ]
+[e :U 13 ]
+[e $ < _i _array_size 10  ]
+[e :U 11 ]
+}
+"15
+[; ;array_functions.c: 15:     return sqrtf(normvalue);
+[e ) ( _sqrtf (1 _normvalue ]
+[e $UE 9  ]
+"16
+[; ;array_functions.c: 16: }
+[e :UE 9 ]
+}
+"18
+[; ;array_functions.c: 18: float dot_product(float A[], float B[], int array_size)
+[v _dot_product `(f ~T0 @X0 1 ef3`*f`*f`i ]
+"19
+[; ;array_functions.c: 19: {
+{
+[e :U _dot_product ]
+"18
+[; ;array_functions.c: 18: float dot_product(float A[], float B[], int array_size)
+[v _A `*f ~T0 @X0 1 r1 ]
+[v _B `*f ~T0 @X0 1 r2 ]
+[v _array_size `i ~T0 @X0 1 r3 ]
+"19
+[; ;array_functions.c: 19: {
+[f ]
+"20
+[; ;array_functions.c: 20:     float dot_product=0;
+[v _dot_product `f ~T0 @X0 1 a ]
+[e = _dot_product -> -> 0 `i `f ]
+"21
+[; ;array_functions.c: 21:     int i;
+[v _i `i ~T0 @X0 1 a ]
+"22
+[; ;array_functions.c: 22:     for(i=0;i<array_size;i++)
+{
+[e = _i -> 0 `i ]
+[e $U 18  ]
+[e :U 15 ]
+"23
+[; ;array_functions.c: 23:     {
+{
+"24
+[; ;array_functions.c: 24:         dot_product += A[i]*B[i];
+[e =+ _dot_product * *U + _A * -> _i `x -> -> # *U _A `i `x *U + _B * -> _i `x -> -> # *U _B `i `x ]
+"25
+[; ;array_functions.c: 25:     }
+}
+[e ++ _i -> 1 `i ]
+[e :U 18 ]
+[e $ < _i _array_size 15  ]
+[e :U 16 ]
+}
+"26
+[; ;array_functions.c: 26:     return dot_product;
+[e ) _dot_product ]
+[e $UE 14  ]
+"27
+[; ;array_functions.c: 27: }
+[e :UE 14 ]
+}
+"29
+[; ;array_functions.c: 29: void sign_change(float A[], int array_size)
+[v _sign_change `(v ~T0 @X0 1 ef2`*f`i ]
+"30
+[; ;array_functions.c: 30: {
+{
+[e :U _sign_change ]
+"29
+[; ;array_functions.c: 29: void sign_change(float A[], int array_size)
+[v _A `*f ~T0 @X0 1 r1 ]
+[v _array_size `i ~T0 @X0 1 r2 ]
+"30
+[; ;array_functions.c: 30: {
+[f ]
+"31
+[; ;array_functions.c: 31:     int i;
+[v _i `i ~T0 @X0 1 a ]
+"32
+[; ;array_functions.c: 32:     for(i=0;i<array_size;i++)
+{
+[e = _i -> 0 `i ]
+[e $U 23  ]
+[e :U 20 ]
+"33
+[; ;array_functions.c: 33:     {
+{
+"34
+[; ;array_functions.c: 34:         A[i]=-1*A[i];
+[e = *U + _A * -> _i `x -> -> # *U _A `i `x * -> -U -> 1 `i `f *U + _A * -> _i `x -> -> # *U _A `i `x ]
+"35
+[; ;array_functions.c: 35:     }
+}
+[e ++ _i -> 1 `i ]
+[e :U 23 ]
+[e $ < _i _array_size 20  ]
+[e :U 21 ]
+}
+"36
+[; ;array_functions.c: 36:     return;
+[e $UE 19  ]
+"37
+[; ;array_functions.c: 37: }
+[e :UE 19 ]
+}
+"39
+[; ;array_functions.c: 39: void negative_array(float A[],float B[], int array_size)
+[v _negative_array `(v ~T0 @X0 1 ef3`*f`*f`i ]
+"40
+[; ;array_functions.c: 40: {
+{
+[e :U _negative_array ]
+"39
+[; ;array_functions.c: 39: void negative_array(float A[],float B[], int array_size)
+[v _A `*f ~T0 @X0 1 r1 ]
+[v _B `*f ~T0 @X0 1 r2 ]
+[v _array_size `i ~T0 @X0 1 r3 ]
+"40
+[; ;array_functions.c: 40: {
+[f ]
+"41
+[; ;array_functions.c: 41:     int i;
+[v _i `i ~T0 @X0 1 a ]
+"42
+[; ;array_functions.c: 42:     for(i=0;i<array_size;i++)
+{
+[e = _i -> 0 `i ]
+[e $U 28  ]
+[e :U 25 ]
+"43
+[; ;array_functions.c: 43:     {
+{
+"44
+[; ;array_functions.c: 44:         B[i]=-1*A[i];
+[e = *U + _B * -> _i `x -> -> # *U _B `i `x * -> -U -> 1 `i `f *U + _A * -> _i `x -> -> # *U _A `i `x ]
+"45
+[; ;array_functions.c: 45:     }
+}
+[e ++ _i -> 1 `i ]
+[e :U 28 ]
+[e $ < _i _array_size 25  ]
+[e :U 26 ]
+}
+"46
+[; ;array_functions.c: 46:     return;
+[e $UE 24  ]
+"47
+[; ;array_functions.c: 47: }
+[e :UE 24 ]
+}
+"49
+[; ;array_functions.c: 49: void reverse_array(float A[],float B[], int array_size)
+[v _reverse_array `(v ~T0 @X0 1 ef3`*f`*f`i ]
+"50
+[; ;array_functions.c: 50: {
+{
+[e :U _reverse_array ]
+"49
+[; ;array_functions.c: 49: void reverse_array(float A[],float B[], int array_size)
+[v _A `*f ~T0 @X0 1 r1 ]
+[v _B `*f ~T0 @X0 1 r2 ]
+[v _array_size `i ~T0 @X0 1 r3 ]
+"50
+[; ;array_functions.c: 50: {
+[f ]
+"51
+[; ;array_functions.c: 51:     int i;
+[v _i `i ~T0 @X0 1 a ]
+"52
+[; ;array_functions.c: 52:     for(i=0;i<array_size;i++)
+{
+[e = _i -> 0 `i ]
+[e $U 33  ]
+[e :U 30 ]
+"53
+[; ;array_functions.c: 53:     {
+{
+"54
+[; ;array_functions.c: 54:         B[i]= A[array_size-1-i];
+[e = *U + _B * -> _i `x -> -> # *U _B `i `x *U + _A * -> - - _array_size -> 1 `i _i `x -> -> # *U _A `i `x ]
+"55
+[; ;array_functions.c: 55:     }
+}
+[e ++ _i -> 1 `i ]
+[e :U 33 ]
+[e $ < _i _array_size 30  ]
+[e :U 31 ]
+}
+"56
+[; ;array_functions.c: 56:     return;
+[e $UE 29  ]
+"57
+[; ;array_functions.c: 57: }
+[e :UE 29 ]
+}

@@ -1,0 +1,807 @@
+Version 3.2 HI-TECH Software Intermediate Code
+[; ;buttons.h: 10: unsigned int poll_switch1_for_gate(unsigned int digitalinputpin);
+[; ;buttons.h: 13: unsigned int poll_switch1_for_edges(unsigned int digitalinputpin);
+[; ;buttons.h: 14: unsigned int poll_switch2_for_edges(unsigned int digitalinputpin);
+[; ;buttons.h: 15: unsigned int poll_switch3_for_edges(unsigned int digitalinputpin);
+[; ;buttons.h: 16: unsigned int poll_switch4_for_edges(unsigned int digitalinputpin);
+[; ;buttons.h: 17: unsigned int poll_switch5_for_edges(unsigned int digitalinputpin);
+[; ;buttons.h: 18: unsigned int poll_switch6_for_edges(unsigned int digitalinputpin);
+[; ;buttons.h: 19: unsigned int poll_switch7_for_edges(unsigned int digitalinputpin);
+[; ;buttons.h: 20: unsigned int poll_switch8_for_edges(unsigned int digitalinputpin);
+[; ;buttons.h: 21: unsigned int poll_switch9_for_edges(unsigned int digitalinputpin);
+[; ;buttons.h: 22: unsigned int poll_switch10_for_edges(unsigned int digitalinputpin);
+[; ;buttons.h: 23: unsigned int poll_switch11_for_edges(unsigned int digitalinputpin);
+[; ;buttons.h: 24: unsigned int poll_switch12_for_edges(unsigned int digitalinputpin);
+"15 buttons.c
+[v _last_switch_value `ui ~T0 @X0 1 e ]
+[i _last_switch_value
+-> -> 0 `i `ui
+]
+[; ;buttons.c: 15: unsigned int last_switch_value = 0;
+"18
+[v _last_switch1_value `ui ~T0 @X0 1 e ]
+[i _last_switch1_value
+-> -> 0 `i `ui
+]
+[; ;buttons.c: 18: unsigned int last_switch1_value = 0;
+"19
+[v _last_switch2_value `ui ~T0 @X0 1 e ]
+[i _last_switch2_value
+-> -> 0 `i `ui
+]
+[; ;buttons.c: 19: unsigned int last_switch2_value = 0;
+"20
+[v _last_switch3_value `ui ~T0 @X0 1 e ]
+[i _last_switch3_value
+-> -> 0 `i `ui
+]
+[; ;buttons.c: 20: unsigned int last_switch3_value = 0;
+"21
+[v _last_switch4_value `ui ~T0 @X0 1 e ]
+[i _last_switch4_value
+-> -> 0 `i `ui
+]
+[; ;buttons.c: 21: unsigned int last_switch4_value = 0;
+"22
+[v _last_switch5_value `ui ~T0 @X0 1 e ]
+[i _last_switch5_value
+-> -> 0 `i `ui
+]
+[; ;buttons.c: 22: unsigned int last_switch5_value = 0;
+"23
+[v _last_switch6_value `ui ~T0 @X0 1 e ]
+[i _last_switch6_value
+-> -> 0 `i `ui
+]
+[; ;buttons.c: 23: unsigned int last_switch6_value = 0;
+"24
+[v _last_switch7_value `ui ~T0 @X0 1 e ]
+[i _last_switch7_value
+-> -> 0 `i `ui
+]
+[; ;buttons.c: 24: unsigned int last_switch7_value = 0;
+"25
+[v _last_switch8_value `ui ~T0 @X0 1 e ]
+[i _last_switch8_value
+-> -> 0 `i `ui
+]
+[; ;buttons.c: 25: unsigned int last_switch8_value = 0;
+"26
+[v _last_switch9_value `ui ~T0 @X0 1 e ]
+[i _last_switch9_value
+-> -> 0 `i `ui
+]
+[; ;buttons.c: 26: unsigned int last_switch9_value = 0;
+"27
+[v _last_switch10_value `ui ~T0 @X0 1 e ]
+[i _last_switch10_value
+-> -> 0 `i `ui
+]
+[; ;buttons.c: 27: unsigned int last_switch10_value = 0;
+"28
+[v _last_switch11_value `ui ~T0 @X0 1 e ]
+[i _last_switch11_value
+-> -> 0 `i `ui
+]
+[; ;buttons.c: 28: unsigned int last_switch11_value = 0;
+"29
+[v _last_switch12_value `ui ~T0 @X0 1 e ]
+[i _last_switch12_value
+-> -> 0 `i `ui
+]
+[; ;buttons.c: 29: unsigned int last_switch12_value = 0;
+"35
+[v _poll_switch1_for_edges `(ui ~T0 @X0 1 ef1`ui ]
+"36
+{
+[; ;buttons.c: 35: unsigned int poll_switch1_for_edges(unsigned int digitalinputpin)
+[; ;buttons.c: 36: {
+[e :U _poll_switch1_for_edges ]
+"35
+[v _digitalinputpin `ui ~T0 @X0 1 r1 ]
+"36
+[f ]
+"38
+[v _has_switch1_changed `ui ~T0 @X0 1 a ]
+[; ;buttons.c: 38: unsigned int has_switch1_changed = 0;
+[e = _has_switch1_changed -> -> 0 `i `ui ]
+[; ;buttons.c: 40: if (last_switch1_value == 0 && digitalinputpin >> 0)
+"40
+[e $ ! && == _last_switch1_value -> -> 0 `i `ui != >> _digitalinputpin -> 0 `i -> -> 0 `i `ui 2  ]
+[; ;buttons.c: 41: {
+"41
+{
+[; ;buttons.c: 42: last_switch1_value = 1;
+"42
+[e = _last_switch1_value -> -> 1 `i `ui ]
+[; ;buttons.c: 43: has_switch1_changed = 1;
+"43
+[e = _has_switch1_changed -> -> 1 `i `ui ]
+"44
+}
+[e :U 2 ]
+[; ;buttons.c: 44: }
+[; ;buttons.c: 45: if (last_switch1_value == 1 && digitalinputpin == 0)
+"45
+[e $ ! && == _last_switch1_value -> -> 1 `i `ui == _digitalinputpin -> -> 0 `i `ui 3  ]
+[; ;buttons.c: 46: {
+"46
+{
+[; ;buttons.c: 47: last_switch1_value = 0;
+"47
+[e = _last_switch1_value -> -> 0 `i `ui ]
+[; ;buttons.c: 48: has_switch1_changed = 2;
+"48
+[e = _has_switch1_changed -> -> 2 `i `ui ]
+"49
+}
+[e :U 3 ]
+[; ;buttons.c: 49: }
+[; ;buttons.c: 52: return has_switch1_changed;
+"52
+[e ) _has_switch1_changed ]
+[e $UE 1  ]
+[; ;buttons.c: 53: }
+"53
+[e :UE 1 ]
+}
+"56
+[v _poll_switch2_for_edges `(ui ~T0 @X0 1 ef1`ui ]
+"57
+{
+[; ;buttons.c: 56: unsigned int poll_switch2_for_edges(unsigned int digitalinputpin)
+[; ;buttons.c: 57: {
+[e :U _poll_switch2_for_edges ]
+"56
+[v _digitalinputpin `ui ~T0 @X0 1 r1 ]
+"57
+[f ]
+"59
+[v _has_switch2_changed `ui ~T0 @X0 1 a ]
+[; ;buttons.c: 59: unsigned int has_switch2_changed = 0;
+[e = _has_switch2_changed -> -> 0 `i `ui ]
+[; ;buttons.c: 61: if (last_switch2_value == 0 && digitalinputpin >> 0)
+"61
+[e $ ! && == _last_switch2_value -> -> 0 `i `ui != >> _digitalinputpin -> 0 `i -> -> 0 `i `ui 5  ]
+[; ;buttons.c: 62: {
+"62
+{
+[; ;buttons.c: 63: last_switch2_value = 1;
+"63
+[e = _last_switch2_value -> -> 1 `i `ui ]
+[; ;buttons.c: 64: has_switch2_changed = 1;
+"64
+[e = _has_switch2_changed -> -> 1 `i `ui ]
+"65
+}
+[e :U 5 ]
+[; ;buttons.c: 65: }
+[; ;buttons.c: 66: if (last_switch2_value == 1 && digitalinputpin == 0)
+"66
+[e $ ! && == _last_switch2_value -> -> 1 `i `ui == _digitalinputpin -> -> 0 `i `ui 6  ]
+[; ;buttons.c: 67: {
+"67
+{
+[; ;buttons.c: 68: last_switch2_value = 0;
+"68
+[e = _last_switch2_value -> -> 0 `i `ui ]
+[; ;buttons.c: 69: has_switch2_changed = 2;
+"69
+[e = _has_switch2_changed -> -> 2 `i `ui ]
+"70
+}
+[e :U 6 ]
+[; ;buttons.c: 70: }
+[; ;buttons.c: 73: return has_switch2_changed;
+"73
+[e ) _has_switch2_changed ]
+[e $UE 4  ]
+[; ;buttons.c: 74: }
+"74
+[e :UE 4 ]
+}
+"76
+[v _poll_switch3_for_edges `(ui ~T0 @X0 1 ef1`ui ]
+"77
+{
+[; ;buttons.c: 76: unsigned int poll_switch3_for_edges(unsigned int digitalinputpin)
+[; ;buttons.c: 77: {
+[e :U _poll_switch3_for_edges ]
+"76
+[v _digitalinputpin `ui ~T0 @X0 1 r1 ]
+"77
+[f ]
+"79
+[v _has_switch3_changed `ui ~T0 @X0 1 a ]
+[; ;buttons.c: 79: unsigned int has_switch3_changed = 0;
+[e = _has_switch3_changed -> -> 0 `i `ui ]
+[; ;buttons.c: 81: if (last_switch3_value == 0 && digitalinputpin >> 0)
+"81
+[e $ ! && == _last_switch3_value -> -> 0 `i `ui != >> _digitalinputpin -> 0 `i -> -> 0 `i `ui 8  ]
+[; ;buttons.c: 82: {
+"82
+{
+[; ;buttons.c: 83: last_switch3_value = 1;
+"83
+[e = _last_switch3_value -> -> 1 `i `ui ]
+[; ;buttons.c: 84: has_switch3_changed = 1;
+"84
+[e = _has_switch3_changed -> -> 1 `i `ui ]
+"85
+}
+[e :U 8 ]
+[; ;buttons.c: 85: }
+[; ;buttons.c: 86: if (last_switch3_value == 1 && digitalinputpin == 0)
+"86
+[e $ ! && == _last_switch3_value -> -> 1 `i `ui == _digitalinputpin -> -> 0 `i `ui 9  ]
+[; ;buttons.c: 87: {
+"87
+{
+[; ;buttons.c: 88: last_switch3_value = 0;
+"88
+[e = _last_switch3_value -> -> 0 `i `ui ]
+[; ;buttons.c: 89: has_switch3_changed = 2;
+"89
+[e = _has_switch3_changed -> -> 2 `i `ui ]
+"90
+}
+[e :U 9 ]
+[; ;buttons.c: 90: }
+[; ;buttons.c: 93: return has_switch3_changed;
+"93
+[e ) _has_switch3_changed ]
+[e $UE 7  ]
+[; ;buttons.c: 94: }
+"94
+[e :UE 7 ]
+}
+"96
+[v _poll_switch4_for_edges `(ui ~T0 @X0 1 ef1`ui ]
+"97
+{
+[; ;buttons.c: 96: unsigned int poll_switch4_for_edges(unsigned int digitalinputpin)
+[; ;buttons.c: 97: {
+[e :U _poll_switch4_for_edges ]
+"96
+[v _digitalinputpin `ui ~T0 @X0 1 r1 ]
+"97
+[f ]
+"99
+[v _has_switch4_changed `ui ~T0 @X0 1 a ]
+[; ;buttons.c: 99: unsigned int has_switch4_changed = 0;
+[e = _has_switch4_changed -> -> 0 `i `ui ]
+[; ;buttons.c: 101: if (last_switch4_value == 0 && digitalinputpin >> 0)
+"101
+[e $ ! && == _last_switch4_value -> -> 0 `i `ui != >> _digitalinputpin -> 0 `i -> -> 0 `i `ui 11  ]
+[; ;buttons.c: 102: {
+"102
+{
+[; ;buttons.c: 103: last_switch4_value = 1;
+"103
+[e = _last_switch4_value -> -> 1 `i `ui ]
+[; ;buttons.c: 104: has_switch4_changed = 1;
+"104
+[e = _has_switch4_changed -> -> 1 `i `ui ]
+"105
+}
+[e :U 11 ]
+[; ;buttons.c: 105: }
+[; ;buttons.c: 106: if (last_switch4_value == 1 && digitalinputpin == 0)
+"106
+[e $ ! && == _last_switch4_value -> -> 1 `i `ui == _digitalinputpin -> -> 0 `i `ui 12  ]
+[; ;buttons.c: 107: {
+"107
+{
+[; ;buttons.c: 108: last_switch4_value = 0;
+"108
+[e = _last_switch4_value -> -> 0 `i `ui ]
+[; ;buttons.c: 109: has_switch4_changed = 2;
+"109
+[e = _has_switch4_changed -> -> 2 `i `ui ]
+"110
+}
+[e :U 12 ]
+[; ;buttons.c: 110: }
+[; ;buttons.c: 113: return has_switch4_changed;
+"113
+[e ) _has_switch4_changed ]
+[e $UE 10  ]
+[; ;buttons.c: 114: }
+"114
+[e :UE 10 ]
+}
+"115
+[v _poll_switch5_for_edges `(ui ~T0 @X0 1 ef1`ui ]
+"116
+{
+[; ;buttons.c: 115: unsigned int poll_switch5_for_edges(unsigned int digitalinputpin)
+[; ;buttons.c: 116: {
+[e :U _poll_switch5_for_edges ]
+"115
+[v _digitalinputpin `ui ~T0 @X0 1 r1 ]
+"116
+[f ]
+"118
+[v _has_switch5_changed `ui ~T0 @X0 1 a ]
+[; ;buttons.c: 118: unsigned int has_switch5_changed = 0;
+[e = _has_switch5_changed -> -> 0 `i `ui ]
+[; ;buttons.c: 120: if (last_switch5_value == 0 && digitalinputpin >> 0)
+"120
+[e $ ! && == _last_switch5_value -> -> 0 `i `ui != >> _digitalinputpin -> 0 `i -> -> 0 `i `ui 14  ]
+[; ;buttons.c: 121: {
+"121
+{
+[; ;buttons.c: 122: last_switch5_value = 1;
+"122
+[e = _last_switch5_value -> -> 1 `i `ui ]
+[; ;buttons.c: 123: has_switch5_changed = 1;
+"123
+[e = _has_switch5_changed -> -> 1 `i `ui ]
+"124
+}
+[e :U 14 ]
+[; ;buttons.c: 124: }
+[; ;buttons.c: 125: if (last_switch5_value == 1 && digitalinputpin == 0)
+"125
+[e $ ! && == _last_switch5_value -> -> 1 `i `ui == _digitalinputpin -> -> 0 `i `ui 15  ]
+[; ;buttons.c: 126: {
+"126
+{
+[; ;buttons.c: 127: last_switch5_value = 0;
+"127
+[e = _last_switch5_value -> -> 0 `i `ui ]
+[; ;buttons.c: 128: has_switch5_changed = 2;
+"128
+[e = _has_switch5_changed -> -> 2 `i `ui ]
+"129
+}
+[e :U 15 ]
+[; ;buttons.c: 129: }
+[; ;buttons.c: 132: return has_switch5_changed;
+"132
+[e ) _has_switch5_changed ]
+[e $UE 13  ]
+[; ;buttons.c: 133: }
+"133
+[e :UE 13 ]
+}
+"135
+[v _poll_switch6_for_edges `(ui ~T0 @X0 1 ef1`ui ]
+"136
+{
+[; ;buttons.c: 135: unsigned int poll_switch6_for_edges(unsigned int digitalinputpin)
+[; ;buttons.c: 136: {
+[e :U _poll_switch6_for_edges ]
+"135
+[v _digitalinputpin `ui ~T0 @X0 1 r1 ]
+"136
+[f ]
+"138
+[v _has_switch6_changed `ui ~T0 @X0 1 a ]
+[; ;buttons.c: 138: unsigned int has_switch6_changed = 0;
+[e = _has_switch6_changed -> -> 0 `i `ui ]
+[; ;buttons.c: 140: if (last_switch6_value == 0 && digitalinputpin >> 0)
+"140
+[e $ ! && == _last_switch6_value -> -> 0 `i `ui != >> _digitalinputpin -> 0 `i -> -> 0 `i `ui 17  ]
+[; ;buttons.c: 141: {
+"141
+{
+[; ;buttons.c: 142: last_switch6_value = 1;
+"142
+[e = _last_switch6_value -> -> 1 `i `ui ]
+[; ;buttons.c: 143: has_switch6_changed = 1;
+"143
+[e = _has_switch6_changed -> -> 1 `i `ui ]
+"144
+}
+[e :U 17 ]
+[; ;buttons.c: 144: }
+[; ;buttons.c: 145: if (last_switch6_value == 1 && digitalinputpin == 0)
+"145
+[e $ ! && == _last_switch6_value -> -> 1 `i `ui == _digitalinputpin -> -> 0 `i `ui 18  ]
+[; ;buttons.c: 146: {
+"146
+{
+[; ;buttons.c: 147: last_switch6_value = 0;
+"147
+[e = _last_switch6_value -> -> 0 `i `ui ]
+[; ;buttons.c: 148: has_switch6_changed = 2;
+"148
+[e = _has_switch6_changed -> -> 2 `i `ui ]
+"149
+}
+[e :U 18 ]
+[; ;buttons.c: 149: }
+[; ;buttons.c: 152: return has_switch6_changed;
+"152
+[e ) _has_switch6_changed ]
+[e $UE 16  ]
+[; ;buttons.c: 153: }
+"153
+[e :UE 16 ]
+}
+"155
+[v _poll_switch7_for_edges `(ui ~T0 @X0 1 ef1`ui ]
+"156
+{
+[; ;buttons.c: 155: unsigned int poll_switch7_for_edges(unsigned int digitalinputpin)
+[; ;buttons.c: 156: {
+[e :U _poll_switch7_for_edges ]
+"155
+[v _digitalinputpin `ui ~T0 @X0 1 r1 ]
+"156
+[f ]
+"158
+[v _has_switch7_changed `ui ~T0 @X0 1 a ]
+[; ;buttons.c: 158: unsigned int has_switch7_changed = 0;
+[e = _has_switch7_changed -> -> 0 `i `ui ]
+[; ;buttons.c: 160: if (last_switch7_value == 0 && digitalinputpin >> 0)
+"160
+[e $ ! && == _last_switch7_value -> -> 0 `i `ui != >> _digitalinputpin -> 0 `i -> -> 0 `i `ui 20  ]
+[; ;buttons.c: 161: {
+"161
+{
+[; ;buttons.c: 162: last_switch7_value = 1;
+"162
+[e = _last_switch7_value -> -> 1 `i `ui ]
+[; ;buttons.c: 163: has_switch7_changed = 1;
+"163
+[e = _has_switch7_changed -> -> 1 `i `ui ]
+"164
+}
+[e :U 20 ]
+[; ;buttons.c: 164: }
+[; ;buttons.c: 165: if (last_switch7_value == 1 && digitalinputpin == 0)
+"165
+[e $ ! && == _last_switch7_value -> -> 1 `i `ui == _digitalinputpin -> -> 0 `i `ui 21  ]
+[; ;buttons.c: 166: {
+"166
+{
+[; ;buttons.c: 167: last_switch7_value = 0;
+"167
+[e = _last_switch7_value -> -> 0 `i `ui ]
+[; ;buttons.c: 168: has_switch7_changed = 2;
+"168
+[e = _has_switch7_changed -> -> 2 `i `ui ]
+"169
+}
+[e :U 21 ]
+[; ;buttons.c: 169: }
+[; ;buttons.c: 172: return has_switch7_changed;
+"172
+[e ) _has_switch7_changed ]
+[e $UE 19  ]
+[; ;buttons.c: 173: }
+"173
+[e :UE 19 ]
+}
+"174
+[v _poll_switch8_for_edges `(ui ~T0 @X0 1 ef1`ui ]
+"175
+{
+[; ;buttons.c: 174: unsigned int poll_switch8_for_edges(unsigned int digitalinputpin)
+[; ;buttons.c: 175: {
+[e :U _poll_switch8_for_edges ]
+"174
+[v _digitalinputpin `ui ~T0 @X0 1 r1 ]
+"175
+[f ]
+"177
+[v _has_switch8_changed `ui ~T0 @X0 1 a ]
+[; ;buttons.c: 177: unsigned int has_switch8_changed = 0;
+[e = _has_switch8_changed -> -> 0 `i `ui ]
+[; ;buttons.c: 179: if (last_switch8_value == 0 && digitalinputpin >> 0)
+"179
+[e $ ! && == _last_switch8_value -> -> 0 `i `ui != >> _digitalinputpin -> 0 `i -> -> 0 `i `ui 23  ]
+[; ;buttons.c: 180: {
+"180
+{
+[; ;buttons.c: 181: last_switch8_value = 1;
+"181
+[e = _last_switch8_value -> -> 1 `i `ui ]
+[; ;buttons.c: 182: has_switch8_changed = 1;
+"182
+[e = _has_switch8_changed -> -> 1 `i `ui ]
+"183
+}
+[e :U 23 ]
+[; ;buttons.c: 183: }
+[; ;buttons.c: 184: if (last_switch8_value == 1 && digitalinputpin == 0)
+"184
+[e $ ! && == _last_switch8_value -> -> 1 `i `ui == _digitalinputpin -> -> 0 `i `ui 24  ]
+[; ;buttons.c: 185: {
+"185
+{
+[; ;buttons.c: 186: last_switch8_value = 0;
+"186
+[e = _last_switch8_value -> -> 0 `i `ui ]
+[; ;buttons.c: 187: has_switch8_changed = 2;
+"187
+[e = _has_switch8_changed -> -> 2 `i `ui ]
+"188
+}
+[e :U 24 ]
+[; ;buttons.c: 188: }
+[; ;buttons.c: 191: return has_switch8_changed;
+"191
+[e ) _has_switch8_changed ]
+[e $UE 22  ]
+[; ;buttons.c: 192: }
+"192
+[e :UE 22 ]
+}
+"194
+[v _poll_switch9_for_edges `(ui ~T0 @X0 1 ef1`ui ]
+"195
+{
+[; ;buttons.c: 194: unsigned int poll_switch9_for_edges(unsigned int digitalinputpin)
+[; ;buttons.c: 195: {
+[e :U _poll_switch9_for_edges ]
+"194
+[v _digitalinputpin `ui ~T0 @X0 1 r1 ]
+"195
+[f ]
+"197
+[v _has_switch9_changed `ui ~T0 @X0 1 a ]
+[; ;buttons.c: 197: unsigned int has_switch9_changed = 0;
+[e = _has_switch9_changed -> -> 0 `i `ui ]
+[; ;buttons.c: 199: if (last_switch9_value == 0 && digitalinputpin >> 0)
+"199
+[e $ ! && == _last_switch9_value -> -> 0 `i `ui != >> _digitalinputpin -> 0 `i -> -> 0 `i `ui 26  ]
+[; ;buttons.c: 200: {
+"200
+{
+[; ;buttons.c: 201: last_switch9_value = 1;
+"201
+[e = _last_switch9_value -> -> 1 `i `ui ]
+[; ;buttons.c: 202: has_switch9_changed = 1;
+"202
+[e = _has_switch9_changed -> -> 1 `i `ui ]
+"203
+}
+[e :U 26 ]
+[; ;buttons.c: 203: }
+[; ;buttons.c: 204: if (last_switch9_value == 1 && digitalinputpin == 0)
+"204
+[e $ ! && == _last_switch9_value -> -> 1 `i `ui == _digitalinputpin -> -> 0 `i `ui 27  ]
+[; ;buttons.c: 205: {
+"205
+{
+[; ;buttons.c: 206: last_switch9_value = 0;
+"206
+[e = _last_switch9_value -> -> 0 `i `ui ]
+[; ;buttons.c: 207: has_switch9_changed = 2;
+"207
+[e = _has_switch9_changed -> -> 2 `i `ui ]
+"208
+}
+[e :U 27 ]
+[; ;buttons.c: 208: }
+[; ;buttons.c: 211: return has_switch9_changed;
+"211
+[e ) _has_switch9_changed ]
+[e $UE 25  ]
+[; ;buttons.c: 212: }
+"212
+[e :UE 25 ]
+}
+"214
+[v _poll_switch10_for_edges `(ui ~T0 @X0 1 ef1`ui ]
+"215
+{
+[; ;buttons.c: 214: unsigned int poll_switch10_for_edges(unsigned int digitalinputpin)
+[; ;buttons.c: 215: {
+[e :U _poll_switch10_for_edges ]
+"214
+[v _digitalinputpin `ui ~T0 @X0 1 r1 ]
+"215
+[f ]
+"217
+[v _has_switch10_changed `ui ~T0 @X0 1 a ]
+[; ;buttons.c: 217: unsigned int has_switch10_changed = 0;
+[e = _has_switch10_changed -> -> 0 `i `ui ]
+[; ;buttons.c: 219: if (last_switch10_value == 0 && digitalinputpin >> 0)
+"219
+[e $ ! && == _last_switch10_value -> -> 0 `i `ui != >> _digitalinputpin -> 0 `i -> -> 0 `i `ui 29  ]
+[; ;buttons.c: 220: {
+"220
+{
+[; ;buttons.c: 221: last_switch10_value = 1;
+"221
+[e = _last_switch10_value -> -> 1 `i `ui ]
+[; ;buttons.c: 222: has_switch10_changed = 1;
+"222
+[e = _has_switch10_changed -> -> 1 `i `ui ]
+"223
+}
+[e :U 29 ]
+[; ;buttons.c: 223: }
+[; ;buttons.c: 224: if (last_switch10_value == 1 && digitalinputpin == 0)
+"224
+[e $ ! && == _last_switch10_value -> -> 1 `i `ui == _digitalinputpin -> -> 0 `i `ui 30  ]
+[; ;buttons.c: 225: {
+"225
+{
+[; ;buttons.c: 226: last_switch10_value = 0;
+"226
+[e = _last_switch10_value -> -> 0 `i `ui ]
+[; ;buttons.c: 227: has_switch10_changed = 2;
+"227
+[e = _has_switch10_changed -> -> 2 `i `ui ]
+"228
+}
+[e :U 30 ]
+[; ;buttons.c: 228: }
+[; ;buttons.c: 231: return has_switch10_changed;
+"231
+[e ) _has_switch10_changed ]
+[e $UE 28  ]
+[; ;buttons.c: 232: }
+"232
+[e :UE 28 ]
+}
+"234
+[v _poll_switch11_for_edges `(ui ~T0 @X0 1 ef1`ui ]
+"235
+{
+[; ;buttons.c: 234: unsigned int poll_switch11_for_edges(unsigned int digitalinputpin)
+[; ;buttons.c: 235: {
+[e :U _poll_switch11_for_edges ]
+"234
+[v _digitalinputpin `ui ~T0 @X0 1 r1 ]
+"235
+[f ]
+"237
+[v _has_switch11_changed `ui ~T0 @X0 1 a ]
+[; ;buttons.c: 237: unsigned int has_switch11_changed = 0;
+[e = _has_switch11_changed -> -> 0 `i `ui ]
+[; ;buttons.c: 239: if (last_switch11_value == 0 && digitalinputpin >> 0)
+"239
+[e $ ! && == _last_switch11_value -> -> 0 `i `ui != >> _digitalinputpin -> 0 `i -> -> 0 `i `ui 32  ]
+[; ;buttons.c: 240: {
+"240
+{
+[; ;buttons.c: 241: last_switch11_value = 1;
+"241
+[e = _last_switch11_value -> -> 1 `i `ui ]
+[; ;buttons.c: 242: has_switch11_changed = 1;
+"242
+[e = _has_switch11_changed -> -> 1 `i `ui ]
+"243
+}
+[e :U 32 ]
+[; ;buttons.c: 243: }
+[; ;buttons.c: 244: if (last_switch11_value == 1 && digitalinputpin == 0)
+"244
+[e $ ! && == _last_switch11_value -> -> 1 `i `ui == _digitalinputpin -> -> 0 `i `ui 33  ]
+[; ;buttons.c: 245: {
+"245
+{
+[; ;buttons.c: 246: last_switch11_value = 0;
+"246
+[e = _last_switch11_value -> -> 0 `i `ui ]
+[; ;buttons.c: 247: has_switch11_changed = 2;
+"247
+[e = _has_switch11_changed -> -> 2 `i `ui ]
+"248
+}
+[e :U 33 ]
+[; ;buttons.c: 248: }
+[; ;buttons.c: 251: return has_switch11_changed;
+"251
+[e ) _has_switch11_changed ]
+[e $UE 31  ]
+[; ;buttons.c: 252: }
+"252
+[e :UE 31 ]
+}
+"254
+[v _poll_switch12_for_edges `(ui ~T0 @X0 1 ef1`ui ]
+"255
+{
+[; ;buttons.c: 254: unsigned int poll_switch12_for_edges(unsigned int digitalinputpin)
+[; ;buttons.c: 255: {
+[e :U _poll_switch12_for_edges ]
+"254
+[v _digitalinputpin `ui ~T0 @X0 1 r1 ]
+"255
+[f ]
+"257
+[v _has_switch12_changed `ui ~T0 @X0 1 a ]
+[; ;buttons.c: 257: unsigned int has_switch12_changed = 0;
+[e = _has_switch12_changed -> -> 0 `i `ui ]
+[; ;buttons.c: 259: if (last_switch12_value == 0 && digitalinputpin >> 0)
+"259
+[e $ ! && == _last_switch12_value -> -> 0 `i `ui != >> _digitalinputpin -> 0 `i -> -> 0 `i `ui 35  ]
+[; ;buttons.c: 260: {
+"260
+{
+[; ;buttons.c: 261: last_switch12_value = 1;
+"261
+[e = _last_switch12_value -> -> 1 `i `ui ]
+[; ;buttons.c: 262: has_switch12_changed = 1;
+"262
+[e = _has_switch12_changed -> -> 1 `i `ui ]
+"263
+}
+[e :U 35 ]
+[; ;buttons.c: 263: }
+[; ;buttons.c: 264: if (last_switch12_value == 1 && digitalinputpin == 0)
+"264
+[e $ ! && == _last_switch12_value -> -> 1 `i `ui == _digitalinputpin -> -> 0 `i `ui 36  ]
+[; ;buttons.c: 265: {
+"265
+{
+[; ;buttons.c: 266: last_switch12_value = 0;
+"266
+[e = _last_switch12_value -> -> 0 `i `ui ]
+[; ;buttons.c: 267: has_switch12_changed = 2;
+"267
+[e = _has_switch12_changed -> -> 2 `i `ui ]
+"268
+}
+[e :U 36 ]
+[; ;buttons.c: 268: }
+[; ;buttons.c: 271: return has_switch12_changed;
+"271
+[e ) _has_switch12_changed ]
+[e $UE 34  ]
+[; ;buttons.c: 272: }
+"272
+[e :UE 34 ]
+}
+"274
+[v _poll_switch1_for_gate `(ui ~T0 @X0 1 ef1`ui ]
+"275
+{
+[; ;buttons.c: 274: unsigned int poll_switch1_for_gate(unsigned int digitalinputpin)
+[; ;buttons.c: 275: {
+[e :U _poll_switch1_for_gate ]
+"274
+[v _digitalinputpin `ui ~T0 @X0 1 r1 ]
+"275
+[f ]
+"277
+[v _has_switch_changed `ui ~T0 @X0 1 a ]
+[; ;buttons.c: 277: unsigned int has_switch_changed = 0;
+[e = _has_switch_changed -> -> 0 `i `ui ]
+[; ;buttons.c: 279: if (last_switch_value == 0 && digitalinputpin >> 0)
+"279
+[e $ ! && == _last_switch_value -> -> 0 `i `ui != >> _digitalinputpin -> 0 `i -> -> 0 `i `ui 38  ]
+[; ;buttons.c: 280: {
+"280
+{
+[; ;buttons.c: 281: last_switch_value = 1;
+"281
+[e = _last_switch_value -> -> 1 `i `ui ]
+[; ;buttons.c: 282: has_switch_changed = 1;
+"282
+[e = _has_switch_changed -> -> 1 `i `ui ]
+"283
+}
+[e :U 38 ]
+[; ;buttons.c: 283: }
+[; ;buttons.c: 284: if (last_switch_value == 1 && digitalinputpin == 0)
+"284
+[e $ ! && == _last_switch_value -> -> 1 `i `ui == _digitalinputpin -> -> 0 `i `ui 39  ]
+[; ;buttons.c: 285: {
+"285
+{
+[; ;buttons.c: 286: last_switch_value = 0;
+"286
+[e = _last_switch_value -> -> 0 `i `ui ]
+[; ;buttons.c: 287: has_switch_changed = 2;
+"287
+[e = _has_switch_changed -> -> 2 `i `ui ]
+"288
+}
+[e :U 39 ]
+[; ;buttons.c: 288: }
+[; ;buttons.c: 291: return has_switch_changed;
+"291
+[e ) _has_switch_changed ]
+[e $UE 37  ]
+[; ;buttons.c: 292: }
+"292
+[e :UE 37 ]
+}

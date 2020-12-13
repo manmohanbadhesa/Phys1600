@@ -1,0 +1,372 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"373 C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\math.h
+[; ;C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\math.h: 373: float sqrtf(float);
+[v _sqrtf `(f ~T0 @X0 0 ef1`f ]
+[v F972 `(f ~T0 @X0 1 tf2`f`f ]
+"319
+[; ;C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\math.h: 319: __attribute__((nonreentrant)) float powf(float, float);
+[v _powf `JF972 ~T0 @X0 0 e ]
+"120
+[; ;C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\math.h: 120: float cosf(float);
+[v _cosf `(f ~T0 @X0 0 ef1`f ]
+"84
+[; ;C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\math.h: 84: float atanf(float);
+[v _atanf `(f ~T0 @X0 0 ef1`f ]
+"379
+[; ;C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\math.h: 379: float tanf(float);
+[v _tanf `(f ~T0 @X0 0 ef1`f ]
+"9 Library4.c
+[; ;Library4.c: 9: float z(float x,float y)
+[v _z `(f ~T0 @X0 1 ef2`f`f ]
+"10
+[; ;Library4.c: 10: {
+{
+[e :U _z ]
+"9
+[; ;Library4.c: 9: float z(float x,float y)
+[v _x `f ~T0 @X0 1 r1 ]
+[v _y `f ~T0 @X0 1 r2 ]
+"10
+[; ;Library4.c: 10: {
+[f ]
+"11
+[; ;Library4.c: 11:     float z;
+[v _z `f ~T0 @X0 1 a ]
+"12
+[; ;Library4.c: 12:     z= sqrtf(powf(x,2)+powf(y,2));
+[e = _z ( _sqrtf (1 + ( _powf (2 , _x -> -> 2 `i `f ( _powf (2 , _y -> -> 2 `i `f ]
+"13
+[; ;Library4.c: 13:     return z;
+[e ) _z ]
+[e $UE 9  ]
+"14
+[; ;Library4.c: 14: }
+[e :UE 9 ]
+}
+"15
+[; ;Library4.c: 15: float R(float A,float beta)
+[v _R `(f ~T0 @X0 1 ef2`f`f ]
+"16
+[; ;Library4.c: 16: {
+{
+[e :U _R ]
+"15
+[; ;Library4.c: 15: float R(float A,float beta)
+[v _A `f ~T0 @X0 1 r1 ]
+[v _beta `f ~T0 @X0 1 r2 ]
+"16
+[; ;Library4.c: 16: {
+[f ]
+"17
+[; ;Library4.c: 17:     float R;
+[v _R `f ~T0 @X0 1 a ]
+"18
+[; ;Library4.c: 18:     R= A*cosf(beta*4.0*atanf(1.0)/180);
+[e = _R * _A ( _cosf (1 -> / * * -> _beta `d .4.0 -> ( _atanf (1 -> .1.0 `f `d -> -> 180 `i `d `f ]
+"19
+[; ;Library4.c: 19:     return R;
+[e ) _R ]
+[e $UE 10  ]
+"20
+[; ;Library4.c: 20: }
+[e :UE 10 ]
+}
+"22
+[; ;Library4.c: 22: float X(float D,float alpha)
+[v _X `(f ~T0 @X0 1 ef2`f`f ]
+"23
+[; ;Library4.c: 23: {
+{
+[e :U _X ]
+"22
+[; ;Library4.c: 22: float X(float D,float alpha)
+[v _D `f ~T0 @X0 1 r1 ]
+[v _alpha `f ~T0 @X0 1 r2 ]
+"23
+[; ;Library4.c: 23: {
+[f ]
+"24
+[; ;Library4.c: 24:     float X;
+[v _X `f ~T0 @X0 1 a ]
+"25
+[; ;Library4.c: 25:     X=D*powf(tanf(alpha*4.0*atanf(1.0)/180),2);
+[e = _X * _D ( _powf (2 , ( _tanf (1 -> / * * -> _alpha `d .4.0 -> ( _atanf (1 -> .1.0 `f `d -> -> 180 `i `d `f -> -> 2 `i `f ]
+"26
+[; ;Library4.c: 26:     return X;
+[e ) _X ]
+[e $UE 11  ]
+"27
+[; ;Library4.c: 27: }
+[e :UE 11 ]
+}
+"29
+[; ;Library4.c: 29: float v(float R,float g,float theta)
+[v _v `(f ~T0 @X0 1 ef3`f`f`f ]
+"30
+[; ;Library4.c: 30: {
+{
+[e :U _v ]
+"29
+[; ;Library4.c: 29: float v(float R,float g,float theta)
+[v _R `f ~T0 @X0 1 r1 ]
+[v _g `f ~T0 @X0 1 r2 ]
+[v _theta `f ~T0 @X0 1 r3 ]
+"30
+[; ;Library4.c: 30: {
+[f ]
+"31
+[; ;Library4.c: 31:     float v;
+[v _v `f ~T0 @X0 1 a ]
+"32
+[; ;Library4.c: 32:     v= sqrtf(R*g*tanf(theta*4.0*atanf(1.0)/180));
+[e = _v ( _sqrtf (1 * * _R _g ( _tanf (1 -> / * * -> _theta `d .4.0 -> ( _atanf (1 -> .1.0 `f `d -> -> 180 `i `d `f ]
+"33
+[; ;Library4.c: 33:     return v;
+[e ) _v ]
+[e $UE 12  ]
+"34
+[; ;Library4.c: 34: }
+[e :UE 12 ]
+}
+"36
+[; ;Library4.c: 36: float e(float a,float k)
+[v _e `(f ~T0 @X0 1 ef2`f`f ]
+"37
+[; ;Library4.c: 37: {
+{
+[e :U _e ]
+"36
+[; ;Library4.c: 36: float e(float a,float k)
+[v _a `f ~T0 @X0 1 r1 ]
+[v _k `f ~T0 @X0 1 r2 ]
+"37
+[; ;Library4.c: 37: {
+[f ]
+"38
+[; ;Library4.c: 38:     int i=0;
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+"39
+[; ;Library4.c: 39:     float sumK=0;
+[v _sumK `f ~T0 @X0 1 a ]
+[e = _sumK -> -> 0 `i `f ]
+"41
+[; ;Library4.c: 41:     for(i=0;i<=k;i++)
+{
+[e = _i -> 0 `i ]
+[e $U 17  ]
+[e :U 14 ]
+"42
+[; ;Library4.c: 42:     {
+{
+"43
+[; ;Library4.c: 43:         sumK += powf(0.5,i);
+[e =+ _sumK ( _powf (2 , -> .0.5 `f -> _i `f ]
+"44
+[; ;Library4.c: 44:     }
+}
+[e ++ _i -> 1 `i ]
+[e :U 17 ]
+[e $ <= -> _i `f _k 14  ]
+[e :U 15 ]
+}
+"45
+[; ;Library4.c: 45:     return sumK;
+[e ) _sumK ]
+[e $UE 13  ]
+"46
+[; ;Library4.c: 46: }
+[e :UE 13 ]
+}
+"48
+[; ;Library4.c: 48: float f(float k)
+[v _f `(f ~T0 @X0 1 ef1`f ]
+"49
+[; ;Library4.c: 49: {
+{
+[e :U _f ]
+"48
+[; ;Library4.c: 48: float f(float k)
+[v _k `f ~T0 @X0 1 r1 ]
+"49
+[; ;Library4.c: 49: {
+[f ]
+"50
+[; ;Library4.c: 50:     int l=0, sumL=0;
+[v _l `i ~T0 @X0 1 a ]
+[e = _l -> 0 `i ]
+[v _sumL `i ~T0 @X0 1 a ]
+[e = _sumL -> 0 `i ]
+"52
+[; ;Library4.c: 52:     for(l=0;l<=k;l++)
+{
+[e = _l -> 0 `i ]
+[e $U 22  ]
+[e :U 19 ]
+"53
+[; ;Library4.c: 53:     {
+{
+"54
+[; ;Library4.c: 54:         sumL += l;
+[e =+ _sumL _l ]
+"55
+[; ;Library4.c: 55:     }
+}
+[e ++ _l -> 1 `i ]
+[e :U 22 ]
+[e $ <= -> _l `f _k 19  ]
+[e :U 20 ]
+}
+"56
+[; ;Library4.c: 56:     return sumL;
+[e ) -> _sumL `f ]
+[e $UE 18  ]
+"57
+[; ;Library4.c: 57: }
+[e :UE 18 ]
+}
+"59
+[; ;Library4.c: 59: float integral(float a,float b,float n)
+[v _integral `(f ~T0 @X0 1 ef3`f`f`f ]
+"60
+[; ;Library4.c: 60: {
+{
+[e :U _integral ]
+"59
+[; ;Library4.c: 59: float integral(float a,float b,float n)
+[v _a `f ~T0 @X0 1 r1 ]
+[v _b `f ~T0 @X0 1 r2 ]
+[v _n `f ~T0 @X0 1 r3 ]
+"60
+[; ;Library4.c: 60: {
+[f ]
+"62
+[; ;Library4.c: 62:  int i=0;
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+"64
+[; ;Library4.c: 64:  float deltax= (b-a)/n;
+[v _deltax `f ~T0 @X0 1 a ]
+[e = _deltax / - _b _a _n ]
+"66
+[; ;Library4.c: 66:  float X=0, X1=0, Xn=0, sum1=0, sum2=0;
+[v _X `f ~T0 @X0 1 a ]
+[e = _X -> -> 0 `i `f ]
+[v _X1 `f ~T0 @X0 1 a ]
+[e = _X1 -> -> 0 `i `f ]
+[v _Xn `f ~T0 @X0 1 a ]
+[e = _Xn -> -> 0 `i `f ]
+[v _sum1 `f ~T0 @X0 1 a ]
+[e = _sum1 -> -> 0 `i `f ]
+[v _sum2 `f ~T0 @X0 1 a ]
+[e = _sum2 -> -> 0 `i `f ]
+"68
+[; ;Library4.c: 68:  for(i=0;i<=n;i++)
+{
+[e = _i -> 0 `i ]
+[e $U 27  ]
+[e :U 24 ]
+"69
+[; ;Library4.c: 69:  {
+{
+"70
+[; ;Library4.c: 70:   X1=0.5*i;
+[e = _X1 -> * .0.5 -> _i `d `f ]
+"71
+[; ;Library4.c: 71:   if(i==0)
+[e $ ! == _i -> 0 `i 28  ]
+"72
+[; ;Library4.c: 72:   {
+{
+"73
+[; ;Library4.c: 73:    X1= 0.5*a;
+[e = _X1 -> * .0.5 -> _a `d `f ]
+"75
+[; ;Library4.c: 75:   }
+}
+[e $U 29  ]
+"76
+[; ;Library4.c: 76:   else
+[e :U 28 ]
+"77
+[; ;Library4.c: 77:    {
+{
+"78
+[; ;Library4.c: 78:      if(i==n)
+[e $ ! == -> _i `f _n 30  ]
+"79
+[; ;Library4.c: 79:                         {
+{
+"80
+[; ;Library4.c: 80:                      Xn=0.5*b;
+[e = _Xn -> * .0.5 -> _b `d `f ]
+"81
+[; ;Library4.c: 81:                         }
+}
+[e $U 31  ]
+"82
+[; ;Library4.c: 82:                         else
+[e :U 30 ]
+"83
+[; ;Library4.c: 83:                             {
+{
+"84
+[; ;Library4.c: 84:                                 if(i%2 == 0)
+[e $ ! == % _i -> 2 `i -> 0 `i 32  ]
+"85
+[; ;Library4.c: 85:                                 {
+{
+"86
+[; ;Library4.c: 86:                                     sum1 += 2*0.5*(a+(i*(b-a)/n));
+[e =+ _sum1 -> * * -> -> 2 `i `d .0.5 -> + _a / * -> _i `f - _b _a _n `d `f ]
+"87
+[; ;Library4.c: 87:                                 }
+}
+[e $U 33  ]
+"88
+[; ;Library4.c: 88:                                 else
+[e :U 32 ]
+"89
+[; ;Library4.c: 89:                                 {
+{
+"90
+[; ;Library4.c: 90:                                     sum2 += 4*0.5*(a+(i*(b-a)/n)) ;
+[e =+ _sum2 -> * * -> -> 4 `i `d .0.5 -> + _a / * -> _i `f - _b _a _n `d `f ]
+"91
+[; ;Library4.c: 91:                                 }
+}
+[e :U 33 ]
+"92
+[; ;Library4.c: 92:                             }
+}
+[e :U 31 ]
+"93
+[; ;Library4.c: 93:    }
+}
+[e :U 29 ]
+"95
+[; ;Library4.c: 95:  }
+}
+[e ++ _i -> 1 `i ]
+[e :U 27 ]
+[e $ <= -> _i `f _n 24  ]
+[e :U 25 ]
+}
+"97
+[; ;Library4.c: 97:     float area, sum3;
+[v _area `f ~T0 @X0 1 a ]
+[v _sum3 `f ~T0 @X0 1 a ]
+"98
+[; ;Library4.c: 98:  sum3= X1 + Xn + sum1 + sum2;
+[e = _sum3 + + + _X1 _Xn _sum1 _sum2 ]
+"99
+[; ;Library4.c: 99:  area = sum3* deltax/3;
+[e = _area / * _sum3 _deltax -> -> 3 `i `f ]
+"100
+[; ;Library4.c: 100:     return area;
+[e ) _area ]
+[e $UE 23  ]
+"101
+[; ;Library4.c: 101: }
+[e :UE 23 ]
+}

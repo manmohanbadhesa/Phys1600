@@ -1,0 +1,98 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"361 C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\math.h
+[; ;C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\math.h: 361: float sinf(float);
+[v _sinf `(f ~T0 @X0 0 ef1`f ]
+"84
+[; ;C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\math.h: 84: float atanf(float);
+[v _atanf `(f ~T0 @X0 0 ef1`f ]
+"120
+[; ;C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\math.h: 120: float cosf(float);
+[v _cosf `(f ~T0 @X0 0 ef1`f ]
+[v F981 `(f ~T0 @X0 1 tf2`f`f ]
+"319
+[; ;C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\math.h: 319: __attribute__((nonreentrant)) float powf(float, float);
+[v _powf `JF981 ~T0 @X0 0 e ]
+"7 exercise5.c
+[; ;exercise5.c: 7: float Range(float initialVelocity, float angle)
+[v _Range `(f ~T0 @X0 1 ef2`f`f ]
+"8
+[; ;exercise5.c: 8: {
+{
+[e :U _Range ]
+"7
+[; ;exercise5.c: 7: float Range(float initialVelocity, float angle)
+[v _initialVelocity `f ~T0 @X0 1 r1 ]
+[v _angle `f ~T0 @X0 1 r2 ]
+"8
+[; ;exercise5.c: 8: {
+[f ]
+"9
+[; ;exercise5.c: 9:     float Range;
+[v _Range `f ~T0 @X0 1 a ]
+"10
+[; ;exercise5.c: 10:     Range= 2*initialVelocity*sinf(angle*4*atanf(1)/180.0)*cosf(angle*4*atanf(1)/180.0)/9.81;
+[e = _Range -> / -> * * * -> -> 2 `i `f _initialVelocity ( _sinf (1 -> / -> * * _angle -> -> 4 `i `f ( _atanf (1 -> -> 1 `i `f `d .180.0 `f ( _cosf (1 -> / -> * * _angle -> -> 4 `i `f ( _atanf (1 -> -> 1 `i `f `d .180.0 `f `d .9.81 `f ]
+"12
+[; ;exercise5.c: 12:     return Range;
+[e ) _Range ]
+[e $UE 9  ]
+"13
+[; ;exercise5.c: 13: }
+[e :UE 9 ]
+}
+"15
+[; ;exercise5.c: 15: float MaxHeight(float initialVelocity, float angle)
+[v _MaxHeight `(f ~T0 @X0 1 ef2`f`f ]
+"16
+[; ;exercise5.c: 16: {
+{
+[e :U _MaxHeight ]
+"15
+[; ;exercise5.c: 15: float MaxHeight(float initialVelocity, float angle)
+[v _initialVelocity `f ~T0 @X0 1 r1 ]
+[v _angle `f ~T0 @X0 1 r2 ]
+"16
+[; ;exercise5.c: 16: {
+[f ]
+"17
+[; ;exercise5.c: 17:         float MaxHeight;
+[v _MaxHeight `f ~T0 @X0 1 a ]
+"19
+[; ;exercise5.c: 19:         MaxHeight= powf(initialVelocity*sinf(angle*4*atanf(1)/180.0),2)/2.0/9.81;
+[e = _MaxHeight -> / / -> ( _powf (2 , * _initialVelocity ( _sinf (1 -> / -> * * _angle -> -> 4 `i `f ( _atanf (1 -> -> 1 `i `f `d .180.0 `f -> -> 2 `i `f `d .2.0 .9.81 `f ]
+"21
+[; ;exercise5.c: 21:         return MaxHeight;
+[e ) _MaxHeight ]
+[e $UE 10  ]
+"22
+[; ;exercise5.c: 22: }
+[e :UE 10 ]
+}
+"24
+[; ;exercise5.c: 24: float TimeinAir(float initialVelocity, float angle)
+[v _TimeinAir `(f ~T0 @X0 1 ef2`f`f ]
+"25
+[; ;exercise5.c: 25: {
+{
+[e :U _TimeinAir ]
+"24
+[; ;exercise5.c: 24: float TimeinAir(float initialVelocity, float angle)
+[v _initialVelocity `f ~T0 @X0 1 r1 ]
+[v _angle `f ~T0 @X0 1 r2 ]
+"25
+[; ;exercise5.c: 25: {
+[f ]
+"26
+[; ;exercise5.c: 26:     float TimeinAir;
+[v _TimeinAir `f ~T0 @X0 1 a ]
+"28
+[; ;exercise5.c: 28:     TimeinAir= 2*initialVelocity*sinf(angle*4*atanf(1)/180.0)/9.81;
+[e = _TimeinAir -> / -> * * -> -> 2 `i `f _initialVelocity ( _sinf (1 -> / -> * * _angle -> -> 4 `i `f ( _atanf (1 -> -> 1 `i `f `d .180.0 `f `d .9.81 `f ]
+"30
+[; ;exercise5.c: 30:     return TimeinAir;
+[e ) _TimeinAir ]
+[e $UE 11  ]
+"31
+[; ;exercise5.c: 31: }
+[e :UE 11 ]
+}

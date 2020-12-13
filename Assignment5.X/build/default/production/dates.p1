@@ -1,0 +1,367 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"7 dates.c
+[; ;dates.c: 7: int leap_year(int year)
+[v _leap_year `(i ~T0 @X0 1 ef1`i ]
+"8
+[; ;dates.c: 8: {
+{
+[e :U _leap_year ]
+"7
+[; ;dates.c: 7: int leap_year(int year)
+[v _year `i ~T0 @X0 1 r1 ]
+"8
+[; ;dates.c: 8: {
+[f ]
+"9
+[; ;dates.c: 9:     int y;
+[v _y `i ~T0 @X0 1 a ]
+"10
+[; ;dates.c: 10:     if(year%4==0)
+[e $ ! == % _year -> 4 `i -> 0 `i 10  ]
+"11
+[; ;dates.c: 11:     {
+{
+"12
+[; ;dates.c: 12:         if(year%100==0)
+[e $ ! == % _year -> 100 `i -> 0 `i 11  ]
+"13
+[; ;dates.c: 13:         {
+{
+"14
+[; ;dates.c: 14:             if(year%400==0)
+[e $ ! == % _year -> 400 `i -> 0 `i 12  ]
+"15
+[; ;dates.c: 15:             {
+{
+"16
+[; ;dates.c: 16:                 y=1;
+[e = _y -> 1 `i ]
+"17
+[; ;dates.c: 17:             }
+}
+[e $U 13  ]
+"18
+[; ;dates.c: 18:             else
+[e :U 12 ]
+"19
+[; ;dates.c: 19:             {
+{
+"20
+[; ;dates.c: 20:                 y=0;
+[e = _y -> 0 `i ]
+"21
+[; ;dates.c: 21:             }
+}
+[e :U 13 ]
+"22
+[; ;dates.c: 22:         }
+}
+[e $U 14  ]
+"23
+[; ;dates.c: 23:         else
+[e :U 11 ]
+"24
+[; ;dates.c: 24:         {
+{
+"25
+[; ;dates.c: 25:             y=1;
+[e = _y -> 1 `i ]
+"26
+[; ;dates.c: 26:         }
+}
+[e :U 14 ]
+"27
+[; ;dates.c: 27:     }
+}
+[e $U 15  ]
+"28
+[; ;dates.c: 28:     else
+[e :U 10 ]
+"29
+[; ;dates.c: 29:     {
+{
+"30
+[; ;dates.c: 30:         y=0;
+[e = _y -> 0 `i ]
+"31
+[; ;dates.c: 31:     }
+}
+[e :U 15 ]
+"32
+[; ;dates.c: 32:     return y;
+[e ) _y ]
+[e $UE 9  ]
+"33
+[; ;dates.c: 33: }
+[e :UE 9 ]
+}
+"35
+[; ;dates.c: 35: int day_number(int year, int month, int day)
+[v _day_number `(i ~T0 @X0 1 ef3`i`i`i ]
+"36
+[; ;dates.c: 36: {
+{
+[e :U _day_number ]
+"35
+[; ;dates.c: 35: int day_number(int year, int month, int day)
+[v _year `i ~T0 @X0 1 r1 ]
+[v _month `i ~T0 @X0 1 r2 ]
+[v _day `i ~T0 @X0 1 r3 ]
+"36
+[; ;dates.c: 36: {
+[f ]
+"37
+[; ;dates.c: 37:     int x;
+[v _x `i ~T0 @X0 1 a ]
+"38
+[; ;dates.c: 38:     x=leap_year(year);
+[e = _x ( _leap_year (1 _year ]
+"40
+[; ;dates.c: 40:     int k;
+[v _k `i ~T0 @X0 1 a ]
+"41
+[; ;dates.c: 41:     if(x==0)
+[e $ ! == _x -> 0 `i 17  ]
+"42
+[; ;dates.c: 42:     {
+{
+"43
+[; ;dates.c: 43:         k=28;
+[e = _k -> 28 `i ]
+"44
+[; ;dates.c: 44:     }
+}
+[e $U 18  ]
+"45
+[; ;dates.c: 45:     else
+[e :U 17 ]
+"46
+[; ;dates.c: 46:     {
+{
+"47
+[; ;dates.c: 47:         k=29;
+[e = _k -> 29 `i ]
+"48
+[; ;dates.c: 48:     }
+}
+[e :U 18 ]
+[v F1108 `i ~T0 @X0 -> 13 `i s ]
+[i F1108
+:U ..
+"49
+[; ;dates.c: 49:     int number[13]={0,31,k,31,30,31,30,31,31,30,31,30,31};
+-> 0 `i
+-> 0 `i
+-> 0 `i
+-> 0 `i
+-> 0 `i
+-> 0 `i
+-> 0 `i
+-> 0 `i
+-> 0 `i
+-> 0 `i
+-> 0 `i
+-> 0 `i
+-> 0 `i
+..
+]
+[v _number `i ~T0 @X0 -> 13 `i a ]
+[e = _number F1108 ]
+[e ; = *U + &U _number * -> -> -> 0 `i `ui `ux -> -> # *U &U _number `ui `ux -> 0 `i ; = *U + &U _number * -> -> -> 1 `i `ui `ux -> -> # *U &U _number `ui `ux -> 31 `i ; = *U + &U _number * -> -> -> 2 `i `ui `ux -> -> # *U &U _number `ui `ux _k ; = *U + &U _number * -> -> -> 3 `i `ui `ux -> -> # *U &U _number `ui `ux -> 31 `i ; = *U + &U _number * -> -> -> 4 `i `ui `ux -> -> # *U &U _number `ui `ux -> 30 `i ; = *U + &U _number * -> -> -> 5 `i `ui `ux -> -> # *U &U _number `ui `ux -> 31 `i ; = *U + &U _number * -> -> -> 6 `i `ui `ux -> -> # *U &U _number `ui `ux -> 30 `i ; = *U + &U _number * -> -> -> 7 `i `ui `ux -> -> # *U &U _number `ui `ux -> 31 `i ; = *U + &U _number * -> -> -> 8 `i `ui `ux -> -> # *U &U _number `ui `ux -> 31 `i ; = *U + &U _number * -> -> -> 9 `i `ui `ux -> -> # *U &U _number `ui `ux -> 30 `i ; = *U + &U _number * -> -> -> 10 `i `ui `ux -> -> # *U &U _number `ui `ux -> 31 `i ; = *U + &U _number * -> -> -> 11 `i `ui `ux -> -> # *U &U _number `ui `ux -> 30 `i = *U + &U _number * -> -> -> 12 `i `ui `ux -> -> # *U &U _number `ui `ux -> 31 `i ]
+"50
+[; ;dates.c: 50:     int days=0;
+[v _days `i ~T0 @X0 1 a ]
+[e = _days -> 0 `i ]
+"51
+[; ;dates.c: 51:     int i;
+[v _i `i ~T0 @X0 1 a ]
+"53
+[; ;dates.c: 53:     for(i=0;i<month;i++)
+{
+[e = _i -> 0 `i ]
+[e $U 22  ]
+[e :U 19 ]
+"54
+[; ;dates.c: 54:     {
+{
+"55
+[; ;dates.c: 55:         days += number[i];
+[e =+ _days *U + &U _number * -> -> _i `ui `ux -> -> # *U &U _number `ui `ux ]
+"56
+[; ;dates.c: 56:     }
+}
+[e ++ _i -> 1 `i ]
+[e :U 22 ]
+[e $ < _i _month 19  ]
+[e :U 20 ]
+}
+"57
+[; ;dates.c: 57:     return days+day;
+[e ) + _days _day ]
+[e $UE 16  ]
+"58
+[; ;dates.c: 58: }
+[e :UE 16 ]
+}
+"60
+[; ;dates.c: 60: int day_difference(int year1,int month1,int day1,int year2,int month2,int day2)
+[v _day_difference `(i ~T0 @X0 1 ef6`i`i`i`i`i`i ]
+"61
+[; ;dates.c: 61: {
+{
+[e :U _day_difference ]
+"60
+[; ;dates.c: 60: int day_difference(int year1,int month1,int day1,int year2,int month2,int day2)
+[v _year1 `i ~T0 @X0 1 r1 ]
+[v _month1 `i ~T0 @X0 1 r2 ]
+[v _day1 `i ~T0 @X0 1 r3 ]
+[v _year2 `i ~T0 @X0 1 r4 ]
+[v _month2 `i ~T0 @X0 1 r5 ]
+[v _day2 `i ~T0 @X0 1 r6 ]
+"61
+[; ;dates.c: 61: {
+[f ]
+"62
+[; ;dates.c: 62:     int i,k,sum1=0,sum2=0;
+[v _i `i ~T0 @X0 1 a ]
+[v _k `i ~T0 @X0 1 a ]
+[v _sum1 `i ~T0 @X0 1 a ]
+[e = _sum1 -> 0 `i ]
+[v _sum2 `i ~T0 @X0 1 a ]
+[e = _sum2 -> 0 `i ]
+"63
+[; ;dates.c: 63:     if(year1!=year2 && year1<year2)
+[e $ ! && != _year1 _year2 < _year1 _year2 24  ]
+"64
+[; ;dates.c: 64:     {
+{
+"65
+[; ;dates.c: 65:     for(i=year1;i<year2;i++)
+{
+[e = _i _year1 ]
+[e $U 28  ]
+[e :U 25 ]
+"66
+[; ;dates.c: 66:     {
+{
+"67
+[; ;dates.c: 67:         k=leap_year(i);
+[e = _k ( _leap_year (1 _i ]
+"68
+[; ;dates.c: 68:         if(k==1)
+[e $ ! == _k -> 1 `i 29  ]
+"69
+[; ;dates.c: 69:         {
+{
+"70
+[; ;dates.c: 70:             sum1 += 366;
+[e =+ _sum1 -> 366 `i ]
+"71
+[; ;dates.c: 71:         }
+}
+[e $U 30  ]
+"72
+[; ;dates.c: 72:         else
+[e :U 29 ]
+"73
+[; ;dates.c: 73:         {
+{
+"74
+[; ;dates.c: 74:             sum2 += 365;
+[e =+ _sum2 -> 365 `i ]
+"75
+[; ;dates.c: 75:         }
+}
+[e :U 30 ]
+"76
+[; ;dates.c: 76:     }
+}
+[e ++ _i -> 1 `i ]
+[e :U 28 ]
+[e $ < _i _year2 25  ]
+[e :U 26 ]
+}
+"77
+[; ;dates.c: 77:     }
+}
+[e :U 24 ]
+"79
+[; ;dates.c: 79:     int j,m;
+[v _j `i ~T0 @X0 1 a ]
+[v _m `i ~T0 @X0 1 a ]
+"80
+[; ;dates.c: 80:     j=leap_year(year1);
+[e = _j ( _leap_year (1 _year1 ]
+"81
+[; ;dates.c: 81:     if(j==1)
+[e $ ! == _j -> 1 `i 31  ]
+"82
+[; ;dates.c: 82:     {
+{
+"83
+[; ;dates.c: 83:         m=day_number(year1,month1,day1);
+[e = _m ( _day_number (3 , , _year1 _month1 _day1 ]
+"84
+[; ;dates.c: 84:     }
+}
+[e $U 32  ]
+"85
+[; ;dates.c: 85:     else
+[e :U 31 ]
+"86
+[; ;dates.c: 86:     {
+{
+"87
+[; ;dates.c: 87:         m=day_number(year1,month1,day1);
+[e = _m ( _day_number (3 , , _year1 _month1 _day1 ]
+"88
+[; ;dates.c: 88:     }
+}
+[e :U 32 ]
+"89
+[; ;dates.c: 89:     int o,p;
+[v _o `i ~T0 @X0 1 a ]
+[v _p `i ~T0 @X0 1 a ]
+"90
+[; ;dates.c: 90:     o=leap_year(year2);
+[e = _o ( _leap_year (1 _year2 ]
+"91
+[; ;dates.c: 91:     if(o==1)
+[e $ ! == _o -> 1 `i 33  ]
+"92
+[; ;dates.c: 92:     {
+{
+"93
+[; ;dates.c: 93:         p=day_number(year2,month2,day2);
+[e = _p ( _day_number (3 , , _year2 _month2 _day2 ]
+"94
+[; ;dates.c: 94:     }
+}
+[e $U 34  ]
+"95
+[; ;dates.c: 95:     else
+[e :U 33 ]
+"96
+[; ;dates.c: 96:     {
+{
+"97
+[; ;dates.c: 97:         p=day_number(year2,month2,day2);
+[e = _p ( _day_number (3 , , _year2 _month2 _day2 ]
+"98
+[; ;dates.c: 98:     }
+}
+[e :U 34 ]
+"99
+[; ;dates.c: 99:     int h;
+[v _h `i ~T0 @X0 1 a ]
+"100
+[; ;dates.c: 100:     h=p-m;
+[e = _h - _p _m ]
+"102
+[; ;dates.c: 102:     return sum1+sum2+h;
+[e ) + + _sum1 _sum2 _h ]
+[e $UE 23  ]
+"104
+[; ;dates.c: 104: }
+[e :UE 23 ]
+}

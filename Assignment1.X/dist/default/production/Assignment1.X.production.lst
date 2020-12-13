@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.30 build 20200825195618 
-                                                                                               Sat Oct 10 01:09:13 2020
+                                                                                               Sat Oct 10 19:09:10 2020
 
 Microchip MPLAB XC8 C Compiler v2.30 (Free license) build 20200825195618 Og1 
      1                           	processor	18F46K42
@@ -1947,7 +1947,7 @@ Microchip MPLAB XC8 C Compiler v2.30 (Free license) build 20200825195618 Og1
   1933 ;;
   1934 ;; *************** function _main *****************
   1935 ;; Defined at:
-  1936 ;;		line 11 in file "main.c"
+  1936 ;;		line 7 in file "main.c"
   1937 ;; Parameters:    Size  Location     Type
   1938 ;;		None
   1939 ;; Auto vars:     Size  Location     Type
@@ -2007,10 +2007,10 @@ Microchip MPLAB XC8 C Compiler v2.30 (Free license) build 20200825195618 Og1
   1988  00A1AC                     _main:
   1989                           	callstack 22
   1990  00A1AC                     
-  1991                           ;main.c: 14:     SYSTEM_Initialize();
+  1991                           ;main.c: 10:     SYSTEM_Initialize();
   1992  00A1AC  ECD0  F03D         	call	_SYSTEM_Initialize	;wreg free
   1993  00A1B0                     
-  1994                           ;main.c: 18:  float x=2.25, y=3.72, z;
+  1994                           ;main.c: 14:  float x=2.25, y=3.72, z;
   1995  00A1B0  0E00               	movlw	0
   1996  00A1B2  0102               	movlb	2	; () banked
   1997  00A1B4  6F00               	movwf	main@x& (0+255),b
@@ -2032,7 +2032,7 @@ Microchip MPLAB XC8 C Compiler v2.30 (Free license) build 20200825195618 Og1
   2013  00A1D0  6F07               	movwf	(main@y+3)& (0+255),b
   2014  00A1D2                     
   2015                           ; BSR set to: 2
-  2016                           ;main.c: 20:     z= sqrtf(powf(x,2)+powf(y,2));
+  2016                           ;main.c: 16:     z= sqrtf(powf(x,2)+powf(y,2));
   2017  00A1D2  0E00               	movlw	0
   2018  00A1D4  0100               	movlb	0	; () banked
   2019  00A1D6  6FDB               	movwf	powf@y& (0+255),b
@@ -2052,7 +2052,7 @@ Microchip MPLAB XC8 C Compiler v2.30 (Free license) build 20200825195618 Og1
   2033  00A200  C0D9  F236         	movff	?_powf+2,_main$1550+2
   2034  00A204  C0DA  F237         	movff	?_powf+3,_main$1550+3
   2035  00A208                     
-  2036                           ;main.c: 20:     z= sqrtf(powf(x,2)+powf(y,2));
+  2036                           ;main.c: 16:     z= sqrtf(powf(x,2)+powf(y,2));
   2037  00A208  0E00               	movlw	0
   2038  00A20A  0100               	movlb	0	; () banked
   2039  00A20C  6FDB               	movwf	powf@y& (0+255),b
@@ -2072,7 +2072,7 @@ Microchip MPLAB XC8 C Compiler v2.30 (Free license) build 20200825195618 Og1
   2053  00A236  C0D9  F23A         	movff	?_powf+2,_main$1551+2
   2054  00A23A  C0DA  F23B         	movff	?_powf+3,_main$1551+3
   2055                           
-  2056                           ;main.c: 20:     z= sqrtf(powf(x,2)+powf(y,2));
+  2056                           ;main.c: 16:     z= sqrtf(powf(x,2)+powf(y,2));
   2057  00A23E  C234  F01A         	movff	_main$1550,___fladd@b
   2058  00A242  C235  F01B         	movff	_main$1550+1,___fladd@b+1
   2059  00A246  C236  F01C         	movff	_main$1550+2,___fladd@b+2
@@ -2087,7 +2087,7 @@ Microchip MPLAB XC8 C Compiler v2.30 (Free license) build 20200825195618 Og1
   2068  00A26A  C01C  F23E         	movff	?___fladd+2,_main$1552+2
   2069  00A26E  C01D  F23F         	movff	?___fladd+3,_main$1552+3
   2070  00A272                     
-  2071                           ;main.c: 20:     z= sqrtf(powf(x,2)+powf(y,2));
+  2071                           ;main.c: 16:     z= sqrtf(powf(x,2)+powf(y,2));
   2072  00A272  C23C  F05C         	movff	_main$1552,sqrtf@x
   2073  00A276  C23D  F05D         	movff	_main$1552+1,sqrtf@x+1
   2074  00A27A  C23E  F05E         	movff	_main$1552+2,sqrtf@x+2
@@ -2098,7 +2098,7 @@ Microchip MPLAB XC8 C Compiler v2.30 (Free license) build 20200825195618 Og1
   2079  00A28E  C05E  F20A         	movff	?_sqrtf+2,main@z+2
   2080  00A292  C05F  F20B         	movff	?_sqrtf+3,main@z+3
   2081  00A296                     
-  2082                           ;main.c: 23:     printf("\n\r Part a's answer is: %f ",z);
+  2082                           ;main.c: 19:     printf("\n\r Part a's answer is: %f ",z);
   2083  00A296  0E7B               	movlw	low STR_1
   2084  00A298  0100               	movlb	0	; () banked
   2085  00A29A  6FC0               	movwf	printf@fmt& (0+255),b
@@ -2110,7 +2110,7 @@ Microchip MPLAB XC8 C Compiler v2.30 (Free license) build 20200825195618 Og1
   2091  00A2AC  C20B  F0C5         	movff	main@z+3,?_printf+5
   2092  00A2B0  EC15  F03E         	call	_printf	;wreg free
   2093  00A2B4                     
-  2094                           ;main.c: 28:     float pi=4.0*atanf(1.0), R, A=4.27, beta=35.0*pi/180;
+  2094                           ;main.c: 24:     float pi=4.0*atanf(1.0), R, A=4.27, beta=35.0*pi/180;
   2095  00A2B4  0E00               	movlw	0
   2096  00A2B6  6E4B               	movwf	atanf@x^0,c
   2097  00A2B8  0E00               	movlw	0
@@ -2125,7 +2125,7 @@ Microchip MPLAB XC8 C Compiler v2.30 (Free license) build 20200825195618 Og1
   2106  00A2D0  C04D  F242         	movff	?_atanf+2,_main$1553+2
   2107  00A2D4  C04E  F243         	movff	?_atanf+3,_main$1553+3
   2108  00A2D8                     
-  2109                           ;main.c: 28:     float pi=4.0*atanf(1.0), R, A=4.27, beta=35.0*pi/180;
+  2109                           ;main.c: 24:     float pi=4.0*atanf(1.0), R, A=4.27, beta=35.0*pi/180;
   2110  00A2D8  C240  F001         	movff	_main$1553,___flmul@b
   2111  00A2DC  C241  F002         	movff	_main$1553+1,___flmul@b+1
   2112  00A2E0  C242  F003         	movff	_main$1553+2,___flmul@b+2
@@ -2185,7 +2185,7 @@ Microchip MPLAB XC8 C Compiler v2.30 (Free license) build 20200825195618 Og1
   2166  00A36E  C034  F216         	movff	?___fldiv+2,main@beta+2
   2167  00A372  C035  F217         	movff	?___fldiv+3,main@beta+3
   2168  00A376                     
-  2169                           ;main.c: 30:     R= A*cosf(beta);
+  2169                           ;main.c: 26:     R= A*cosf(beta);
   2170  00A376  C214  F054         	movff	main@beta,cosf@x
   2171  00A37A  C215  F055         	movff	main@beta+1,cosf@x+1
   2172  00A37E  C216  F056         	movff	main@beta+2,cosf@x+2
@@ -2196,7 +2196,7 @@ Microchip MPLAB XC8 C Compiler v2.30 (Free license) build 20200825195618 Og1
   2177  00A392  C056  F246         	movff	?_cosf+2,_main$1554+2
   2178  00A396  C057  F247         	movff	?_cosf+3,_main$1554+3
   2179  00A39A                     
-  2180                           ;main.c: 30:     R= A*cosf(beta);
+  2180                           ;main.c: 26:     R= A*cosf(beta);
   2181  00A39A  C244  F001         	movff	_main$1554,___flmul@b
   2182  00A39E  C245  F002         	movff	_main$1554+1,___flmul@b+1
   2183  00A3A2  C246  F003         	movff	_main$1554+2,___flmul@b+2
@@ -2211,7 +2211,7 @@ Microchip MPLAB XC8 C Compiler v2.30 (Free license) build 20200825195618 Og1
   2192  00A3C6  C003  F20E         	movff	?___flmul+2,main@R+2
   2193  00A3CA  C004  F20F         	movff	?___flmul+3,main@R+3
   2194  00A3CE                     
-  2195                           ;main.c: 33:     printf("\n\r Part b's answer is: %f ",R);
+  2195                           ;main.c: 29:     printf("\n\r Part b's answer is: %f ",R);
   2196  00A3CE  0E96               	movlw	low STR_2
   2197  00A3D0  0100               	movlb	0	; () banked
   2198  00A3D2  6FC0               	movwf	printf@fmt& (0+255),b
@@ -2223,7 +2223,7 @@ Microchip MPLAB XC8 C Compiler v2.30 (Free license) build 20200825195618 Og1
   2204  00A3E4  C20F  F0C5         	movff	main@R+3,?_printf+5
   2205  00A3E8  EC15  F03E         	call	_printf	;wreg free
   2206  00A3EC                     
-  2207                           ;main.c: 38:     float X, D=6.85, alpha=33.0*pi/180;
+  2207                           ;main.c: 34:     float X, D=6.85, alpha=33.0*pi/180;
   2208  00A3EC  0E33               	movlw	51
   2209  00A3EE  0102               	movlb	2	; () banked
   2210  00A3F0  6F1C               	movwf	main@D& (0+255),b
@@ -2266,7 +2266,7 @@ Microchip MPLAB XC8 C Compiler v2.30 (Free license) build 20200825195618 Og1
   2247  00A44E  C034  F222         	movff	?___fldiv+2,main@alpha+2
   2248  00A452  C035  F223         	movff	?___fldiv+3,main@alpha+3
   2249  00A456                     
-  2250                           ;main.c: 40:     X=D*powf(tanf(alpha),2);
+  2250                           ;main.c: 36:     X=D*powf(tanf(alpha),2);
   2251  00A456  0E00               	movlw	0
   2252  00A458  0100               	movlb	0	; () banked
   2253  00A45A  6FDB               	movwf	powf@y& (0+255),b
@@ -2291,7 +2291,7 @@ Microchip MPLAB XC8 C Compiler v2.30 (Free license) build 20200825195618 Og1
   2272  00A498  C0D9  F24A         	movff	?_powf+2,_main$1555+2
   2273  00A49C  C0DA  F24B         	movff	?_powf+3,_main$1555+3
   2274  00A4A0                     
-  2275                           ;main.c: 40:     X=D*powf(tanf(alpha),2);
+  2275                           ;main.c: 36:     X=D*powf(tanf(alpha),2);
   2276  00A4A0  C248  F001         	movff	_main$1555,___flmul@b
   2277  00A4A4  C249  F002         	movff	_main$1555+1,___flmul@b+1
   2278  00A4A8  C24A  F003         	movff	_main$1555+2,___flmul@b+2
@@ -2306,7 +2306,7 @@ Microchip MPLAB XC8 C Compiler v2.30 (Free license) build 20200825195618 Og1
   2287  00A4CC  C003  F21A         	movff	?___flmul+2,main@X+2
   2288  00A4D0  C004  F21B         	movff	?___flmul+3,main@X+3
   2289  00A4D4                     
-  2290                           ;main.c: 42:     printf("\n\r Part c's answer is: %f ",X);
+  2290                           ;main.c: 38:     printf("\n\r Part c's answer is: %f ",X);
   2291  00A4D4  0EB1               	movlw	low STR_3
   2292  00A4D6  0100               	movlb	0	; () banked
   2293  00A4D8  6FC0               	movwf	printf@fmt& (0+255),b
@@ -2318,7 +2318,7 @@ Microchip MPLAB XC8 C Compiler v2.30 (Free license) build 20200825195618 Og1
   2299  00A4EA  C21B  F0C5         	movff	main@X+3,?_printf+5
   2300  00A4EE  EC15  F03E         	call	_printf	;wreg free
   2301  00A4F2                     
-  2302                           ;main.c: 48:     float v, J=2.15, g=9.81, theta=43.0*pi/180;
+  2302                           ;main.c: 44:     float v, J=2.15, g=9.81, theta=43.0*pi/180;
   2303  00A4F2  0E9A               	movlw	154
   2304  00A4F4  0102               	movlb	2	; () banked
   2305  00A4F6  6F28               	movwf	main@J& (0+255),b
@@ -2371,7 +2371,7 @@ Microchip MPLAB XC8 C Compiler v2.30 (Free license) build 20200825195618 Og1
   2352  00A564  C034  F232         	movff	?___fldiv+2,main@theta+2
   2353  00A568  C035  F233         	movff	?___fldiv+3,main@theta+3
   2354  00A56C                     
-  2355                           ;main.c: 50:     v= sqrtf(J*g*tanf(theta));
+  2355                           ;main.c: 46:     v= sqrtf(J*g*tanf(theta));
   2356  00A56C  C22C  F005         	movff	main@g,___flmul@a
   2357  00A570  C22D  F006         	movff	main@g+1,___flmul@a+1
   2358  00A574  C22E  F007         	movff	main@g+2,___flmul@a+2
@@ -2386,7 +2386,7 @@ Microchip MPLAB XC8 C Compiler v2.30 (Free license) build 20200825195618 Og1
   2367  00A598  C003  F24E         	movff	?___flmul+2,_main$1556+2
   2368  00A59C  C004  F24F         	movff	?___flmul+3,_main$1556+3
   2369  00A5A0                     
-  2370                           ;main.c: 50:     v= sqrtf(J*g*tanf(theta));
+  2370                           ;main.c: 46:     v= sqrtf(J*g*tanf(theta));
   2371  00A5A0  C230  F054         	movff	main@theta,tanf@x
   2372  00A5A4  C231  F055         	movff	main@theta+1,tanf@x+1
   2373  00A5A8  C232  F056         	movff	main@theta+2,tanf@x+2
@@ -2397,7 +2397,7 @@ Microchip MPLAB XC8 C Compiler v2.30 (Free license) build 20200825195618 Og1
   2378  00A5BC  C056  F252         	movff	?_tanf+2,_main$1557+2
   2379  00A5C0  C057  F253         	movff	?_tanf+3,_main$1557+3
   2380  00A5C4                     
-  2381                           ;main.c: 50:     v= sqrtf(J*g*tanf(theta));
+  2381                           ;main.c: 46:     v= sqrtf(J*g*tanf(theta));
   2382  00A5C4  C24C  F001         	movff	_main$1556,___flmul@b
   2383  00A5C8  C24D  F002         	movff	_main$1556+1,___flmul@b+1
   2384  00A5CC  C24E  F003         	movff	_main$1556+2,___flmul@b+2
@@ -2412,7 +2412,7 @@ Microchip MPLAB XC8 C Compiler v2.30 (Free license) build 20200825195618 Og1
   2393  00A5F0  C003  F256         	movff	?___flmul+2,_main$1558+2
   2394  00A5F4  C004  F257         	movff	?___flmul+3,_main$1558+3
   2395  00A5F8                     
-  2396                           ;main.c: 50:     v= sqrtf(J*g*tanf(theta));
+  2396                           ;main.c: 46:     v= sqrtf(J*g*tanf(theta));
   2397  00A5F8  C254  F05C         	movff	_main$1558,sqrtf@x
   2398  00A5FC  C255  F05D         	movff	_main$1558+1,sqrtf@x+1
   2399  00A600  C256  F05E         	movff	_main$1558+2,sqrtf@x+2
@@ -2423,7 +2423,7 @@ Microchip MPLAB XC8 C Compiler v2.30 (Free license) build 20200825195618 Og1
   2404  00A614  C05E  F226         	movff	?_sqrtf+2,main@v+2
   2405  00A618  C05F  F227         	movff	?_sqrtf+3,main@v+3
   2406  00A61C                     
-  2407                           ;main.c: 52:     printf("\n\r Part d's answer is: %f ",v);
+  2407                           ;main.c: 48:     printf("\n\r Part d's answer is: %f ",v);
   2408  00A61C  0ECC               	movlw	low STR_4
   2409  00A61E  0100               	movlb	0	; () banked
   2410  00A620  6FC0               	movwf	printf@fmt& (0+255),b
@@ -19145,7 +19145,7 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V2.30 build 20200825195618 
-Symbol Table                                                                                   Sat Oct 10 01:09:13 2020
+Symbol Table                                                                                   Sat Oct 10 19:09:10 2020
 
                                            _T FE5F                                  ___fldiv@aexp 004A  
                                 ___fldiv@bexp 0049                                  ___fldiv@sign 0042  

@@ -1,0 +1,540 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F46K42 ]
+[d frameptr 16353 ]
+"477 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\doprnt.c
+[v _printf printf `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\islower.c
+[v _islower islower `(b  1 e 0 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\isupper.c
+[v _isupper isupper `(b  1 e 0 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strchr.c
+[v _strchr strchr `(*.32uc  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strcpy.c
+[v _strcpy strcpy `(*.39uc  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strcspn.c
+[v _strcspn strcspn `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strspn.c
+[v _strspn strspn `(ui  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strtok.c
+[v _strtok strtok `(*.39uc  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\tolower.c
+[v _tolower tolower `(uc  1 e 1 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\toupper.c
+[v _toupper toupper `(uc  1 e 1 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\Umul64.c
+[v ___omul __omul `(ul  1 e 4 0 ]
+"21 C:\MinGW\msys\1.0\home\manmo\Phys1600\exercise8.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"69
+[v _Reverse_String Reverse_String `(v  1 e 1 0 ]
+"82
+[v _Caps Caps `(v  1 e 1 0 ]
+"50 C:\MinGW\msys\1.0\home\manmo\Phys1600\exercise8.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"58
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"72
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"55 C:\MinGW\msys\1.0\home\manmo\Phys1600\exercise8.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"66 C:\MinGW\msys\1.0\home\manmo\Phys1600\exercise8.X\mcc_generated_files/uart2.c
+[v _UART2_Initialize UART2_Initialize `(v  1 e 1 0 ]
+"117
+[v _UART2_is_rx_ready UART2_is_rx_ready `(uc  1 e 1 0 ]
+"136
+[v _UART2_Read UART2_Read `(uc  1 e 1 0 ]
+"161
+[v _UART2_Write UART2_Write `(v  1 e 1 0 ]
+"175
+[v _putch putch `(v  1 e 1 0 ]
+"184
+[v _UART2_DefaultFramingErrorHandler UART2_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+"186
+[v _UART2_DefaultOverrunErrorHandler UART2_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+"188
+[v _UART2_DefaultErrorHandler UART2_DefaultErrorHandler `(v  1 e 1 0 ]
+"191
+[v _UART2_SetFramingErrorHandler UART2_SetFramingErrorHandler `(v  1 e 1 0 ]
+"195
+[v _UART2_SetOverrunErrorHandler UART2_SetOverrunErrorHandler `(v  1 e 1 0 ]
+"199
+[v _UART2_SetErrorHandler UART2_SetErrorHandler `(v  1 e 1 0 ]
+"5 C:\MinGW\msys\1.0\home\manmo\Phys1600\exercise8.X\myUART.c
+[v _wait_for_ENTER wait_for_ENTER `(v  1 e 1 0 ]
+"27
+[v _ReadNUART2 ReadNUART2 `(v  1 e 1 0 ]
+"4 C:\MinGW\msys\1.0\home\manmo\Phys1600\exercise8.X\putty.c
+[v _clearPuTTY clearPuTTY `(v  1 e 1 0 ]
+[s S122 . 1 `uc 1 I2C2IF 1 0 :1:0 
+`uc 1 I2C2EIF 1 0 :1:1 
+`uc 1 U2RXIF 1 0 :1:2 
+`uc 1 U2TXIF 1 0 :1:3 
+`uc 1 U2EIF 1 0 :1:4 
+`uc 1 U2IF 1 0 :1:5 
+`uc 1 TMR3IF 1 0 :1:6 
+`uc 1 TMR3GIF 1 0 :1:7 
+]
+"4505 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f46k42.h
+[u S131 . 1 `S122 1 . 1 0 ]
+[v _PIR6bits PIR6bits `VES131  1 e 1 @14758 ]
+"4686
+[v _PMD0 PMD0 `VEuc  1 e 1 @14784 ]
+"4763
+[v _PMD1 PMD1 `VEuc  1 e 1 @14785 ]
+"4833
+[v _PMD2 PMD2 `VEuc  1 e 1 @14786 ]
+"4878
+[v _PMD3 PMD3 `VEuc  1 e 1 @14787 ]
+"4940
+[v _PMD4 PMD4 `VEuc  1 e 1 @14788 ]
+"4973
+[v _PMD5 PMD5 `VEuc  1 e 1 @14789 ]
+"5018
+[v _PMD6 PMD6 `VEuc  1 e 1 @14790 ]
+"5068
+[v _PMD7 PMD7 `VEuc  1 e 1 @14791 ]
+"5207
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @14809 ]
+"5347
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @14811 ]
+"5499
+[v _OSCEN OSCEN `VEuc  1 e 1 @14813 ]
+"5550
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @14814 ]
+"5654
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @14815 ]
+"7216
+[v _RB6PPS RB6PPS `VEuc  1 e 1 @14862 ]
+"8266
+[v _ANSELA ANSELA `VEuc  1 e 1 @14912 ]
+"8328
+[v _WPUA WPUA `VEuc  1 e 1 @14913 ]
+"8390
+[v _ODCONA ODCONA `VEuc  1 e 1 @14914 ]
+"8452
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @14915 ]
+"8514
+[v _INLVLA INLVLA `VEuc  1 e 1 @14916 ]
+"8886
+[v _ANSELB ANSELB `VEuc  1 e 1 @14928 ]
+"8948
+[v _WPUB WPUB `VEuc  1 e 1 @14929 ]
+"9010
+[v _ODCONB ODCONB `VEuc  1 e 1 @14930 ]
+"9072
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @14931 ]
+"9134
+[v _INLVLB INLVLB `VEuc  1 e 1 @14932 ]
+"9506
+[v _RB1I2C RB1I2C `VEuc  1 e 1 @14938 ]
+"9614
+[v _RB2I2C RB2I2C `VEuc  1 e 1 @14939 ]
+"9722
+[v _ANSELC ANSELC `VEuc  1 e 1 @14944 ]
+"9784
+[v _WPUC WPUC `VEuc  1 e 1 @14945 ]
+"9846
+[v _ODCONC ODCONC `VEuc  1 e 1 @14946 ]
+"9908
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @14947 ]
+"9970
+[v _INLVLC INLVLC `VEuc  1 e 1 @14948 ]
+"10342
+[v _RC3I2C RC3I2C `VEuc  1 e 1 @14954 ]
+"10450
+[v _RC4I2C RC4I2C `VEuc  1 e 1 @14955 ]
+"10558
+[v _ANSELD ANSELD `VEuc  1 e 1 @14960 ]
+"10620
+[v _WPUD WPUD `VEuc  1 e 1 @14961 ]
+"10682
+[v _ODCOND ODCOND `VEuc  1 e 1 @14962 ]
+"10744
+[v _SLRCOND SLRCOND `VEuc  1 e 1 @14963 ]
+"10806
+[v _INLVLD INLVLD `VEuc  1 e 1 @14964 ]
+"10992
+[v _RD0I2C RD0I2C `VEuc  1 e 1 @14970 ]
+"11100
+[v _RD1I2C RD1I2C `VEuc  1 e 1 @14971 ]
+"11208
+[v _ANSELE ANSELE `VEuc  1 e 1 @14976 ]
+"11240
+[v _WPUE WPUE `VEuc  1 e 1 @14977 ]
+"11278
+[v _ODCONE ODCONE `VEuc  1 e 1 @14978 ]
+"11310
+[v _SLRCONE SLRCONE `VEuc  1 e 1 @14979 ]
+"11342
+[v _INLVLE INLVLE `VEuc  1 e 1 @14980 ]
+"12363
+[v _U2RXPPS U2RXPPS `VEuc  1 e 1 @15080 ]
+"25816
+[v _U2RXB U2RXB `VEuc  1 e 1 @15824 ]
+"25854
+[v _U2TXB U2TXB `VEuc  1 e 1 @15826 ]
+"25899
+[v _U2P1L U2P1L `VEuc  1 e 1 @15828 ]
+"25926
+[v _U2P2L U2P2L `VEuc  1 e 1 @15830 ]
+"25953
+[v _U2P3L U2P3L `VEuc  1 e 1 @15832 ]
+"25973
+[v _U2CON0 U2CON0 `VEuc  1 e 1 @15834 ]
+[s S143 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+]
+"26004
+[s S147 . 1 `uc 1 U2MODE 1 0 :4:0 
+`uc 1 U2RXEN 1 0 :1:4 
+`uc 1 U2TXEN 1 0 :1:5 
+`uc 1 U2ABDEN 1 0 :1:6 
+`uc 1 U2BRGS 1 0 :1:7 
+]
+[s S153 . 1 `uc 1 U2MODE0 1 0 :1:0 
+`uc 1 U2MODE1 1 0 :1:1 
+`uc 1 U2MODE2 1 0 :1:2 
+]
+[s S157 . 1 `uc 1 MODE 1 0 :4:0 
+`uc 1 RXEN 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 ABDEN 1 0 :1:6 
+`uc 1 BRGS 1 0 :1:7 
+]
+[u S163 . 1 `S143 1 . 1 0 `S147 1 . 1 0 `S153 1 . 1 0 `S157 1 . 1 0 ]
+[v _U2CON0bits U2CON0bits `VES163  1 e 1 @15834 ]
+"26089
+[v _U2CON1 U2CON1 `VEuc  1 e 1 @15835 ]
+"26169
+[v _U2CON2 U2CON2 `VEuc  1 e 1 @15836 ]
+"26308
+[v _U2BRGL U2BRGL `VEuc  1 e 1 @15837 ]
+"26328
+[v _U2BRGH U2BRGH `VEuc  1 e 1 @15838 ]
+"26348
+[v _U2FIFO U2FIFO `VEuc  1 e 1 @15839 ]
+"26478
+[v _U2UIR U2UIR `VEuc  1 e 1 @15840 ]
+"26534
+[v _U2ERRIR U2ERRIR `VEuc  1 e 1 @15841 ]
+[s S189 . 1 `uc 1 TXCIF 1 0 :1:0 
+`uc 1 RXFOIF 1 0 :1:1 
+`uc 1 RXBKIF 1 0 :1:2 
+`uc 1 FERIF 1 0 :1:3 
+`uc 1 CERIF 1 0 :1:4 
+`uc 1 ABDOVF 1 0 :1:5 
+`uc 1 PERIF 1 0 :1:6 
+`uc 1 TXMTIF 1 0 :1:7 
+]
+"26561
+[s S198 . 1 `uc 1 U2TXCIF 1 0 :1:0 
+`uc 1 U2RXFOIF 1 0 :1:1 
+`uc 1 U2RXBKIF 1 0 :1:2 
+`uc 1 U2FERIF 1 0 :1:3 
+`uc 1 U2CERIF 1 0 :1:4 
+`uc 1 U2ABDOVF 1 0 :1:5 
+`uc 1 U2PERIF 1 0 :1:6 
+`uc 1 U2TXMTIF 1 0 :1:7 
+]
+[u S207 . 1 `S189 1 . 1 0 `S198 1 . 1 0 ]
+[v _U2ERRIRbits U2ERRIRbits `VES207  1 e 1 @15841 ]
+"26646
+[v _U2ERRIE U2ERRIE `VEuc  1 e 1 @15842 ]
+"45726
+[v _LATA LATA `VEuc  1 e 1 @16314 ]
+"45838
+[v _LATB LATB `VEuc  1 e 1 @16315 ]
+"45950
+[v _LATC LATC `VEuc  1 e 1 @16316 ]
+"46062
+[v _LATD LATD `VEuc  1 e 1 @16317 ]
+"46174
+[v _LATE LATE `VEuc  1 e 1 @16318 ]
+"46226
+[v _TRISA TRISA `VEuc  1 e 1 @16322 ]
+"46288
+[v _TRISB TRISB `VEuc  1 e 1 @16323 ]
+"46350
+[v _TRISC TRISC `VEuc  1 e 1 @16324 ]
+"46412
+[v _TRISD TRISD `VEuc  1 e 1 @16325 ]
+"46474
+[v _TRISE TRISE `VEuc  1 e 1 @16326 ]
+[s S69 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"53 C:\MinGW\msys\1.0\home\manmo\Phys1600\exercise8.X\mcc_generated_files/uart2.c
+[u S74 . 1 `S69 1 . 1 0 `uc 1 status 1 0 ]
+[v _uart2RxLastError uart2RxLastError `VES74  1 s 1 uart2RxLastError ]
+"58
+[v _UART2_FramingErrorHandler UART2_FramingErrorHandler `*.37(v  1 e 2 0 ]
+"59
+[v _UART2_OverrunErrorHandler UART2_OverrunErrorHandler `*.37(v  1 e 2 0 ]
+"60
+[v _UART2_ErrorHandler UART2_ErrorHandler `*.37(v  1 e 2 0 ]
+"21 C:\MinGW\msys\1.0\home\manmo\Phys1600\exercise8.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"28
+[v main@caplast caplast `[51]uc  1 a 51 0 ]
+[v main@capfirst capfirst `[51]uc  1 a 51 102 ]
+"27
+[v main@inputstring inputstring `[51]uc  1 a 51 38 ]
+[v main@reverselast reverselast `[51]uc  1 a 51 51 ]
+[v main@reversefirst reversefirst `[51]uc  1 a 51 0 ]
+"28
+[v main@LastName LastName `[20]uc  1 a 20 71 ]
+[v main@FirstName FirstName `[20]uc  1 a 20 51 ]
+"27
+[v main@string2 string2 `[20]uc  1 a 20 18 ]
+[v main@string string `[6]uc  1 a 6 89 ]
+"29
+[v main@token token `*.39uc  1 a 2 153 ]
+"26
+[v main@F16340 F16340 `[6]uc  1 s 6 F16340 ]
+"65
+} 0
+"5 C:\MinGW\msys\1.0\home\manmo\Phys1600\exercise8.X\myUART.c
+[v _wait_for_ENTER wait_for_ENTER `(v  1 e 1 0 ]
+{
+"7
+[v wait_for_ENTER@i i `ui  1 a 2 0 ]
+"12
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strtok.c
+[v _strtok strtok `(*.39uc  1 e 2 0 ]
+{
+[v strtok@s1 s1 `*.39uc  1 p 2 11 ]
+[v strtok@s2 s2 `*.32Cuc  1 p 2 13 ]
+"15
+[v strtok@sp sp `*.39uc  1 s 2 sp ]
+"31
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strspn.c
+[v _strspn strspn `(ui  1 e 2 0 ]
+{
+"6
+[v strspn@i i `ui  1 a 2 9 ]
+"4
+[v strspn@s1 s1 `*.39Cuc  1 p 2 4 ]
+[v strspn@s2 s2 `*.32Cuc  1 p 2 6 ]
+"14
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strcspn.c
+[v _strcspn strcspn `(ui  1 e 2 0 ]
+{
+"6
+[v strcspn@i i `ui  1 a 2 9 ]
+"4
+[v strcspn@s1 s1 `*.39Cuc  1 p 2 4 ]
+[v strcspn@s2 s2 `*.32Cuc  1 p 2 6 ]
+"14
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strchr.c
+[v _strchr strchr `(*.32uc  1 e 2 0 ]
+{
+[v strchr@ptr ptr `*.32Cuc  1 p 2 0 ]
+[v strchr@chr chr `i  1 p 2 2 ]
+"11
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strcpy.c
+[v _strcpy strcpy `(*.39uc  1 e 2 0 ]
+{
+"15
+[v strcpy@cp cp `*.39uc  1 a 2 4 ]
+"8
+[v strcpy@to to `*.39uc  1 p 2 0 ]
+[v strcpy@from from `*.39Cuc  1 p 2 2 ]
+"24
+} 0
+"4 C:\MinGW\msys\1.0\home\manmo\Phys1600\exercise8.X\putty.c
+[v _clearPuTTY clearPuTTY `(v  1 e 1 0 ]
+{
+"9
+} 0
+"477 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\doprnt.c
+[v _printf printf `(i  1 e 2 0 ]
+{
+"547
+[v printf@cp cp `*.34Cuc  1 a 2 15 ]
+"479
+[v printf@ap ap `[1]*.39v  1 a 2 13 ]
+"512
+[v printf@c c `uc  1 a 1 17 ]
+"477
+[v printf@f f `*.32Cuc  1 p 2 2 ]
+"1567
+} 0
+"175 C:\MinGW\msys\1.0\home\manmo\Phys1600\exercise8.X\mcc_generated_files/uart2.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+[v putch@txData txData `uc  1 a 1 wreg ]
+[v putch@txData txData `uc  1 a 1 wreg ]
+"177
+[v putch@txData txData `uc  1 a 1 1 ]
+"178
+} 0
+"161
+[v _UART2_Write UART2_Write `(v  1 e 1 0 ]
+{
+[v UART2_Write@txData txData `uc  1 a 1 wreg ]
+[v UART2_Write@txData txData `uc  1 a 1 wreg ]
+[v UART2_Write@txData txData `uc  1 a 1 0 ]
+"168
+} 0
+"50 C:\MinGW\msys\1.0\home\manmo\Phys1600\exercise8.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"56
+} 0
+"66 C:\MinGW\msys\1.0\home\manmo\Phys1600\exercise8.X\mcc_generated_files/uart2.c
+[v _UART2_Initialize UART2_Initialize `(v  1 e 1 0 ]
+{
+"115
+} 0
+"195
+[v _UART2_SetOverrunErrorHandler UART2_SetOverrunErrorHandler `(v  1 e 1 0 ]
+{
+[v UART2_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"197
+} 0
+"191
+[v _UART2_SetFramingErrorHandler UART2_SetFramingErrorHandler `(v  1 e 1 0 ]
+{
+[v UART2_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"193
+} 0
+"199
+[v _UART2_SetErrorHandler UART2_SetErrorHandler `(v  1 e 1 0 ]
+{
+[v UART2_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"201
+} 0
+"72 C:\MinGW\msys\1.0\home\manmo\Phys1600\exercise8.X\mcc_generated_files/mcc.c
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"90
+} 0
+"55 C:\MinGW\msys\1.0\home\manmo\Phys1600\exercise8.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"139
+} 0
+"58 C:\MinGW\msys\1.0\home\manmo\Phys1600\exercise8.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"70
+} 0
+"69 C:\MinGW\msys\1.0\home\manmo\Phys1600\exercise8.X\main.c
+[v _Reverse_String Reverse_String `(v  1 e 1 0 ]
+{
+"71
+[v Reverse_String@i i `i  1 a 2 12 ]
+[v Reverse_String@length length `i  1 a 2 10 ]
+"69
+[v Reverse_String@string_in string_in `*.39uc  1 p 2 4 ]
+[v Reverse_String@string_out string_out `*.39uc  1 p 2 6 ]
+"79
+} 0
+"27 C:\MinGW\msys\1.0\home\manmo\Phys1600\exercise8.X\myUART.c
+[v _ReadNUART2 ReadNUART2 `(v  1 e 1 0 ]
+{
+"29
+[v ReadNUART2@i i `ui  1 a 2 8 ]
+"30
+[v ReadNUART2@letter letter `ui  1 a 2 6 ]
+"27
+[v ReadNUART2@holds_string holds_string `*.39uc  1 p 2 0 ]
+[v ReadNUART2@length_N length_N `ui  1 p 2 2 ]
+"57
+} 0
+"117 C:\MinGW\msys\1.0\home\manmo\Phys1600\exercise8.X\mcc_generated_files/uart2.c
+[v _UART2_is_rx_ready UART2_is_rx_ready `(uc  1 e 1 0 ]
+{
+"120
+} 0
+"136
+[v _UART2_Read UART2_Read `(uc  1 e 1 0 ]
+{
+"159
+} 0
+"186
+[v _UART2_DefaultOverrunErrorHandler UART2_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+{
+} 0
+"184
+[v _UART2_DefaultFramingErrorHandler UART2_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+{
+} 0
+"188
+[v _UART2_DefaultErrorHandler UART2_DefaultErrorHandler `(v  1 e 1 0 ]
+{
+"189
+} 0
+"82 C:\MinGW\msys\1.0\home\manmo\Phys1600\exercise8.X\main.c
+[v _Caps Caps `(v  1 e 1 0 ]
+{
+"84
+[v Caps@i i `i  1 a 2 11 ]
+[v Caps@length length `i  1 a 2 9 ]
+"82
+[v Caps@string_in string_in `*.39uc  1 p 2 4 ]
+[v Caps@string_out string_out `*.39uc  1 p 2 6 ]
+"98
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\toupper.c
+[v _toupper toupper `(uc  1 e 1 0 ]
+{
+[v toupper@c c `uc  1 a 1 wreg ]
+[v toupper@c c `uc  1 a 1 wreg ]
+"10
+[v toupper@c c `uc  1 a 1 0 ]
+"13
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+"6
+[v strlen@cp cp `*.39Cuc  1 a 2 2 ]
+"4
+[v strlen@s s `*.39Cuc  1 p 2 0 ]
+"13
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\islower.c
+[v _islower islower `(b  1 e 0 0 ]
+{
+[v islower@c c `uc  1 a 1 wreg ]
+[v islower@c c `uc  1 a 1 wreg ]
+"14
+[v islower@c c `uc  1 a 1 2 ]
+"15
+} 0

@@ -91,7 +91,7 @@
 [v ___omul __omul `(uo  1 e 8 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
-"11 C:\MinGW\msys\1.0\home\manmo\Phys1600\Assignment1.X\main.c
+"7 C:\MinGW\msys\1.0\home\manmo\Phys1600\Assignment1.X\main.c
 [v _main main `(v  1 e 1 0 ]
 "50 C:\MinGW\msys\1.0\home\manmo\Phys1600\Assignment1.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
@@ -355,29 +355,29 @@
 [v _UART2_OverrunErrorHandler UART2_OverrunErrorHandler `*.37(v  1 e 2 0 ]
 "60
 [v _UART2_ErrorHandler UART2_ErrorHandler `*.37(v  1 e 2 0 ]
-"11 C:\MinGW\msys\1.0\home\manmo\Phys1600\Assignment1.X\main.c
+"7 C:\MinGW\msys\1.0\home\manmo\Phys1600\Assignment1.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"28
+"24
 [v main@pi pi `f  1 a 4 88 ]
-"48
+"44
 [v main@theta theta `f  1 a 4 48 ]
 [v main@g g `f  1 a 4 44 ]
 [v main@J J `f  1 a 4 40 ]
 [v main@v v `f  1 a 4 36 ]
-"38
+"34
 [v main@alpha alpha `f  1 a 4 32 ]
 [v main@D D `f  1 a 4 28 ]
 [v main@X X `f  1 a 4 24 ]
-"28
+"24
 [v main@beta beta `f  1 a 4 20 ]
 [v main@A A `f  1 a 4 16 ]
 [v main@R R `f  1 a 4 12 ]
-"18
+"14
 [v main@z z `f  1 a 4 8 ]
 [v main@y y `f  1 a 4 4 ]
 [v main@x x `f  1 a 4 0 ]
-"58
+"54
 } 0
 "26 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\tanf.c
 [v _tanf tanf `(f  1 e 4 0 ]

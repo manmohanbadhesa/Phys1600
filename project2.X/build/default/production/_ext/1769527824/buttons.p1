@@ -1,0 +1,63 @@
+Version 3.2 HI-TECH Software Intermediate Code
+[; ;buttons.h: 9: unsigned int poll_switch1_for_edges(unsigned int digitalinputpin);
+"16 ../exercise10.X/buttons.c
+[v _last_switch1_value `ui ~T0 @X0 1 e ]
+[i _last_switch1_value
+-> -> 0 `i `ui
+]
+[; ;buttons.c: 16: unsigned int last_switch1_value = 0;
+"22
+[v _poll_switch1_for_edges `(ui ~T0 @X0 1 ef1`ui ]
+"23
+{
+[; ;buttons.c: 22: unsigned int poll_switch1_for_edges(unsigned int digitalinputpin)
+[; ;buttons.c: 23: {
+[e :U _poll_switch1_for_edges ]
+"22
+[v _digitalinputpin `ui ~T0 @X0 1 r1 ]
+"23
+[f ]
+"25
+[v _has_switch1_changed `ui ~T0 @X0 1 a ]
+[; ;buttons.c: 25: unsigned int has_switch1_changed = 0;
+[e = _has_switch1_changed -> -> 0 `i `ui ]
+[; ;buttons.c: 27: if (last_switch1_value == 0 && digitalinputpin >> 0)
+"27
+[e $ ! && == _last_switch1_value -> -> 0 `i `ui != >> _digitalinputpin -> 0 `i -> -> 0 `i `ui 2  ]
+[; ;buttons.c: 28: {
+"28
+{
+[; ;buttons.c: 29: last_switch1_value = 1;
+"29
+[e = _last_switch1_value -> -> 1 `i `ui ]
+[; ;buttons.c: 30: has_switch1_changed = 1;
+"30
+[e = _has_switch1_changed -> -> 1 `i `ui ]
+"31
+}
+[e :U 2 ]
+[; ;buttons.c: 31: }
+[; ;buttons.c: 32: if (last_switch1_value == 1 && digitalinputpin == 0)
+"32
+[e $ ! && == _last_switch1_value -> -> 1 `i `ui == _digitalinputpin -> -> 0 `i `ui 3  ]
+[; ;buttons.c: 33: {
+"33
+{
+[; ;buttons.c: 34: last_switch1_value = 0;
+"34
+[e = _last_switch1_value -> -> 0 `i `ui ]
+[; ;buttons.c: 35: has_switch1_changed = 2;
+"35
+[e = _has_switch1_changed -> -> 2 `i `ui ]
+"36
+}
+[e :U 3 ]
+[; ;buttons.c: 36: }
+[; ;buttons.c: 38: return has_switch1_changed;
+"38
+[e ) _has_switch1_changed ]
+[e $UE 1  ]
+[; ;buttons.c: 39: }
+"39
+[e :UE 1 ]
+}

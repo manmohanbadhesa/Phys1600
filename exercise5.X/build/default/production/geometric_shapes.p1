@@ -1,0 +1,92 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"84 C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\math.h
+[; ;C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\math.h: 84: float atanf(float);
+[v _atanf `(f ~T0 @X0 0 ef1`f ]
+[v F972 `(f ~T0 @X0 1 tf2`f`f ]
+"319
+[; ;C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\math.h: 319: __attribute__((nonreentrant)) float powf(float, float);
+[v _powf `JF972 ~T0 @X0 0 e ]
+"7 geometric_shapes.c
+[; ;geometric_shapes.c: 7: float volume_sphere(float radius)
+[v _volume_sphere `(f ~T0 @X0 1 ef1`f ]
+"8
+[; ;geometric_shapes.c: 8: {
+{
+[e :U _volume_sphere ]
+"7
+[; ;geometric_shapes.c: 7: float volume_sphere(float radius)
+[v _radius `f ~T0 @X0 1 r1 ]
+"8
+[; ;geometric_shapes.c: 8: {
+[f ]
+"9
+[; ;geometric_shapes.c: 9:     float volumes;
+[v _volumes `f ~T0 @X0 1 a ]
+"10
+[; ;geometric_shapes.c: 10:     volumes= 4*4*atanf(1)*powf(radius,3)/3;
+[e = _volumes / * * -> * -> 4 `i -> 4 `i `f ( _atanf (1 -> -> 1 `i `f ( _powf (2 , _radius -> -> 3 `i `f -> -> 3 `i `f ]
+"11
+[; ;geometric_shapes.c: 11:     return volumes;
+[e ) _volumes ]
+[e $UE 9  ]
+"12
+[; ;geometric_shapes.c: 12: }
+[e :UE 9 ]
+}
+"14
+[; ;geometric_shapes.c: 14: float volume_cylinder(float radius, float height)
+[v _volume_cylinder `(f ~T0 @X0 1 ef2`f`f ]
+"15
+[; ;geometric_shapes.c: 15: {
+{
+[e :U _volume_cylinder ]
+"14
+[; ;geometric_shapes.c: 14: float volume_cylinder(float radius, float height)
+[v _radius `f ~T0 @X0 1 r1 ]
+[v _height `f ~T0 @X0 1 r2 ]
+"15
+[; ;geometric_shapes.c: 15: {
+[f ]
+"16
+[; ;geometric_shapes.c: 16:     float volumec;
+[v _volumec `f ~T0 @X0 1 a ]
+"17
+[; ;geometric_shapes.c: 17:     volumec=4*atanf(1)*height*powf(radius,2);
+[e = _volumec * * * -> -> 4 `i `f ( _atanf (1 -> -> 1 `i `f _height ( _powf (2 , _radius -> -> 2 `i `f ]
+"18
+[; ;geometric_shapes.c: 18:     return volumec;
+[e ) _volumec ]
+[e $UE 10  ]
+"19
+[; ;geometric_shapes.c: 19: }
+[e :UE 10 ]
+}
+"21
+[; ;geometric_shapes.c: 21: float volume_ellipsoid(float a, float b, float c)
+[v _volume_ellipsoid `(f ~T0 @X0 1 ef3`f`f`f ]
+"22
+[; ;geometric_shapes.c: 22: {
+{
+[e :U _volume_ellipsoid ]
+"21
+[; ;geometric_shapes.c: 21: float volume_ellipsoid(float a, float b, float c)
+[v _a `f ~T0 @X0 1 r1 ]
+[v _b `f ~T0 @X0 1 r2 ]
+[v _c `f ~T0 @X0 1 r3 ]
+"22
+[; ;geometric_shapes.c: 22: {
+[f ]
+"23
+[; ;geometric_shapes.c: 23:     float volumee;
+[v _volumee `f ~T0 @X0 1 a ]
+"24
+[; ;geometric_shapes.c: 24:     volumee= 4*4*atanf(1)*a*b*c/3;
+[e = _volumee / * * * * -> * -> 4 `i -> 4 `i `f ( _atanf (1 -> -> 1 `i `f _a _b _c -> -> 3 `i `f ]
+"25
+[; ;geometric_shapes.c: 25:     return volumee;
+[e ) _volumee ]
+[e $UE 11  ]
+"26
+[; ;geometric_shapes.c: 26: }
+[e :UE 11 ]
+}

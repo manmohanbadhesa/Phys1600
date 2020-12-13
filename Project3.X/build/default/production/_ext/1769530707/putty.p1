@@ -1,0 +1,28 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"111 C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\stdio.h
+[v _printf `(i ~T0 @X0 0 ev`*Cuc ]
+"4 ../exercise13.X/putty.c
+[; ;../exercise13.X/putty.c: 4: void clearPuTTY(void)
+[v _clearPuTTY `(v ~T0 @X0 1 ef ]
+"5
+[; ;../exercise13.X/putty.c: 5: {
+{
+[e :U _clearPuTTY ]
+[f ]
+"6
+[; ;../exercise13.X/putty.c: 6: printf("%c%c%c%c",27,'[','2','J');
+[e ( _printf , , , , (. :s 1C -> 27 `i -> 91 `ui -> 50 `ui -> 74 `ui ]
+"7
+[; ;../exercise13.X/putty.c: 7: printf("%c%c%c%c",27,'[','3','J');
+[e ( _printf , , , , (. :s 2C -> 27 `i -> 91 `ui -> 51 `ui -> 74 `ui ]
+"8
+[; ;../exercise13.X/putty.c: 8: printf("%c%c%c",27,'[','H');
+[e ( _printf , , , (. :s 3C -> 27 `i -> 91 `ui -> 72 `ui ]
+"9
+[; ;../exercise13.X/putty.c: 9: }
+[e :UE 3 ]
+}
+[p f _printf 8912896 ]
+[a 1C 37 99 37 99 37 99 37 99 0 ]
+[a 2C 37 99 37 99 37 99 37 99 0 ]
+[a 3C 37 99 37 99 37 99 0 ]
