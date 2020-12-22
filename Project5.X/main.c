@@ -1,5 +1,5 @@
 //Bicolour LED at pins RD1 and RD2 with long leg at the pin you want to me make
-//Connect pins of keypad in increasing order and group rows and columns seperately 
+//Connect pins of keypad in increasing order and group rows and columns separately  
 //to make it easier to remember as follows:
 //Column pins RC1, RC2, RC3 in chronological order for convenience 
 //Row pins at RC4, RC5, RC6, RC7
@@ -24,7 +24,7 @@ char alarmoff[]="1357#";
 int alarm_status=0;  //integer used as a status to alternate between conditions
 
 //Function for using photo gate as a button on PIC microcontroller
-//has_switchN_changed used as global vairbale to detect button presses
+//has_switchN_changed used as global variable to detect button presses
 void buttonResponse(void);
 int has_switch1_changed=0,has_switch2_changed=0, has_switch3_changed=0, has_switch4_changed=0;
 int has_switch_changed=0;

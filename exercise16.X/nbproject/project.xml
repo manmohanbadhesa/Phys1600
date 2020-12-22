@@ -15,6 +15,7 @@
             <sourceRootList>
                 <sourceRootElem>../exercise15.X</sourceRootElem>
                 <sourceRootElem>.</sourceRootElem>
+                <sourceRootElem>../Example Code-20201107</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

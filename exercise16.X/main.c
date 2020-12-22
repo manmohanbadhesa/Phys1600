@@ -22,6 +22,7 @@
 #include <stdio.h>     // has printf()
 #include <math.h>
 #include "myUART.h"
+#include "buttons.h"
 
 #include "mcc_generated_files/mcc.h"
 
@@ -32,38 +33,34 @@ void main(void)
 {
     // Initialize the device
     SYSTEM_Initialize();
-    uint32_t time_1 = 0ul, time_2 = 0ul;
-    float time;
-    unsigned char letter;
-
-    //IO_RD2_SetHigh(); // LED on show capture in progress 
+    
+    //uint32_t time, time1=1, time2=2, time3=3, s_ratio=1000000;
+    double time, time1=1, time2=2, time3=3, s_ratio=1000000;
     
     clearPuTTY();
-      
-    printf("SMT1 Timer\n\n\r");
-    
-    SMT1CON0bits.EN = 1;          // enables SMT peripheral       
-    SMT1_DataAcquisitionEnable(); // start SMT peripheral
-    
-    printf("SMT Mode = %u (0 is timer)\n\r",SMT1CON1bits.MODE);
-    printf("SMT enabled = %u (0 is no, 1 is yes)\n\r",SMT1CON0bits.EN);
-    printf("SMT timer incrementing = %u (0 is no, 1 is yes)\n\r",SMT1_IsTimerIncrementing());
-    printf("SMT prescaler setting = %u , N = %u \n\r",SMT1CON0bits.PS,1 << SMT1CON0bits.PS);
-    printf("SMT period %lu \n\n\r",SMT1_GetPeriod());
+           
+    printf("SMT1 Gated Timer - RE to FE on SMT1SIG (RC5)\n\n\r");
+   
+    printf("SMT Mode = %u",SMT1CON1bits.MODE);
 
+    //codes to control operation. Not needed. Already set in Easy Setup  
+    SMT1CON0bits.EN = 1;             // enable SMT peripheral
+    SMT1_DataAcquisitionEnable();    // allows acquisitions/captures    
+    //SMT1_RepeatDataAcquisition();    // allow repeated measurements
+        while(1)
+        {
+            // Add your application code
+            // capture 3 pulse widths
+            SMT1_ManualTimerReset();  // zero SMT1 counter/timer  
+            SMT1PWAIF = 0;            // clear pulse width (FE) interrupt flag
+            while(SMT1PWAIF == 0);    // wait for pulse width buffer to fill
+            time1 = SMT1_GetCapturedPulseWidth();  // read buffer
+            time=time1/s_ratio;             //convert musec to seconds 
+            
+            printf("\n\n\rPulse width = %f musec\n\r", time1);            
+            printf("Pulse width = %f seconds\n\r", time);
 
-    
-    while(1)
-    {
-    SMT1_ManualTimerReset();       // zero SMT1 counter/timer  
-    time_1 = SMT1_GetTimerValue(); // just to check if zeroed
-    DELAY_milliseconds(3100);
-    time_2 = SMT1_GetTimerValue();
-    //printf("SMT start = %lu musec (should be very small number)\n\r", time_1);
-    //printf("SMT end = %lu musec\n\r", time_2);
-    time = (float)(time_2 - time_1) * (1 << SMT1CON0bits.PS) * 4.0/_XTAL_FREQ;
-    //printf("elapsed time = %f seconds\n\n\r", time);
-    }
+        }
 
 }
     

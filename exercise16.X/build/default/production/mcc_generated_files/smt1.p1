@@ -2343,8 +2343,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/smt1.c: 62:     SMT1CON0 = 0x80;
 [e = _SMT1CON0 -> -> 128 `i `uc ]
 "65
-[; ;mcc_generated_files/smt1.c: 65:     SMT1CON1 = 0x00;
-[e = _SMT1CON1 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/smt1.c: 65:     SMT1CON1 = 0x07;
+[e = _SMT1CON1 -> -> 7 `i `uc ]
 "68
 [; ;mcc_generated_files/smt1.c: 68:     SMT1STAT = 0x00;
 [e = _SMT1STAT -> -> 0 `i `uc ]
@@ -2352,8 +2352,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/smt1.c: 71:     SMT1CLK = 0x00;
 [e = _SMT1CLK -> -> 0 `i `uc ]
 "74
-[; ;mcc_generated_files/smt1.c: 74:     SMT1WIN = 0x00;
-[e = _SMT1WIN -> -> 0 `i `uc ]
+[; ;mcc_generated_files/smt1.c: 74:     SMT1WIN = 0x0D;
+[e = _SMT1WIN -> -> 13 `i `uc ]
 "77
 [; ;mcc_generated_files/smt1.c: 77:     SMT1SIG = 0x00;
 [e = _SMT1SIG -> -> 0 `i `uc ]
@@ -2366,265 +2366,268 @@ Version 4.0 HI-TECH Software Intermediate Code
 "86
 [; ;mcc_generated_files/smt1.c: 86:     SMT1PRL = 0xFF;
 [e = _SMT1PRL -> -> 255 `i `uc ]
-"88
-[; ;mcc_generated_files/smt1.c: 88: }
+"89
+[; ;mcc_generated_files/smt1.c: 89:     SMT1CON1bits.SMT1GO = 1;
+[e = . . _SMT1CON1bits 1 6 -> -> 1 `i `uc ]
+"91
+[; ;mcc_generated_files/smt1.c: 91: }
 [e :UE 2229 ]
 }
-"90
-[; ;mcc_generated_files/smt1.c: 90: void SMT1_DataAcquisitionEnable(void)
+"93
+[; ;mcc_generated_files/smt1.c: 93: void SMT1_DataAcquisitionEnable(void)
 [v _SMT1_DataAcquisitionEnable `(v ~T0 @X0 1 ef ]
-"91
-[; ;mcc_generated_files/smt1.c: 91: {
+"94
+[; ;mcc_generated_files/smt1.c: 94: {
 {
 [e :U _SMT1_DataAcquisitionEnable ]
 [f ]
-"93
-[; ;mcc_generated_files/smt1.c: 93:     SMT1CON1bits.SMT1GO = 1;
+"96
+[; ;mcc_generated_files/smt1.c: 96:     SMT1CON1bits.SMT1GO = 1;
 [e = . . _SMT1CON1bits 1 6 -> -> 1 `i `uc ]
-"94
-[; ;mcc_generated_files/smt1.c: 94: }
+"97
+[; ;mcc_generated_files/smt1.c: 97: }
 [e :UE 2230 ]
 }
-"96
-[; ;mcc_generated_files/smt1.c: 96: void SMT1_DataAcquisitionDisable(void)
+"99
+[; ;mcc_generated_files/smt1.c: 99: void SMT1_DataAcquisitionDisable(void)
 [v _SMT1_DataAcquisitionDisable `(v ~T0 @X0 1 ef ]
-"97
-[; ;mcc_generated_files/smt1.c: 97: {
+"100
+[; ;mcc_generated_files/smt1.c: 100: {
 {
 [e :U _SMT1_DataAcquisitionDisable ]
 [f ]
-"99
-[; ;mcc_generated_files/smt1.c: 99:     SMT1CON1bits.SMT1GO = 0;
+"102
+[; ;mcc_generated_files/smt1.c: 102:     SMT1CON1bits.SMT1GO = 0;
 [e = . . _SMT1CON1bits 1 6 -> -> 0 `i `uc ]
-"100
-[; ;mcc_generated_files/smt1.c: 100: }
+"103
+[; ;mcc_generated_files/smt1.c: 103: }
 [e :UE 2231 ]
 }
-"102
-[; ;mcc_generated_files/smt1.c: 102: void SMT1_HaltCounter(void)
+"105
+[; ;mcc_generated_files/smt1.c: 105: void SMT1_HaltCounter(void)
 [v _SMT1_HaltCounter `(v ~T0 @X0 1 ef ]
-"103
-[; ;mcc_generated_files/smt1.c: 103: {
+"106
+[; ;mcc_generated_files/smt1.c: 106: {
 {
 [e :U _SMT1_HaltCounter ]
 [f ]
-"104
-[; ;mcc_generated_files/smt1.c: 104:     SMT1CON0bits.SMT1STP = 1;
+"107
+[; ;mcc_generated_files/smt1.c: 107:     SMT1CON0bits.SMT1STP = 1;
 [e = . . _SMT1CON0bits 1 4 -> -> 1 `i `uc ]
-"105
-[; ;mcc_generated_files/smt1.c: 105: }
+"108
+[; ;mcc_generated_files/smt1.c: 108: }
 [e :UE 2232 ]
 }
-"107
-[; ;mcc_generated_files/smt1.c: 107: void SMT1_SetPeriod(uint32_t periodVal)
+"110
+[; ;mcc_generated_files/smt1.c: 110: void SMT1_SetPeriod(uint32_t periodVal)
 [v _SMT1_SetPeriod `(v ~T0 @X0 1 ef1`ul ]
-"108
-[; ;mcc_generated_files/smt1.c: 108: {
+"111
+[; ;mcc_generated_files/smt1.c: 111: {
 {
 [e :U _SMT1_SetPeriod ]
-"107
-[; ;mcc_generated_files/smt1.c: 107: void SMT1_SetPeriod(uint32_t periodVal)
-[v _periodVal `ul ~T0 @X0 1 r1 ]
-"108
-[; ;mcc_generated_files/smt1.c: 108: {
-[f ]
 "110
-[; ;mcc_generated_files/smt1.c: 110:     SMT1PRU = (periodVal >> 16);
-[e = _SMT1PRU -> >> _periodVal -> 16 `i `uc ]
+[; ;mcc_generated_files/smt1.c: 110: void SMT1_SetPeriod(uint32_t periodVal)
+[v _periodVal `ul ~T0 @X0 1 r1 ]
 "111
-[; ;mcc_generated_files/smt1.c: 111:     SMT1PRH = (periodVal >> 8);
-[e = _SMT1PRH -> >> _periodVal -> 8 `i `uc ]
-"112
-[; ;mcc_generated_files/smt1.c: 112:     SMT1PRL = periodVal;
-[e = _SMT1PRL -> _periodVal `uc ]
+[; ;mcc_generated_files/smt1.c: 111: {
+[f ]
 "113
-[; ;mcc_generated_files/smt1.c: 113: }
+[; ;mcc_generated_files/smt1.c: 113:     SMT1PRU = (periodVal >> 16);
+[e = _SMT1PRU -> >> _periodVal -> 16 `i `uc ]
+"114
+[; ;mcc_generated_files/smt1.c: 114:     SMT1PRH = (periodVal >> 8);
+[e = _SMT1PRH -> >> _periodVal -> 8 `i `uc ]
+"115
+[; ;mcc_generated_files/smt1.c: 115:     SMT1PRL = periodVal;
+[e = _SMT1PRL -> _periodVal `uc ]
+"116
+[; ;mcc_generated_files/smt1.c: 116: }
 [e :UE 2233 ]
 }
-"115
-[; ;mcc_generated_files/smt1.c: 115: uint32_t SMT1_GetPeriod()
+"118
+[; ;mcc_generated_files/smt1.c: 118: uint32_t SMT1_GetPeriod()
 [v _SMT1_GetPeriod `(ul ~T0 @X0 1 ef ]
-"116
-[; ;mcc_generated_files/smt1.c: 116: {
+"119
+[; ;mcc_generated_files/smt1.c: 119: {
 {
 [e :U _SMT1_GetPeriod ]
 [f ]
-"117
-[; ;mcc_generated_files/smt1.c: 117:     return (SMT1PR);
+"120
+[; ;mcc_generated_files/smt1.c: 120:     return (SMT1PR);
 [e ) -> _SMT1PR `ul ]
 [e $UE 2234  ]
-"118
-[; ;mcc_generated_files/smt1.c: 118: }
+"121
+[; ;mcc_generated_files/smt1.c: 121: }
 [e :UE 2234 ]
 }
-"120
-[; ;mcc_generated_files/smt1.c: 120: void SMT1_SingleDataAcquisition(void)
+"123
+[; ;mcc_generated_files/smt1.c: 123: void SMT1_SingleDataAcquisition(void)
 [v _SMT1_SingleDataAcquisition `(v ~T0 @X0 1 ef ]
-"121
-[; ;mcc_generated_files/smt1.c: 121: {
+"124
+[; ;mcc_generated_files/smt1.c: 124: {
 {
 [e :U _SMT1_SingleDataAcquisition ]
 [f ]
-"122
-[; ;mcc_generated_files/smt1.c: 122:     SMT1CON1bits.SMT1REPEAT = 0;
+"125
+[; ;mcc_generated_files/smt1.c: 125:     SMT1CON1bits.SMT1REPEAT = 0;
 [e = . . _SMT1CON1bits 1 5 -> -> 0 `i `uc ]
-"123
-[; ;mcc_generated_files/smt1.c: 123: }
+"126
+[; ;mcc_generated_files/smt1.c: 126: }
 [e :UE 2235 ]
 }
-"125
-[; ;mcc_generated_files/smt1.c: 125: void SMT1_RepeatDataAcquisition(void)
+"128
+[; ;mcc_generated_files/smt1.c: 128: void SMT1_RepeatDataAcquisition(void)
 [v _SMT1_RepeatDataAcquisition `(v ~T0 @X0 1 ef ]
-"126
-[; ;mcc_generated_files/smt1.c: 126: {
+"129
+[; ;mcc_generated_files/smt1.c: 129: {
 {
 [e :U _SMT1_RepeatDataAcquisition ]
 [f ]
-"127
-[; ;mcc_generated_files/smt1.c: 127:     SMT1CON1bits.SMT1REPEAT = 1;
+"130
+[; ;mcc_generated_files/smt1.c: 130:     SMT1CON1bits.SMT1REPEAT = 1;
 [e = . . _SMT1CON1bits 1 5 -> -> 1 `i `uc ]
-"128
-[; ;mcc_generated_files/smt1.c: 128: }
+"131
+[; ;mcc_generated_files/smt1.c: 131: }
 [e :UE 2236 ]
 }
-"130
-[; ;mcc_generated_files/smt1.c: 130: void SMT1_ManualPeriodBufferUpdate(void)
+"133
+[; ;mcc_generated_files/smt1.c: 133: void SMT1_ManualPeriodBufferUpdate(void)
 [v _SMT1_ManualPeriodBufferUpdate `(v ~T0 @X0 1 ef ]
-"131
-[; ;mcc_generated_files/smt1.c: 131: {
+"134
+[; ;mcc_generated_files/smt1.c: 134: {
 {
 [e :U _SMT1_ManualPeriodBufferUpdate ]
 [f ]
-"132
-[; ;mcc_generated_files/smt1.c: 132:     SMT1STATbits.SMT1CPRUP = 1;
+"135
+[; ;mcc_generated_files/smt1.c: 135:     SMT1STATbits.SMT1CPRUP = 1;
 [e = . . _SMT1STATbits 1 6 -> -> 1 `i `uc ]
-"133
-[; ;mcc_generated_files/smt1.c: 133: }
+"136
+[; ;mcc_generated_files/smt1.c: 136: }
 [e :UE 2237 ]
 }
-"135
-[; ;mcc_generated_files/smt1.c: 135: void SMT1_ManualPulseWidthBufferUpdate(void)
+"138
+[; ;mcc_generated_files/smt1.c: 138: void SMT1_ManualPulseWidthBufferUpdate(void)
 [v _SMT1_ManualPulseWidthBufferUpdate `(v ~T0 @X0 1 ef ]
-"136
-[; ;mcc_generated_files/smt1.c: 136: {
+"139
+[; ;mcc_generated_files/smt1.c: 139: {
 {
 [e :U _SMT1_ManualPulseWidthBufferUpdate ]
 [f ]
-"137
-[; ;mcc_generated_files/smt1.c: 137:     SMT1STATbits.SMT1CPWUP = 1;
+"140
+[; ;mcc_generated_files/smt1.c: 140:     SMT1STATbits.SMT1CPWUP = 1;
 [e = . . _SMT1STATbits 1 5 -> -> 1 `i `uc ]
-"138
-[; ;mcc_generated_files/smt1.c: 138: }
+"141
+[; ;mcc_generated_files/smt1.c: 141: }
 [e :UE 2238 ]
 }
-"140
-[; ;mcc_generated_files/smt1.c: 140: void SMT1_ManualTimerReset(void)
+"143
+[; ;mcc_generated_files/smt1.c: 143: void SMT1_ManualTimerReset(void)
 [v _SMT1_ManualTimerReset `(v ~T0 @X0 1 ef ]
-"141
-[; ;mcc_generated_files/smt1.c: 141: {
+"144
+[; ;mcc_generated_files/smt1.c: 144: {
 {
 [e :U _SMT1_ManualTimerReset ]
 [f ]
-"142
-[; ;mcc_generated_files/smt1.c: 142:     SMT1STATbits.SMT1RST = 1;
+"145
+[; ;mcc_generated_files/smt1.c: 145:     SMT1STATbits.SMT1RST = 1;
 [e = . . _SMT1STATbits 2 1 -> -> 1 `i `uc ]
-"143
-[; ;mcc_generated_files/smt1.c: 143: }
+"146
+[; ;mcc_generated_files/smt1.c: 146: }
 [e :UE 2239 ]
 }
-"145
-[; ;mcc_generated_files/smt1.c: 145: _Bool SMT1_IsWindowOpen(void)
+"148
+[; ;mcc_generated_files/smt1.c: 148: _Bool SMT1_IsWindowOpen(void)
 [v _SMT1_IsWindowOpen `(a ~T0 @X0 1 ef ]
-"146
-[; ;mcc_generated_files/smt1.c: 146: {
+"149
+[; ;mcc_generated_files/smt1.c: 149: {
 {
 [e :U _SMT1_IsWindowOpen ]
 [f ]
-"147
-[; ;mcc_generated_files/smt1.c: 147:     return (SMT1STATbits.SMT1WS);
+"150
+[; ;mcc_generated_files/smt1.c: 150:     return (SMT1STATbits.SMT1WS);
 [e ) -> . . _SMT1STATbits 1 1 `a ]
 [e $UE 2240  ]
-"148
-[; ;mcc_generated_files/smt1.c: 148: }
+"151
+[; ;mcc_generated_files/smt1.c: 151: }
 [e :UE 2240 ]
 }
-"150
-[; ;mcc_generated_files/smt1.c: 150: _Bool SMT1_IsSignalAcquisitionInProgress(void)
+"153
+[; ;mcc_generated_files/smt1.c: 153: _Bool SMT1_IsSignalAcquisitionInProgress(void)
 [v _SMT1_IsSignalAcquisitionInProgress `(a ~T0 @X0 1 ef ]
-"151
-[; ;mcc_generated_files/smt1.c: 151: {
+"154
+[; ;mcc_generated_files/smt1.c: 154: {
 {
 [e :U _SMT1_IsSignalAcquisitionInProgress ]
 [f ]
-"152
-[; ;mcc_generated_files/smt1.c: 152:     return (SMT1STATbits.SMT1AS);
+"155
+[; ;mcc_generated_files/smt1.c: 155:     return (SMT1STATbits.SMT1AS);
 [e ) -> . . _SMT1STATbits 1 0 `a ]
 [e $UE 2241  ]
-"153
-[; ;mcc_generated_files/smt1.c: 153: }
+"156
+[; ;mcc_generated_files/smt1.c: 156: }
 [e :UE 2241 ]
 }
-"155
-[; ;mcc_generated_files/smt1.c: 155: _Bool SMT1_IsTimerIncrementing(void)
+"158
+[; ;mcc_generated_files/smt1.c: 158: _Bool SMT1_IsTimerIncrementing(void)
 [v _SMT1_IsTimerIncrementing `(a ~T0 @X0 1 ef ]
-"156
-[; ;mcc_generated_files/smt1.c: 156: {
+"159
+[; ;mcc_generated_files/smt1.c: 159: {
 {
 [e :U _SMT1_IsTimerIncrementing ]
 [f ]
-"157
-[; ;mcc_generated_files/smt1.c: 157:     return (SMT1STATbits.SMT1TS);
+"160
+[; ;mcc_generated_files/smt1.c: 160:     return (SMT1STATbits.SMT1TS);
 [e ) -> . . _SMT1STATbits 1 2 `a ]
 [e $UE 2242  ]
-"158
-[; ;mcc_generated_files/smt1.c: 158: }
+"161
+[; ;mcc_generated_files/smt1.c: 161: }
 [e :UE 2242 ]
 }
-"160
-[; ;mcc_generated_files/smt1.c: 160: uint32_t SMT1_GetCapturedPulseWidth()
+"163
+[; ;mcc_generated_files/smt1.c: 163: uint32_t SMT1_GetCapturedPulseWidth()
 [v _SMT1_GetCapturedPulseWidth `(ul ~T0 @X0 1 ef ]
-"161
-[; ;mcc_generated_files/smt1.c: 161: {
+"164
+[; ;mcc_generated_files/smt1.c: 164: {
 {
 [e :U _SMT1_GetCapturedPulseWidth ]
 [f ]
-"162
-[; ;mcc_generated_files/smt1.c: 162:     return (SMT1CPW);
+"165
+[; ;mcc_generated_files/smt1.c: 165:     return (SMT1CPW);
 [e ) -> _SMT1CPW `ul ]
 [e $UE 2243  ]
-"163
-[; ;mcc_generated_files/smt1.c: 163: }
+"166
+[; ;mcc_generated_files/smt1.c: 166: }
 [e :UE 2243 ]
 }
-"165
-[; ;mcc_generated_files/smt1.c: 165: uint32_t SMT1_GetCapturedPeriod()
+"168
+[; ;mcc_generated_files/smt1.c: 168: uint32_t SMT1_GetCapturedPeriod()
 [v _SMT1_GetCapturedPeriod `(ul ~T0 @X0 1 ef ]
-"166
-[; ;mcc_generated_files/smt1.c: 166: {
+"169
+[; ;mcc_generated_files/smt1.c: 169: {
 {
 [e :U _SMT1_GetCapturedPeriod ]
 [f ]
-"167
-[; ;mcc_generated_files/smt1.c: 167:     return (SMT1CPR);
+"170
+[; ;mcc_generated_files/smt1.c: 170:     return (SMT1CPR);
 [e ) -> _SMT1CPR `ul ]
 [e $UE 2244  ]
-"168
-[; ;mcc_generated_files/smt1.c: 168: }
+"171
+[; ;mcc_generated_files/smt1.c: 171: }
 [e :UE 2244 ]
 }
-"170
-[; ;mcc_generated_files/smt1.c: 170: uint32_t SMT1_GetTimerValue()
+"173
+[; ;mcc_generated_files/smt1.c: 173: uint32_t SMT1_GetTimerValue()
 [v _SMT1_GetTimerValue `(ul ~T0 @X0 1 ef ]
-"171
-[; ;mcc_generated_files/smt1.c: 171: {
+"174
+[; ;mcc_generated_files/smt1.c: 174: {
 {
 [e :U _SMT1_GetTimerValue ]
 [f ]
-"172
-[; ;mcc_generated_files/smt1.c: 172:     return (SMT1TMR);
+"175
+[; ;mcc_generated_files/smt1.c: 175:     return (SMT1TMR);
 [e ) -> _SMT1TMR `ul ]
 [e $UE 2245  ]
-"173
-[; ;mcc_generated_files/smt1.c: 173: }
+"176
+[; ;mcc_generated_files/smt1.c: 176: }
 [e :UE 2245 ]
 }

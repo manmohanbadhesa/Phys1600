@@ -13,6 +13,8 @@
         <itemPath>mcc_generated_files/smt1.h</itemPath>
         <itemPath>mcc_generated_files/delay.h</itemPath>
         <itemPath>mcc_generated_files/uart2.h</itemPath>
+        <itemPath>mcc_generated_files/tmr2.h</itemPath>
+        <itemPath>mcc_generated_files/pwm5.h</itemPath>
       </logicalFolder>
       <itemPath>buttons.h</itemPath>
       <itemPath>myUART.h</itemPath>
@@ -37,6 +39,8 @@
         <itemPath>mcc_generated_files/smt1.c</itemPath>
         <itemPath>mcc_generated_files/delay.c</itemPath>
         <itemPath>mcc_generated_files/uart2.c</itemPath>
+        <itemPath>mcc_generated_files/tmr2.c</itemPath>
+        <itemPath>mcc_generated_files/pwm5.c</itemPath>
       </logicalFolder>
       <itemPath>buttons.c</itemPath>
       <itemPath>myUART.c</itemPath>
@@ -53,6 +57,7 @@
   <sourceRootList>
     <Elem>../exercise15.X</Elem>
     <Elem>.</Elem>
+    <Elem>../Example Code-20201107</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>

@@ -27187,7 +27187,7 @@ void SMT1_Initialize(void)
     SMT1CON0 = 0x80;
 
 
-    SMT1CON1 = 0x00;
+    SMT1CON1 = 0x07;
 
 
     SMT1STAT = 0x00;
@@ -27196,7 +27196,7 @@ void SMT1_Initialize(void)
     SMT1CLK = 0x00;
 
 
-    SMT1WIN = 0x00;
+    SMT1WIN = 0x0D;
 
 
     SMT1SIG = 0x00;
@@ -27209,6 +27209,9 @@ void SMT1_Initialize(void)
 
 
     SMT1PRL = 0xFF;
+
+
+    SMT1CON1bits.SMT1GO = 1;
 
 }
 

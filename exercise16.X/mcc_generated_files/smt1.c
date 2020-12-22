@@ -61,8 +61,8 @@ void SMT1_Initialize(void)
     // WPOL high/rising edge enabled; SMT1STP rolls over to 24'h000000; SMT1SPOL high/rising edge enabled; SMT1EN enabled; SMT1PS 1:1 Prescaler; SMT1CPOL rising edge; 
     SMT1CON0 = 0x80;
 
-    // SMT1REPEAT Single Acquisition mode; SMT1MODE Timer; SMT1GO disabled; 
-    SMT1CON1 = 0x00;
+    // SMT1REPEAT Single Acquisition mode; SMT1MODE Capture; SMT1GO disabled; 
+    SMT1CON1 = 0x07;
 
     // SMT1CPWUP SMT1CPW1 update complete; SMT1CPRUP SMT1PR1 update complete; SMT1RST SMT1TMR1 update complete; 
     SMT1STAT = 0x00;
@@ -70,8 +70,8 @@ void SMT1_Initialize(void)
     // SMT1CSEL FOSC/4; 
     SMT1CLK = 0x00;
 
-    // SMT1WSEL SMT1WINPPS; 
-    SMT1WIN = 0x00;
+    // SMT1WSEL PWM5OUT; 
+    SMT1WIN = 0x0D;
 
     // SMT1SSEL SMT1SIGPPS; 
     SMT1SIG = 0x00;
@@ -85,6 +85,9 @@ void SMT1_Initialize(void)
     // SMT1PR 255; 
     SMT1PRL = 0xFF;
 
+    // Start the SMT module by writing to SMTxGO bit
+    SMT1CON1bits.SMT1GO = 1;
+    
 }
         
 void SMT1_DataAcquisitionEnable(void)

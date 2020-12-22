@@ -35,8 +35,8 @@ void main(void)
     uint32_t time1=1, time2=2, time3=3, time4=4;
     uint32_t time5=5, time6=6;
 
-    while(IO_RD1_GetValue() == 0); //wait for button press;
-    IO_RD2_SetHigh(); // LED on show capture in progress 
+    //while(IO_RD1_GetValue() == 0); //wait for button press;
+    //IO_RD2_SetHigh(); // LED on show capture in progress 
 
     clearPuTTY();
            
@@ -75,7 +75,7 @@ void main(void)
     printf("Period = %lu musec, Pulse width = %lu musec \n\r", time3 - time1, time2 - time1);
     printf("Period = %lu musec, Pulse width = %lu musec \n\r", time6 - time4, time6 - time5);
     
-    IO_RD2_SetLow(); // LED off, capture finished 
+    //IO_RD2_SetLow(); // LED off, capture finished 
     
     while (1)
     {
